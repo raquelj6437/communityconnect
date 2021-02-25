@@ -6,6 +6,6 @@ Raquel Joseph - Leader/Tech\
 Amir Gabal - Tech\
 Adriana Alvarado - Tech\
 Moonis Thadey - Tech\
-Sissi W - UX Design\
+Sissi W - UX Design
 
 ### Daily Scrum - February 25th
