@@ -1,4 +1,5 @@
 # Community Connect
+---
 https://buspark.atlassian.net/jira/software/projects/CC/boards/12/backlog
 
 ### Team
@@ -18,3 +19,12 @@ Since our current focus for the sprint is mainly functionality, Sissi would cont
 Most of the code for this weeks sprint will consist of HTML and SQL (as the database for the timesheet).
 
 ### Daily Scrum - February 27th
+#### What did you do in the last 24 hours that helped the Development Team meet the Sprint Goal?
+
+Raquel - In the last 24 hours, during our team meeting, we discussed what we liked and disliked about our current wireframes and made improvements to them. Furthermore, I started learning SQL on code academy to familiarize myself with the syntax to prepare for the build sprint next week. My main assignment for this week was to create the github repository for my team and creating the README.
+
+#### What will you do in the next 24 hours to help the Development Team meet the Sprint Goal?
+
+Raquel - In the next 24 hours, I will prepare my team for the build sprint by indicating specifics that need to by done each day. I will also continue learning SQL to ensure that I am fully prepared for the build sprint.
+
+#### Do you see any impediment that prevents you or the Development Team from meeting the Sprint Goal? What are the impediments? What is your impediment removal plan?
