@@ -1,6 +1,6 @@
 # Community Connect
----
 https://buspark.atlassian.net/jira/software/projects/CC/boards/12/backlog
+---
 
 ### Team
 Raquel Joseph - Leader/Tech\
