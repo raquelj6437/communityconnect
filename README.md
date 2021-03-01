@@ -27,6 +27,8 @@ Most of the code for this weeks sprint will consist of HTML and SQL (as the data
 
 *Sissi* - In the last 24 hours I worked on the wireframe and made changes.
 
+*Adriana* - In the last 24 hours, I looked over HTML/CSS to begin the rough draft code of the timesheet, focusinng mostly on functionality instead of presentation. I also made a rough idea of how the wireframes should be presented to get a better sense what should be the "main idea."
+
 #### What will you do in the next 24 hours to help the Development Team meet the Sprint Goal?
 
 *Raquel* - In the next 24 hours, I will prepare my team for the build sprint by indicating specifics that need to by done each day. I will also continue learning SQL to ensure that I am fully prepared for the build sprint.
@@ -35,4 +37,8 @@ Most of the code for this weeks sprint will consist of HTML and SQL (as the data
 
 *Sissi* - In the next 24 hours I will continue to work on the wireframe and maybe start to think about the logo.
 
+*Adriana* - I will continue to look over HTML/CSS and begin the front-end, to hopefully have something acceptable and functional to present on Tuesday to the team.
+
 #### Do you see any impediment that prevents you or the Development Team from meeting the Sprint Goal? What are the impediments? What is your impediment removal plan?
+
+There aren't any impediments as of now. 
