@@ -25,10 +25,14 @@ Most of the code for this weeks sprint will consist of HTML and SQL (as the data
 
 *Amir* - In the last 24 hours I studied up on SQL to help construct an efficient database for the project.
 
+*Sissi* - In the last 24 hours I worked on the wireframe and made changes.
+
 #### What will you do in the next 24 hours to help the Development Team meet the Sprint Goal?
 
 *Raquel* - In the next 24 hours, I will prepare my team for the build sprint by indicating specifics that need to by done each day. I will also continue learning SQL to ensure that I am fully prepared for the build sprint.
 
 *Amir* - In the next 24 hours I will continue to learn SQL as well as Ruby as a framework.
+
+*Sissi* - In the next 24 hours I will continue to work on the wireframe and maybe start to think about the logo.
 
 #### Do you see any impediment that prevents you or the Development Team from meeting the Sprint Goal? What are the impediments? What is your impediment removal plan?
