@@ -10,5 +10,5 @@ Moonis Thadey - Tech\
 Sissi W - UX Design
 
 ### Weekly Updates
-[Week 1](./classUpdates/week1.md)
-[Week 1](./classUpdates/week2.md)  
+[Week 1](./classUpdates/week1.md)\
+[Week 2](./classUpdates/week2.md)  
