@@ -4,4 +4,6 @@ gem 'pry'
 gem 'sinatra'
 gem 'shotgun'
 gem 'dotenv'
-gem 'sqlite3'
+group :development, :test do
+  gem 'sqlite3'
+end
