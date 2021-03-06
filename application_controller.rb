@@ -10,4 +10,15 @@ class ApplicationController < Sinatra::Base
     erb :index
   end
   
+  post '/' do
+    # puts params
+    @db = SQLite3::Database.open 'timesheet.db'
+    @organization = params[:organization]
+    @date = params[:date]
+    @hours = params[:hours]
+    @signature = params[:signature]
+
+    add(@db,@organization,@date,@hours,@signature)
+    erb :index
+  end
 end
