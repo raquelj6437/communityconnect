@@ -8,9 +8,9 @@ end
     
 add(db,"nbc","04/22/18","5","jessica sanchez")
 
-    rescue SQLite3::Exception => e 
-        puts "Exception occurred"
-        puts e
-    ensure
-        db.close if db
-end
+#     rescue SQLite3::Exception => e 
+#         puts "Exception occurred"
+#         puts e
+#     ensure
+#         db.close if db
+# end
