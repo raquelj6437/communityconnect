@@ -1,4 +1,4 @@
-# require 'sqlite3'
+require 'sqlite3'
 
 # db.execute "CREATE TABLE IF NOT EXISTS user_timesheet(company TEXT, date TEXT, hours TEXT, signature TEXT)"
 
