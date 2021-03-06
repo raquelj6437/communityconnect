@@ -7,6 +7,7 @@ def add(db,organization,date,hours,signature)
 end
     
 # add(db,"nbc","04/22/18","5","jessica sanchez")
+
 #     rescue SQLite3::Exception => e 
 #         puts "Exception occurred"
 #         puts e
