@@ -1,0 +1,23 @@
+<section>
+    <h1>Community Connect</h1>
+
+      <table>
+        <tr>
+          <th>Organization:</th>
+          <th>Date:</th>
+          <th>Hours:</th>
+          <th>Signature:</th>
+        </tr>
+        <% @opportunity.each do |opportunity| %>
+            <tr>
+                <td><%= opportunity.organization%></td>
+                <td><%= opportunity.date%></td>
+                <td><%= opportunity.hours%></td>
+                <td><%= opportunity.signature%></td>
+            </tr>
+        <%end%>
+      </table>
+    <div>
+        
+    </div>
+</section>
