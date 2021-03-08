@@ -476,3 +476,49 @@ Processing by OpportunitiesController#index as HTML
 Completed 200 OK in 399ms (Views: 318.5ms | ActiveRecord: 1.3ms | Allocations: 14814)
 
 
+Started GET "/opportunities/" for ::1 at 2021-03-08 15:11:56 -0500
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by OpportunitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/index.html.erb within layouts/application
+  [1m[36mOpportunity Load (0.5ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" ORDER BY created_at DESC[0m
+  ↳ app/views/opportunities/index.html.erb:11
+  Rendered opportunities/index.html.erb within layouts/application (Duration: 12.0ms | Allocations: 5102)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 62.6ms | Allocations: 11341)
+Completed 200 OK in 88ms (Views: 67.2ms | ActiveRecord: 1.0ms | Allocations: 15012)
+
+
+Started GET "/opportunities/new" for ::1 at 2021-03-08 15:12:00 -0500
+Processing by OpportunitiesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/new.html.erb within layouts/application
+  Rendered opportunities/new.html.erb within layouts/application (Duration: 78.1ms | Allocations: 13499)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 85.9ms | Allocations: 16818)
+Completed 200 OK in 88ms (Views: 86.7ms | ActiveRecord: 0.0ms | Allocations: 17447)
+
+
+Started GET "/opportunities/new" for ::1 at 2021-03-08 15:12:07 -0500
+Processing by OpportunitiesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/new.html.erb within layouts/application
+  Rendered opportunities/new.html.erb within layouts/application (Duration: 9.5ms | Allocations: 4800)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.8ms | Allocations: 8117)
+Completed 200 OK in 19ms (Views: 18.5ms | ActiveRecord: 0.0ms | Allocations: 8575)
+
+
+Started GET "/opportunities/" for ::1 at 2021-03-08 15:12:08 -0500
+Processing by OpportunitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/index.html.erb within layouts/application
+  [1m[36mOpportunity Load (0.2ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" ORDER BY created_at DESC[0m
+  ↳ app/views/opportunities/index.html.erb:11
+  Rendered opportunities/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 743)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 4177)
+Completed 200 OK in 14ms (Views: 11.8ms | ActiveRecord: 0.2ms | Allocations: 4659)
+
+
