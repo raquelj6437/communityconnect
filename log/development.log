@@ -661,3 +661,70 @@ Migrating to CreateOpportunities (20210308164147)
   [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(4346549080646495835)[0m
   [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/opportunities/" for ::1 at 2021-03-10 14:00:45 -0500
+
+ActiveRecord::ConnectionNotEstablished - could not translate host name "rj" to address: nodename nor servname provided, or not known:
+
+Started POST "/__better_errors/c4d4d24d9a5aace8/variables" for ::1 at 2021-03-10 14:00:45 -0500
+Started POST "/__better_errors/c4d4d24d9a5aace8/variables" for ::1 at 2021-03-10 14:02:51 -0500
+Started GET "/opportunities/" for ::1 at 2021-03-10 14:04:17 -0500
+  [1m[35m (2.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by OpportunitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/index.html.erb within layouts/application
+  [1m[36mOpportunity Load (3.9ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" ORDER BY created_at DESC[0m
+  ↳ app/views/opportunities/index.html.erb:11
+  Rendered opportunities/index.html.erb within layouts/application (Duration: 16.2ms | Allocations: 1237)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 42.9ms | Allocations: 7242)
+Completed 200 OK in 123ms (Views: 67.0ms | ActiveRecord: 3.9ms | Allocations: 10894)
+
+
+Started GET "/opportunities/new" for ::1 at 2021-03-10 14:04:22 -0500
+Processing by OpportunitiesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/new.html.erb within layouts/application
+  Rendered opportunities/new.html.erb within layouts/application (Duration: 68.4ms | Allocations: 13440)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 75.8ms | Allocations: 16759)
+Completed 200 OK in 97ms (Views: 76.6ms | ActiveRecord: 8.8ms | Allocations: 21718)
+
+
+Started POST "/opportunities" for ::1 at 2021-03-10 14:04:32 -0500
+Processing by OpportunitiesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "opportunity"=>{"organization"=>"google", "date"=>"3/22", "hours"=>"5", "signature"=>"raquel"}, "commit"=>"Create new post"}
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/opportunities_controller.rb:12:in `create'
+  [1m[36mOpportunity Create (4.0ms)[0m  [1m[32mINSERT INTO "opportunities" ("organization", "date", "hours", "signature", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["organization", "google"], ["date", "3/22"], ["hours", "5"], ["signature", "raquel"], ["created_at", "2021-03-10 19:04:32.573494"], ["updated_at", "2021-03-10 19:04:32.573494"]]
+  ↳ app/controllers/opportunities_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/opportunities_controller.rb:12:in `create'
+Redirected to http://localhost:3000/opportunities/1
+Completed 302 Found in 14ms (ActiveRecord: 6.0ms | Allocations: 3287)
+
+
+Started GET "/opportunities/1" for ::1 at 2021-03-10 14:04:32 -0500
+Processing by OpportunitiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mOpportunity Load (1.7ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/opportunities_controller.rb:20:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/show.html.erb within layouts/application
+  Rendered opportunities/show.html.erb within layouts/application (Duration: 3.4ms | Allocations: 182)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.8ms | Allocations: 3614)
+Completed 200 OK in 26ms (Views: 12.5ms | ActiveRecord: 4.0ms | Allocations: 5615)
+
+
+Started GET "/opportunities/" for ::1 at 2021-03-10 14:04:35 -0500
+Processing by OpportunitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/index.html.erb within layouts/application
+  [1m[36mOpportunity Load (2.2ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" ORDER BY created_at DESC[0m
+  ↳ app/views/opportunities/index.html.erb:11
+  Rendered opportunities/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 733)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.2ms | Allocations: 4165)
+Completed 200 OK in 20ms (Views: 14.8ms | ActiveRecord: 2.2ms | Allocations: 4758)
+
+
