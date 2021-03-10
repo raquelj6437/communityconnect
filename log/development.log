@@ -740,3 +740,16 @@ Completed 200 OK in 20ms (Views: 14.8ms | ActiveRecord: 2.2ms | Allocations: 475
   [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
   [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(4346549080646495835)[0m
   [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/opportunities/" for ::1 at 2021-03-10 14:17:00 -0500
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by OpportunitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/index.html.erb within layouts/application
+  [1m[36mOpportunity Load (1.8ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" ORDER BY created_at DESC[0m
+  ↳ app/views/opportunities/index.html.erb:11
+  Rendered opportunities/index.html.erb within layouts/application (Duration: 19.1ms | Allocations: 5658)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 50.5ms | Allocations: 11656)
+Completed 200 OK in 114ms (Views: 62.5ms | ActiveRecord: 8.1ms | Allocations: 15307)
+
+
