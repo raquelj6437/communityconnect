@@ -2755,3 +2755,73 @@ Processing by ServicesController#index as HTML
 Completed 200 OK in 109ms (Views: 78.4ms | Allocations: 5095)
 
 
+Started GET "/services/" for ::1 at 2021-03-15 12:43:08 -0400
+Processing by ServicesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering services/index.html.erb within layouts/application
+  Rendered services/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 147)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 57.5ms | Allocations: 3873)
+Completed 200 OK in 80ms (Views: 68.4ms | Allocations: 5074)
+
+
+Started GET "/services/index" for ::1 at 2021-03-15 12:43:09 -0400
+
+AbstractController::ActionNotFound - The action 'show' could not be found for ServicesController
+Did you mean?  index:
+
+Started POST "/__better_errors/41d8d14e10e3aa37/variables" for ::1 at 2021-03-15 12:43:09 -0400
+Started GET "/" for ::1 at 2021-03-15 12:43:09 -0400
+Processing by OpportunitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/index.html.erb within layouts/application
+  [1m[36mOpportunity Load (2.0ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" ORDER BY created_at DESC[0m
+  ↳ app/views/opportunities/index.html.erb:11
+  Rendered opportunities/index.html.erb within layouts/application (Duration: 7.6ms | Allocations: 1392)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.8ms | Allocations: 4952)
+Completed 200 OK in 65ms (Views: 18.3ms | ActiveRecord: 25.5ms | Allocations: 9023)
+
+
+Started GET "/services/" for ::1 at 2021-03-15 16:05:17 -0400
+Processing by ServicesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering services/index.html.erb within layouts/application
+  Rendered services/index.html.erb within layouts/application (Duration: 6.0ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 218.7ms | Allocations: 3535)
+Completed 200 OK in 323ms (Views: 239.3ms | Allocations: 3977)
+
+
+Started GET "/" for ::1 at 2021-03-15 16:05:20 -0400
+Processing by OpportunitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/index.html.erb within layouts/application
+  [1m[36mOpportunity Load (10.7ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" ORDER BY created_at DESC[0m
+  ↳ app/views/opportunities/index.html.erb:11
+  Rendered opportunities/index.html.erb within layouts/application (Duration: 25.9ms | Allocations: 1158)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 47.6ms | Allocations: 4645)
+Completed 200 OK in 318ms (Views: 37.8ms | ActiveRecord: 127.6ms | Allocations: 8145)
+
+
+Started GET "/opportunities/new" for ::1 at 2021-03-15 16:05:22 -0400
+Processing by OpportunitiesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/new.html.erb within layouts/application
+  Rendered opportunities/new.html.erb within layouts/application (Duration: 403.4ms | Allocations: 15947)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 416.5ms | Allocations: 19329)
+Completed 200 OK in 426ms (Views: 417.2ms | ActiveRecord: 0.0ms | Allocations: 19942)
+
+
+Started GET "/services/" for ::1 at 2021-03-15 16:05:26 -0400
+Processing by ServicesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering services/index.html.erb within layouts/application
+  Rendered services/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 38)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 3526)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.0ms | Allocations: 3968)
+
+

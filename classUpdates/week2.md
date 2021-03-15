@@ -3,11 +3,11 @@ This week's build sprint was a little difficult for us. We were a little confuse
 
 We all got together to meet and install ruby on rails which gave us a number of issues in itself.
 
-![zoom picture](../updateImgs/zoom_screenshot.png)
+![zoom picture](updateImgs/zoom_screenshot.png)
 
 Finally, after two hours of installing and figuring out all the bugs we got to start a tutorial to learn ruby on rails.
 
-![zoom picture](../updateImgs/zoom_screenshot2.png)
+![zoom picture](updateImgs/zoom_screenshot2.png)
 
 We have deployed our app at [here](https://community-connect-1.herokuapp.com).
 

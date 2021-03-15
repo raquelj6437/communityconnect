@@ -11,5 +11,6 @@ Sissi W - UX Design
 
 ### Weekly Updates
 [Week 1](./classUpdates/week1.md)\
-[Week 2](./classUpdates/week2.md)  
+[Week 2](./classUpdates/week2.md)\ 
+[Week 3](./classUpdates/week2.md)\ 
 

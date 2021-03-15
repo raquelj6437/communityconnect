@@ -5,6 +5,9 @@ This week we worked on adding buttons and a list of community service opportunit
 
 We met with our mentors for some advice on how we should proceed with week three build sprint. Unfortunately we forgot to take a screenshot of us on zoom but heres a screenshot.
 
+![slack picture](updateImgs/slack_screenshot.png)
+![slack picture](updateImgs/slack_screenshot2.png)
+
 ### Daily Scrum
 #### What did you do in the last 24 hours that helped the Development Team meet the Sprint Goal?
 
