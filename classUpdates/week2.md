@@ -13,7 +13,7 @@ We have deployed our app at [here](https://community-connect-1.herokuapp.com).
 
 We were not able to finish the tutorial before class so we plan on finishing it and implementing it to our app today. We also plan on completing at least 2 stories by the end of the week.
 
-### Daily Scrum - February 27th
+### Daily Scrum
 #### What did you do in the last 24 hours that helped the Development Team meet the Sprint Goal?
 
 *Raquel* - In the last 24 hours, I installed ruby on rails and began implementing the project with rails instead of sinatra.
