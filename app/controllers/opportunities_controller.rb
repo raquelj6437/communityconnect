@@ -10,7 +10,7 @@ class OpportunitiesController < ApplicationController
     def create
         @opportunity = Opportunity.new(opportunity_params)
         if @opportunity.save
-            redirect_to @opportunity
+            redirect_to '/'
         else
             render 'new'
         end
