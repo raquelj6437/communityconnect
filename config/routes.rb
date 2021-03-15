@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
-  resources :opportunities
+  resources :opportunities, :services
   root "opportunities#index"
-
-  get '/new' => 'opportunities#new'
 end
