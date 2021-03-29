@@ -3653,3 +3653,216 @@ Completed 200 OK in 40ms (Views: 20.5ms | ActiveRecord: 3.5ms | Allocations: 504
 >>>>>>> 2a2ee7605a13e368a00181595f446c4bd8ed1e12
 
 
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4346549080646495835)[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (2.7ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(4346549080646495835)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2021-03-28 21:45:57 -0400
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 443)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 48.0ms | Allocations: 7486)
+Completed 200 OK in 95ms (Views: 53.4ms | ActiveRecord: 0.0ms | Allocations: 10696)
+
+
+Started POST "/session" for ::1 at 2021-03-28 21:46:03 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "login"=>{"email"=>"t@t.com", "password"=>"[FILTERED]"}, "submit"=>"Submit"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "t@t.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:3:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 319ms (ActiveRecord: 14.5ms | Allocations: 7432)
+
+
+Started GET "/" for ::1 at 2021-03-28 21:46:04 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 87)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 3675)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms | Allocations: 4128)
+
+
+Started POST "/users" for ::1 at 2021-03-28 21:46:34 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"r", "email"=>"r@r.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "submit"=>"Submit"}
+  [1m[36mTRANSACTION (6.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mUser Create (14.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "r"], ["email", "r@r.com"], ["created_at", "2021-03-29 01:46:34.865733"], ["updated_at", "2021-03-29 01:46:34.865733"], ["password_digest", "$2a$12$b8lsG2JNCOTFSZmD9nGfxOqihXAB6mIXtTXlmsyuunHVDYxDXs7jK"]]
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (8.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 407ms (ActiveRecord: 30.0ms | Allocations: 3283)
+
+
+Started GET "/" for ::1 at 2021-03-28 21:46:34 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 87)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 33.3ms | Allocations: 3677)
+Completed 200 OK in 36ms (Views: 34.6ms | ActiveRecord: 0.0ms | Allocations: 4128)
+
+
+Started POST "/session" for ::1 at 2021-03-28 21:46:39 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "login"=>{"email"=>"r@r.com", "password"=>"[FILTERED]"}, "submit"=>"Submit"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "r@r.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:3:in `create'
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.9ms | Allocations: 1453)
+
+
+
+BCrypt::Errors::InvalidHash - invalid hash:
+  app/controllers/sessions_controller.rb:4:in `create'
+
+Started POST "/__better_errors/29efc2fe85395c1a/variables" for ::1 at 2021-03-28 21:46:39 -0400
+Started GET "/" for ::1 at 2021-03-28 21:46:48 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 87)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 32.9ms | Allocations: 3677)
+Completed 200 OK in 35ms (Views: 34.0ms | ActiveRecord: 0.0ms | Allocations: 4135)
+
+
+Started POST "/users" for ::1 at 2021-03-28 21:46:56 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"b", "email"=>"b@b.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "submit"=>"Submit"}
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mUser Create (3.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "b"], ["email", "b@b.com"], ["created_at", "2021-03-29 01:46:56.588406"], ["updated_at", "2021-03-29 01:46:56.588406"], ["password_digest", "$2a$12$hli1ArNYNTbQyWsbi3jhVOQp0bSt52DK9Jlf5MWsKSYfW5W9bgihO"]]
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 522ms (ActiveRecord: 5.2ms | Allocations: 2687)
+
+
+Started GET "/" for ::1 at 2021-03-28 21:46:56 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 87)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 3677)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms | Allocations: 4127)
+
+
+Started POST "/session" for ::1 at 2021-03-28 21:47:01 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "login"=>{"email"=>"b@b.com", "password"=>"[FILTERED]"}, "submit"=>"Submit"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "b@b.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:3:in `create'
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 271ms (ActiveRecord: 1.0ms | Allocations: 1075)
+
+
+Started GET "/dashboard" for ::1 at 2021-03-28 21:47:01 -0400
+Processing by OpportunitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/index.html.erb within layouts/application
+  [1m[36mOpportunity Load (1.8ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."user_id" = $1 ORDER BY created_at DESC[0m  [["user_id", 2]]
+  ↳ app/views/opportunities/index.html.erb:11
+  Rendered opportunities/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 2725)
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 2794)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 3.7ms | Allocations: 6156)
+
+
+
+ActiveRecord::StatementInvalid - PG::UndefinedColumn: ERROR:  column opportunities.user_id does not exist
+LINE 1: ...LECT "opportunities".* FROM "opportunities" WHERE "opportuni...
+                                                             ^:
+  app/views/opportunities/index.html.erb:11
+
+Started POST "/__better_errors/3d8c12821d32f439/variables" for ::1 at 2021-03-28 21:47:01 -0400
+Started GET "/dashboard" for ::1 at 2021-03-28 21:53:03 -0400
+Processing by OpportunitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/index.html.erb within layouts/application
+  [1m[36mOpportunity Load (1.6ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."user_id" = $1 ORDER BY created_at DESC[0m  [["user_id", 2]]
+  ↳ app/views/opportunities/index.html.erb:11
+  Rendered opportunities/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 2113)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 2182)
+Completed 500 Internal Server Error in 64ms (ActiveRecord: 29.6ms | Allocations: 7425)
+
+
+
+ActiveRecord::StatementInvalid - PG::UndefinedColumn: ERROR:  column opportunities.user_id does not exist
+LINE 1: ...LECT "opportunities".* FROM "opportunities" WHERE "opportuni...
+                                                             ^:
+  app/views/opportunities/index.html.erb:11
+
+Started POST "/__better_errors/6b084092f299b4b6/variables" for ::1 at 2021-03-28 21:53:04 -0400
+Started POST "/session" for ::1 at 2021-03-28 21:53:21 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "login"=>{"email"=>"b@b.com", "password"=>"[FILTERED]"}, "submit"=>"Submit"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "b@b.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:3:in `create'
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 279ms (ActiveRecord: 2.1ms | Allocations: 5143)
+
+
+Started GET "/dashboard" for ::1 at 2021-03-28 21:53:21 -0400
+Processing by OpportunitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/index.html.erb within layouts/application
+  [1m[36mOpportunity Load (1.2ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."user_id" = $1 ORDER BY created_at DESC[0m  [["user_id", 2]]
+  ↳ app/views/opportunities/index.html.erb:11
+  Rendered opportunities/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 2103)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 2171)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 1.2ms | Allocations: 2772)
+
+
+
+ActiveRecord::StatementInvalid - PG::UndefinedColumn: ERROR:  column opportunities.user_id does not exist
+LINE 1: ...LECT "opportunities".* FROM "opportunities" WHERE "opportuni...
+                                                             ^:
+  app/views/opportunities/index.html.erb:11
+
+Started POST "/__better_errors/ebf4e08775bbe7d5/variables" for ::1 at 2021-03-28 21:53:21 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4346549080646495835)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(4346549080646495835)[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2021-03-28 22:02:56 -0400
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 443)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 62.1ms | Allocations: 7486)
+Completed 200 OK in 138ms (Views: 80.6ms | ActiveRecord: 0.0ms | Allocations: 10695)
+
+
+Started POST "/session" for ::1 at 2021-03-28 22:03:06 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "login"=>{"email"=>"b@b.com", "password"=>"[FILTERED]"}, "submit"=>"Submit"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "b@b.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:3:in `create'
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 335ms (ActiveRecord: 13.6ms | Allocations: 7418)
+
+
+Started GET "/dashboard" for ::1 at 2021-03-28 22:03:06 -0400
+Processing by OpportunitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/index.html.erb within layouts/application
+  [1m[36mOpportunity Load (1.5ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."user_id" = $1 ORDER BY created_at DESC[0m  [["user_id", 2]]
+  ↳ app/views/opportunities/index.html.erb:11
+  Rendered opportunities/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1120)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | Allocations: 4780)
+Completed 200 OK in 29ms (Views: 15.0ms | ActiveRecord: 4.2ms | Allocations: 8218)
+
+

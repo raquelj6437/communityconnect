@@ -1,6 +1,6 @@
 class OpportunitiesController < ApplicationController
     def index
-        @opportunity = Opportunity.all.order("created_at DESC")
+        @opportunity = Opportunity.where(:user_id => session[:user_id]).order("created_at DESC")
     end
 
     def new
@@ -9,11 +9,9 @@ class OpportunitiesController < ApplicationController
 
     def create
         @opportunity = Opportunity.new(opportunity_params)
-        if @opportunity.save
-            redirect_to '/dashboard'
-        else
-            redirect_to '/dashboard'
-        end
+        @opportunity.user_id = session[:user_id]
+        @opportunity.save
+        redirect_to '/dashboard'
     end
 
     def show
