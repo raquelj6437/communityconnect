@@ -4097,3 +4097,8 @@ Processing by UsersController#index as HTML
 Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms | Allocations: 4125)
 
 
+Started GET "/" for ::1 at 2021-03-29 16:57:19 -0400
+
+ActiveRecord::NoDatabaseError - FATAL:  database "my_app_development" does not exist:
+
+Started POST "/__better_errors/f96dcc8b8346453b/variables" for ::1 at 2021-03-29 16:57:20 -0400
