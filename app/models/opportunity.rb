@@ -1,3 +1,3 @@
 class Opportunity < ApplicationRecord
-    has_many :opportunity
+  belongs_to :user
 end
