@@ -1,4 +1,4 @@
-### Build Sprint 3
+### Build Sprint 4
 In this sprint my team and I learned React for the front end development while simultaneously working on login and registration authentification.
 ![slack picture](updateImgs/login_screenshot.png)
 ![slack picture](updateImgs/react_screenshot.jpeg)
