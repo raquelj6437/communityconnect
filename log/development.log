@@ -7647,3 +7647,13 @@ Processing by UsersController#index as HTML
 Completed 200 OK in 61ms (Views: 53.2ms | Allocations: 4357)
 
 
+Started GET "/" for ::1 at 2021-04-06 13:21:53 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 78.3ms | Allocations: 3889)
+Completed 200 OK in 96ms (Views: 84.0ms | Allocations: 4328)
+
+
