@@ -4566,3 +4566,3084 @@ Completed 200 OK in 86ms (Views: 38.2ms | ActiveRecord: 13.7ms | Allocations: 84
   [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(4346549080646495835)[0m
   [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
 >>>>>>> 89e7ae29ed14be0c680901e33eaea5644cfd784a
+Started GET "/" for ::1 at 2021-04-03 13:37:58 -0400
+
+ActiveRecord::NoDatabaseError - FATAL:  database "my_app_development" does not exist:
+
+Started POST "/__better_errors/005a63d148dab424/variables" for ::1 at 2021-04-03 13:38:00 -0400
+Started GET "/" for ::1 at 2021-04-03 23:38:23 -0400
+
+ActiveRecord::NoDatabaseError - FATAL:  database "my_app_development" does not exist:
+
+Started POST "/__better_errors/2a0be5c59c86bbba/variables" for ::1 at 2021-04-03 23:38:24 -0400
+Started GET "/" for ::1 at 2021-04-03 23:38:51 -0400
+
+ActiveRecord::NoDatabaseError - FATAL:  database "my_app_development" does not exist:
+
+Started POST "/__better_errors/255466e01217a0f6/variables" for ::1 at 2021-04-03 23:38:51 -0400
+Started GET "/" for ::1 at 2021-04-03 23:40:55 -0400
+
+ActiveRecord::NoDatabaseError - FATAL:  database "my_app_development" does not exist:
+
+Started POST "/__better_errors/fb912a2f564ed727/variables" for ::1 at 2021-04-03 23:40:55 -0400
+Started GET "/" for ::1 at 2021-04-03 23:43:14 -0400
+
+ActiveRecord::NoDatabaseError - FATAL:  database "my_app_development" does not exist:
+
+Started POST "/__better_errors/6e31e25cc2076868/variables" for ::1 at 2021-04-03 23:43:14 -0400
+Started GET "/" for ::1 at 2021-04-03 23:45:26 -0400
+
+ActiveRecord::NoDatabaseError - FATAL:  database "my_app_development" does not exist:
+
+Started POST "/__better_errors/f17fad4942936244/variables" for ::1 at 2021-04-03 23:45:27 -0400
+Started GET "/" for ::1 at 2021-04-03 23:45:29 -0400
+
+ActiveRecord::NoDatabaseError - FATAL:  database "my_app_development" does not exist:
+
+Started POST "/__better_errors/b294b4d63b4e34f9/variables" for ::1 at 2021-04-03 23:45:29 -0400
+Started GET "/" for ::1 at 2021-04-03 23:51:24 -0400
+
+ActiveRecord::NoDatabaseError - FATAL:  database "my_app_development" does not exist:
+
+Started POST "/__better_errors/2e91afdea94d3ac5/variables" for ::1 at 2021-04-03 23:51:25 -0400
+  [1m[35m (1241.3ms)[0m  [1m[35mCREATE DATABASE "my_app_development" ENCODING = 'utf8'[0m
+  [1m[35m (218.9ms)[0m  [1m[35mCREATE DATABASE "my_app_test" ENCODING = 'utf8'[0m
+  [1m[35m (11.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (32.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4346549080646495835)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateOpportunities (20210308164147)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (33.0ms)[0m  [1m[35mCREATE TABLE "opportunities" ("id" bigserial primary key, "organization" character varying, "date" character varying, "hours" character varying, "signature" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210308164147"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateUsers (20210321142018)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (29.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "name" character varying, "email" character varying, "password" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210321142018"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddPasswordDigestToUsers (20210321142330)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "users" ADD "password_digest" character varying[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "users" ADD "string" character varying[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210321142330"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddUserIdToOpportunity (20210328212535)
+  [1m[36mTRANSACTION (25.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "opportunities" ADD "user_id" bigint[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE INDEX "index_opportunities_on_user_id" ON "opportunities" ("user_id")[0m
+  [1m[35m (2.2ms)[0m  [1m[35mALTER TABLE "opportunities" ADD CONSTRAINT "fk_rails_7a1e18e277"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210328212535"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (3.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-04-04 04:30:09.721545"], ["updated_at", "2021-04-04 04:30:09.721545"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(4346549080646495835)[0m
+  [1m[35m (4.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2021-04-04 00:30:25 -0400
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 577)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 218.0ms | Allocations: 28851)
+Completed 200 OK in 280ms (Views: 255.1ms | ActiveRecord: 0.0ms | Allocations: 32990)
+
+
+Started GET "/" for ::1 at 2021-04-04 09:52:51 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 10.0ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 83.0ms | Allocations: 3642)
+Completed 200 OK in 115ms (Views: 89.4ms | Allocations: 4116)
+
+
+Started GET "/" for ::1 at 2021-04-04 15:02:54 -0400
+  [1m[35m (6.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 6.4ms | Allocations: 441)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 53.9ms | Allocations: 7444)
+Completed 200 OK in 85ms (Views: 63.3ms | ActiveRecord: 0.0ms | Allocations: 10644)
+
+
+Started GET "/" for ::1 at 2021-04-04 15:04:34 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 93.9ms | Allocations: 3641)
+Completed 200 OK in 148ms (Views: 142.3ms | ActiveRecord: 0.0ms | Allocations: 4090)
+
+
+Started GET "/" for ::1 at 2021-04-04 15:55:07 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 11.7ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 194.0ms | Allocations: 3649)
+Completed 200 OK in 211ms (Views: 201.2ms | Allocations: 4092)
+
+
+Started POST "/session" for ::1 at 2021-04-04 15:57:07 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "login"=>{"email"=>"a@me.com", "password"=>"[FILTERED]"}, "submit"=>"Submit"}
+  [1m[36mUser Load (7.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "a@me.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:3:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 445ms (ActiveRecord: 238.5ms | Allocations: 7976)
+
+
+Started GET "/" for ::1 at 2021-04-04 15:57:08 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 26.1ms | Allocations: 3646)
+Completed 200 OK in 28ms (Views: 27.0ms | ActiveRecord: 0.0ms | Allocations: 4096)
+
+
+Started POST "/users" for ::1 at 2021-04-04 15:57:28 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"adri", "email"=>"a@me.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "submit"=>"Submit"}
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mUser Create (86.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "adri"], ["email", "a@me.com"], ["created_at", "2021-04-04 19:57:29.012733"], ["updated_at", "2021-04-04 19:57:29.012733"], ["password_digest", "$2a$12$nwWwgWwh62xdXR/eRTOL0ems7J5jziCQD4Y.9MiAm.7qb8nYP6QLy"]]
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (4.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+Redirected to http://localhost:3000/opportunities
+Completed 302 Found in 429ms (ActiveRecord: 115.8ms | Allocations: 6866)
+
+
+Started GET "/opportunities" for ::1 at 2021-04-04 15:57:29 -0400
+Processing by OpportunitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/index.html.erb within layouts/application
+  [1m[36mOpportunity Load (25.8ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."user_id" = $1 ORDER BY created_at DESC[0m  [["user_id", 1]]
+  ↳ app/views/opportunities/index.html.erb:11
+  Rendered opportunities/index.html.erb within layouts/application (Duration: 31.4ms | Allocations: 1112)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 43.0ms | Allocations: 4739)
+Completed 200 OK in 82ms (Views: 25.7ms | ActiveRecord: 28.5ms | Allocations: 7721)
+
+
+Started GET "/opportunities" for ::1 at 2021-04-04 15:58:03 -0400
+Processing by OpportunitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/index.html.erb within layouts/application
+  [1m[36mOpportunity Load (4.4ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."user_id" = $1 ORDER BY created_at DESC[0m  [["user_id", 1]]
+  ↳ app/views/opportunities/index.html.erb:11
+  Rendered opportunities/index.html.erb within layouts/application (Duration: 6.5ms | Allocations: 785)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.0ms | Allocations: 4349)
+Completed 200 OK in 32ms (Views: 18.5ms | ActiveRecord: 4.4ms | Allocations: 4983)
+
+
+Started GET "/opportunities" for ::1 at 2021-04-04 15:58:06 -0400
+Processing by OpportunitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/index.html.erb within layouts/application
+  [1m[36mOpportunity Load (2.0ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."user_id" = $1 ORDER BY created_at DESC[0m  [["user_id", 1]]
+  ↳ app/views/opportunities/index.html.erb:11
+  Rendered opportunities/index.html.erb within layouts/application (Duration: 4.1ms | Allocations: 785)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20.0ms | Allocations: 4349)
+Completed 200 OK in 24ms (Views: 18.8ms | ActiveRecord: 2.0ms | Allocations: 4983)
+
+
+Started GET "/opportunities" for ::1 at 2021-04-04 15:58:14 -0400
+Processing by OpportunitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/index.html.erb within layouts/application
+  [1m[36mOpportunity Load (2.0ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."user_id" = $1 ORDER BY created_at DESC[0m  [["user_id", 1]]
+  ↳ app/views/opportunities/index.html.erb:11
+  Rendered opportunities/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 785)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 25.9ms | Allocations: 4349)
+Completed 200 OK in 30ms (Views: 25.0ms | ActiveRecord: 2.0ms | Allocations: 4983)
+
+
+Started GET "/opportunities" for ::1 at 2021-04-04 15:58:36 -0400
+Processing by OpportunitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/index.html.erb within layouts/application
+  [1m[36mOpportunity Load (25.1ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."user_id" = $1 ORDER BY created_at DESC[0m  [["user_id", 1]]
+  ↳ app/views/opportunities/index.html.erb:11
+  Rendered opportunities/index.html.erb within layouts/application (Duration: 28.8ms | Allocations: 793)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 42.7ms | Allocations: 4359)
+Completed 200 OK in 48ms (Views: 19.1ms | ActiveRecord: 25.1ms | Allocations: 5003)
+
+
+Started GET "/opportunities" for ::1 at 2021-04-04 15:58:37 -0400
+Processing by OpportunitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/index.html.erb within layouts/application
+  [1m[36mOpportunity Load (1.7ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."user_id" = $1 ORDER BY created_at DESC[0m  [["user_id", 1]]
+  ↳ app/views/opportunities/index.html.erb:11
+  Rendered opportunities/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 785)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | Allocations: 4349)
+Completed 200 OK in 16ms (Views: 12.3ms | ActiveRecord: 1.7ms | Allocations: 4983)
+
+
+Started GET "/opportunities" for ::1 at 2021-04-04 15:58:40 -0400
+Processing by OpportunitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/index.html.erb within layouts/application
+  [1m[36mOpportunity Load (5.1ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."user_id" = $1 ORDER BY created_at DESC[0m  [["user_id", 1]]
+  ↳ app/views/opportunities/index.html.erb:11
+  Rendered opportunities/index.html.erb within layouts/application (Duration: 8.8ms | Allocations: 794)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.6ms | Allocations: 4358)
+Completed 200 OK in 32ms (Views: 15.4ms | ActiveRecord: 5.1ms | Allocations: 4997)
+
+
+Started GET "/opportunities/new" for ::1 at 2021-04-04 15:58:53 -0400
+Processing by OpportunitiesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/new.html.erb within layouts/application
+  Rendered opportunities/new.html.erb within layouts/application (Duration: 475.9ms | Allocations: 23428)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 484.1ms | Allocations: 26896)
+Completed 200 OK in 514ms (Views: 485.2ms | ActiveRecord: 3.7ms | Allocations: 30877)
+
+
+Started POST "/opportunities" for ::1 at 2021-04-04 15:59:03 -0400
+Processing by OpportunitiesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "opportunity"=>{"organization"=>"hi", "date"=>"3/4", "hours"=>"2", "signature"=>"a"}, "commit"=>"Add Opportunity"}
+  [1m[36mTRANSACTION (9.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/opportunities_controller.rb:13:in `create'
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/opportunities_controller.rb:13:in `create'
+  [1m[36mOpportunity Create (32.7ms)[0m  [1m[32mINSERT INTO "opportunities" ("organization", "date", "hours", "signature", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["organization", "hi"], ["date", "3/4"], ["hours", "2"], ["signature", "a"], ["created_at", "2021-04-04 19:59:03.574885"], ["updated_at", "2021-04-04 19:59:03.574885"], ["user_id", 1]]
+  ↳ app/controllers/opportunities_controller.rb:13:in `create'
+  [1m[36mTRANSACTION (6.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/opportunities_controller.rb:13:in `create'
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 146ms (ActiveRecord: 50.4ms | Allocations: 9796)
+
+
+Started GET "/dashboard" for ::1 at 2021-04-04 15:59:03 -0400
+Processing by OpportunitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/index.html.erb within layouts/application
+  [1m[36mOpportunity Load (2.2ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."user_id" = $1 ORDER BY created_at DESC[0m  [["user_id", 1]]
+  ↳ app/views/opportunities/index.html.erb:11
+  Rendered opportunities/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 820)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.5ms | Allocations: 4401)
+Completed 200 OK in 31ms (Views: 14.2ms | ActiveRecord: 2.2ms | Allocations: 5036)
+
+
+Started GET "/" for ::1 at 2021-04-04 15:59:17 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.9ms | Allocations: 3645)
+Completed 200 OK in 14ms (Views: 11.9ms | ActiveRecord: 0.0ms | Allocations: 4096)
+
+
+  [1m[35m (4.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4346549080646495835)[0m
+  [1m[35m (4.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateArticles (20210405013905)
+  [1m[36mTRANSACTION (27.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (146.1ms)[0m  [1m[35mCREATE TABLE "articles" ("id" bigserial primary key, "title" character varying, "body" text, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210405013905"]]
+  [1m[36mTRANSACTION (3.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (2.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(4346549080646495835)[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2021-04-04 21:52:51 -0400
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 441)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/adrianaalvarado/communityconnect/public/packs
+[Webpacker] Hash: 60630589022757991d5a
+Version: webpack 4.46.0
+Time: 9390ms
+Built at: 04/04/2021 9:53:05 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-431e60d99a811dd2b3d8.js   1.09 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-431e60d99a811dd2b3d8.js.map   1.26 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint hello_react = js/hello_react-431e60d99a811dd2b3d8.js js/hello_react-431e60d99a811dd2b3d8.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.07 KiB {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 18 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 14133.0ms | Allocations: 29493)
+Completed 200 OK in 14164ms (Views: 14142.4ms | ActiveRecord: 0.0ms | Allocations: 32714)
+
+
+Started GET "/articles" for ::1 at 2021-04-04 21:53:24 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mArticle Load (6.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:16
+  Rendered articles/index.html.erb within layouts/application (Duration: 34.8ms | Allocations: 3532)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 50.8ms | Allocations: 7159)
+Completed 200 OK in 68ms (Views: 50.1ms | ActiveRecord: 6.2ms | Allocations: 8719)
+
+
+Started GET "/" for ::1 at 2021-04-04 21:53:35 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 91.9ms | Allocations: 3787)
+Completed 200 OK in 95ms (Views: 93.3ms | ActiveRecord: 0.0ms | Allocations: 4234)
+
+
+Started GET "/" for ::1 at 2021-04-04 21:53:35 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.3ms | Allocations: 3785)
+Completed 200 OK in 16ms (Views: 15.5ms | ActiveRecord: 0.0ms | Allocations: 4227)
+
+
+Started GET "/" for ::1 at 2021-04-04 21:56:33 -0400
+
+ArgumentError - Invalid route name, already in use: 'root' 
+You may have defined two routes with the same name using the `:as` option, or you may be overriding a route already defined by a resource with the same naming. For the latter, you can restrict the routes created with `resources` as explained here: 
+https://guides.rubyonrails.org/routing.html#restricting-the-routes-created:
+  config/routes.rb:6:in `block in <main>'
+  config/routes.rb:1:in `<main>'
+
+Started POST "/__better_errors/69c995ccc6e284dd/variables" for ::1 at 2021-04-04 21:56:34 -0400
+Started GET "/" for ::1 at 2021-04-04 21:56:59 -0400
+
+TypeError - no implicit conversion of Symbol into Integer:
+  config/routes.rb:5:in `block in <main>'
+  config/routes.rb:1:in `<main>'
+
+Started POST "/__better_errors/a03206241b1c6493/variables" for ::1 at 2021-04-04 21:56:59 -0400
+Started GET "/" for ::1 at 2021-04-04 21:57:12 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 90)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 24.6ms | Allocations: 3844)
+Completed 200 OK in 28ms (Views: 26.8ms | ActiveRecord: 0.0ms | Allocations: 4478)
+
+
+Started GET "/" for ::1 at 2021-04-04 21:57:23 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 90)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.6ms | Allocations: 3866)
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.0ms | Allocations: 4498)
+
+
+Started GET "/" for ::1 at 2021-04-04 21:57:25 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.5ms | Allocations: 3785)
+Completed 200 OK in 17ms (Views: 15.5ms | ActiveRecord: 0.0ms | Allocations: 4227)
+
+
+Started GET "/" for ::1 at 2021-04-04 21:58:46 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 85)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/adrianaalvarado/communityconnect/public/packs
+[Webpacker] Hash: b6b4f222f42921ece851
+Version: webpack 4.46.0
+Time: 2666ms
+Built at: 04/04/2021 9:58:52 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-b572f8e34df56c063020.js   1.09 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-b572f8e34df56c063020.js.map   1.26 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint hello_react = js/hello_react-b572f8e34df56c063020.js js/hello_react-b572f8e34df56c063020.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.05 KiB {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 18 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 6638.3ms | Allocations: 4935)
+Completed 200 OK in 6641ms (Views: 6639.5ms | ActiveRecord: 0.0ms | Allocations: 5377)
+
+
+Started GET "/articles" for ::1 at 2021-04-04 21:59:14 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mArticle Load (3.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:16
+  Rendered articles/index.html.erb within layouts/application (Duration: 37.7ms | Allocations: 3106)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 64.2ms | Allocations: 6732)
+Completed 200 OK in 73ms (Views: 63.1ms | ActiveRecord: 3.1ms | Allocations: 7853)
+
+
+Started GET "/articles" for ::1 at 2021-04-04 22:01:02 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/adrianaalvarado/communityconnect/public/packs
+[Webpacker] Hash: 74e95f22c37c624e4962
+Version: webpack 4.46.0
+Time: 2627ms
+Built at: 04/04/2021 10:01:08 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-3c18e55205c3094a928f.js   1.06 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-3c18e55205c3094a928f.js.map   1.22 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint hello_react = js/hello_react-3c18e55205c3094a928f.js js/hello_react-3c18e55205c3094a928f.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 747 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 13 hidden modules
+
+  [1m[36mArticle Load (1.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:16
+  Rendered articles/index.html.erb within layouts/application (Duration: 6342.4ms | Allocations: 4181)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6356.4ms | Allocations: 7778)
+Completed 200 OK in 6359ms (Views: 6356.1ms | ActiveRecord: 1.4ms | Allocations: 8237)
+
+
+Started GET "/articles" for ::1 at 2021-04-04 22:01:41 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/adrianaalvarado/communityconnect/public/packs
+[Webpacker] Hash: 9b20fbb5cf5094ff936e
+Version: webpack 4.46.0
+Time: 2498ms
+Built at: 04/04/2021 10:01:48 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-4973169400dc14b22b18.js   1.06 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-4973169400dc14b22b18.js.map   1.22 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint hello_react = js/hello_react-4973169400dc14b22b18.js js/hello_react-4973169400dc14b22b18.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 747 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 13 hidden modules
+
+  [1m[36mArticle Load (1.7ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:16
+  Rendered articles/index.html.erb within layouts/application (Duration: 6419.8ms | Allocations: 4181)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6433.2ms | Allocations: 7778)
+Completed 200 OK in 6436ms (Views: 6432.9ms | ActiveRecord: 1.7ms | Allocations: 8237)
+
+
+Started GET "/articles" for ::1 at 2021-04-04 22:11:04 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/adrianaalvarado/communityconnect/public/packs
+[Webpacker] Hash: 74e95f22c37c624e4962
+Version: webpack 4.46.0
+Time: 2226ms
+Built at: 04/04/2021 10:11:11 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-3c18e55205c3094a928f.js   1.06 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-3c18e55205c3094a928f.js.map   1.22 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint hello_react = js/hello_react-3c18e55205c3094a928f.js js/hello_react-3c18e55205c3094a928f.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 747 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 13 hidden modules
+
+  [1m[36mArticle Load (16.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:16
+  Rendered articles/index.html.erb within layouts/application (Duration: 6620.2ms | Allocations: 7516)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6637.4ms | Allocations: 11126)
+Completed 200 OK in 6644ms (Views: 6639.8ms | ActiveRecord: 85.5ms | Allocations: 11590)
+
+
+Started GET "/articles" for ::1 at 2021-04-04 22:23:06 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/adrianaalvarado/communityconnect/public/packs
+[Webpacker] Hash: ecb744b8c61cc15f215c
+Version: webpack 4.46.0
+Time: 2483ms
+Built at: 04/04/2021 10:23:13 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-621363e0a0c71a862a01.js   1.06 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-621363e0a0c71a862a01.js.map   1.22 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint hello_react = js/hello_react-621363e0a0c71a862a01.js js/hello_react-621363e0a0c71a862a01.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 745 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 13 hidden modules
+
+  [1m[36mArticle Load (2.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:16
+  Rendered articles/index.html.erb within layouts/application (Duration: 7189.3ms | Allocations: 7459)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7210.6ms | Allocations: 11069)
+Completed 200 OK in 7235ms (Views: 7223.5ms | ActiveRecord: 80.4ms | Allocations: 11528)
+
+
+Started GET "/articles" for ::1 at 2021-04-04 22:23:51 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/adrianaalvarado/communityconnect/public/packs
+[Webpacker] Hash: 91c18f0b654cb62454f7
+Version: webpack 4.46.0
+Time: 2640ms
+Built at: 04/04/2021 10:23:58 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-b180e23af365905b6316.js   1.06 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-b180e23af365905b6316.js.map   1.22 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint hello_react = js/hello_react-b180e23af365905b6316.js js/hello_react-b180e23af365905b6316.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 745 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 13 hidden modules
+
+  [1m[36mArticle Load (2.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:16
+  Rendered articles/index.html.erb within layouts/application (Duration: 6369.6ms | Allocations: 4181)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6389.6ms | Allocations: 7778)
+Completed 200 OK in 6392ms (Views: 6388.2ms | ActiveRecord: 2.3ms | Allocations: 8237)
+
+
+Started GET "/articles" for ::1 at 2021-04-04 22:24:25 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mArticle Load (1.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:16
+  Rendered articles/index.html.erb within layouts/application (Duration: 19.1ms | Allocations: 3115)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 38.8ms | Allocations: 6753)
+Completed 200 OK in 48ms (Views: 39.6ms | ActiveRecord: 1.5ms | Allocations: 7870)
+
+
+Started GET "/articles" for ::1 at 2021-04-04 22:24:28 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mArticle Load (1.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:16
+  Rendered articles/index.html.erb within layouts/application (Duration: 40.9ms | Allocations: 3025)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 55.2ms | Allocations: 6622)
+Completed 200 OK in 57ms (Views: 54.5ms | ActiveRecord: 1.5ms | Allocations: 7081)
+
+
+Started GET "/articles" for ::1 at 2021-04-04 22:24:29 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mArticle Load (1.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:16
+  Rendered articles/index.html.erb within layouts/application (Duration: 25.6ms | Allocations: 3025)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 40.9ms | Allocations: 6622)
+Completed 200 OK in 43ms (Views: 40.8ms | ActiveRecord: 1.5ms | Allocations: 7081)
+
+
+Started GET "/" for ::1 at 2021-04-05 11:01:04 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 6.0ms | Allocations: 90)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 148.5ms | Allocations: 3825)
+Completed 200 OK in 215ms (Views: 158.6ms | Allocations: 4449)
+
+
+Started GET "/" for ::1 at 2021-04-05 11:01:05 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 135.5ms | Allocations: 5017)
+Completed 200 OK in 138ms (Views: 136.4ms | Allocations: 5456)
+
+
+Started GET "/" for ::1 at 2021-04-05 12:08:40 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 85)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 2e17441969d3eb653c1e
+Version: webpack 4.46.0
+Time: 5180ms
+Built at: 04/05/2021 12:08:50 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+    js/hello_react-c2eb2e4145e742571723.js   1.22 MiB  hello_react  [emitted] [immutable]  hello_react
+js/hello_react-c2eb2e4145e742571723.js.map   1.38 MiB  hello_react  [emitted] [dev]        hello_react
+                             manifest.json  703 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+Entrypoint hello_react = js/hello_react-c2eb2e4145e742571723.js js/hello_react-c2eb2e4145e742571723.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 745 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 38 hidden modules
+
+ERROR in ./app/javascript/components/App.js
+Module not found: Error: Can't resolve './components/Navbar' in '/Users/adrianaalvarado/communityconnect/app/javascript/components'
+ @ ./app/javascript/components/App.js 4:0-41 15:38-44
+ @ ./app/javascript/packs/hello_react.jsx
+
+  Rendered layout layouts/application.html.erb (Duration: 10129.6ms | Allocations: 4951)
+Completed 200 OK in 10254ms (Views: 10148.8ms | Allocations: 5390)
+
+
+Started GET "/articles" for ::1 at 2021-04-05 12:09:03 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mArticle Load (6.5ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:16
+  Rendered articles/index.html.erb within layouts/application (Duration: 634.2ms | Allocations: 6390)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 712.2ms | Allocations: 10024)
+Completed 200 OK in 778ms (Views: 737.4ms | ActiveRecord: 191.1ms | Allocations: 10482)
+
+
+Started GET "/articles" for ::1 at 2021-04-05 12:12:24 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mArticle Load (2.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:16
+  Rendered articles/index.html.erb within layouts/application (Duration: 88.8ms | Allocations: 3372)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 132.7ms | Allocations: 7217)
+Completed 200 OK in 186ms (Views: 158.6ms | ActiveRecord: 2.1ms | Allocations: 8450)
+
+
+Started GET "/articles" for ::1 at 2021-04-05 12:12:33 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mArticle Load (21.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:16
+  Rendered articles/index.html.erb within layouts/application (Duration: 87.9ms | Allocations: 3366)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 136.0ms | Allocations: 7198)
+Completed 200 OK in 158ms (Views: 127.5ms | ActiveRecord: 21.4ms | Allocations: 8427)
+
+
+Started GET "/articles/new" for ::1 at 2021-04-05 12:14:26 -0400
+Processing by ArticlesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 215.4ms | Allocations: 7884)
+  Rendered articles/new.html.erb within layouts/application (Duration: 222.4ms | Allocations: 8256)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 270.5ms | Allocations: 11901)
+Completed 200 OK in 1164ms (Views: 280.7ms | ActiveRecord: 242.3ms | Allocations: 16728)
+
+
+Started POST "/articles" for ::1 at 2021-04-05 12:14:34 -0400
+Processing by ArticlesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "article"=>{"title"=>"fkev", "body"=>"dfkjnve,f"}, "commit"=>"Create Article"}
+  [1m[36mTRANSACTION (20.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/articles_controller.rb:27:in `block in create'
+  [1m[36mArticle Create (244.1ms)[0m  [1m[32mINSERT INTO "articles" ("title", "body", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "fkev"], ["body", "dfkjnve,f"], ["created_at", "2021-04-05 16:14:34.718648"], ["updated_at", "2021-04-05 16:14:34.718648"]]
+  ↳ app/controllers/articles_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (8.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/articles_controller.rb:27:in `block in create'
+Redirected to http://localhost:3000/articles/1
+Completed 302 Found in 358ms (ActiveRecord: 272.9ms | Allocations: 3398)
+
+
+Started GET "/articles/1" for ::1 at 2021-04-05 12:14:35 -0400
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (2.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:62:in `set_article'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 276)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.1ms | Allocations: 4035)
+Completed 200 OK in 97ms (Views: 21.9ms | ActiveRecord: 20.4ms | Allocations: 6071)
+
+
+Started GET "/articles/1/edit" for ::1 at 2021-04-05 12:14:39 -0400
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (2.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:62:in `set_article'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/edit.html.erb within layouts/application
+  Rendered articles/_form.html.erb (Duration: 4.2ms | Allocations: 729)
+  Rendered articles/edit.html.erb within layouts/application (Duration: 14.0ms | Allocations: 992)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 30.0ms | Allocations: 4732)
+Completed 200 OK in 55ms (Views: 31.4ms | ActiveRecord: 2.4ms | Allocations: 6612)
+
+
+Started GET "/articles/1" for ::1 at 2021-04-05 12:14:42 -0400
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArticle Load (38.0ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:62:in `set_article'
+  Rendering layout layouts/application.html.erb
+  Rendering articles/show.html.erb within layouts/application
+  Rendered articles/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 107)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.6ms | Allocations: 3853)
+Completed 200 OK in 76ms (Views: 20.5ms | ActiveRecord: 38.0ms | Allocations: 5597)
+
+
+Started GET "/articles" for ::1 at 2021-04-05 12:14:44 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mArticle Load (1.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:16
+  Rendered articles/index.html.erb within layouts/application (Duration: 26.6ms | Allocations: 3746)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 38.7ms | Allocations: 7379)
+Completed 200 OK in 41ms (Views: 38.6ms | ActiveRecord: 1.3ms | Allocations: 7841)
+
+
+Started DELETE "/articles/1" for ::1 at 2021-04-05 12:14:53 -0400
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"1"}
+  [1m[36mArticle Load (2.9ms)[0m  [1m[34mSELECT "articles".* FROM "articles" WHERE "articles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/articles_controller.rb:62:in `set_article'
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/articles_controller.rb:52:in `destroy'
+  [1m[36mArticle Destroy (42.0ms)[0m  [1m[31mDELETE FROM "articles" WHERE "articles"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/articles_controller.rb:52:in `destroy'
+  [1m[36mTRANSACTION (6.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/articles_controller.rb:52:in `destroy'
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 84ms (ActiveRecord: 53.1ms | Allocations: 2908)
+
+
+Started GET "/articles" for ::1 at 2021-04-05 12:14:53 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mArticle Load (2.8ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:16
+  Rendered articles/index.html.erb within layouts/application (Duration: 27.7ms | Allocations: 3063)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 42.0ms | Allocations: 6699)
+Completed 200 OK in 45ms (Views: 40.3ms | ActiveRecord: 2.8ms | Allocations: 7166)
+
+
+Started GET "/articles" for ::1 at 2021-04-05 12:14:55 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mArticle Load (1.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:16
+  Rendered articles/index.html.erb within layouts/application (Duration: 26.4ms | Allocations: 3061)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 47.5ms | Allocations: 6695)
+Completed 200 OK in 50ms (Views: 47.2ms | ActiveRecord: 1.6ms | Allocations: 7155)
+
+
+Started GET "/" for ::1 at 2021-04-05 12:15:10 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 220)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 58.7ms | Allocations: 4031)
+Completed 200 OK in 73ms (Views: 67.4ms | ActiveRecord: 0.0ms | Allocations: 5013)
+
+
+Started GET "/articles" for ::1 at 2021-04-05 12:32:18 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mArticle Load (27.6ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:16
+  Rendered articles/index.html.erb within layouts/application (Duration: 750.6ms | Allocations: 6391)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 1065.8ms | Allocations: 10024)
+Completed 200 OK in 1090ms (Views: 1072.9ms | ActiveRecord: 231.1ms | Allocations: 10483)
+
+
+Started GET "/" for ::1 at 2021-04-05 12:32:21 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20.4ms | Allocations: 3830)
+Completed 200 OK in 22ms (Views: 21.1ms | ActiveRecord: 0.0ms | Allocations: 4275)
+
+
+Started GET "/" for ::1 at 2021-04-05 12:38:29 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 226)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 47.2ms | Allocations: 4206)
+Completed 200 OK in 71ms (Views: 63.0ms | Allocations: 5416)
+
+
+Started GET "/" for ::1 at 2021-04-05 12:38:38 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 12.6ms | Allocations: 221)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 45.7ms | Allocations: 4199)
+Completed 200 OK in 60ms (Views: 52.7ms | Allocations: 5406)
+
+
+Started GET "/" for ::1 at 2021-04-05 12:58:29 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 14.0ms | Allocations: 242)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 110.0ms | Allocations: 4218)
+Completed 200 OK in 259ms (Views: 216.4ms | Allocations: 5423)
+
+
+Started GET "/styles/reset.css" for ::1 at 2021-04-05 12:58:29 -0400
+Started GET "/styles/debug.css" for ::1 at 2021-04-05 12:58:29 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles/reset.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/styles/debug.css"):
+  
+Started GET "/styles/debug.css" for ::1 at 2021-04-05 12:58:30 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles/debug.css"):
+  
+Started GET "/" for ::1 at 2021-04-05 13:00:44 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 244)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 102.3ms | Allocations: 4227)
+Completed 200 OK in 120ms (Views: 109.8ms | Allocations: 5439)
+
+
+Started GET "/styles/reset.css" for ::1 at 2021-04-05 13:00:44 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles/reset.css"):
+  
+Started GET "/styles/debug.css" for ::1 at 2021-04-05 13:00:44 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles/debug.css"):
+  
+Started GET "/" for ::1 at 2021-04-05 13:00:47 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | Allocations: 3827)
+Completed 200 OK in 13ms (Views: 11.9ms | Allocations: 4267)
+
+
+Started GET "/styles/reset.css" for ::1 at 2021-04-05 13:00:47 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles/reset.css"):
+  
+Started GET "/styles/debug.css" for ::1 at 2021-04-05 13:00:47 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles/debug.css"):
+  
+Started GET "/" for ::1 at 2021-04-05 13:00:55 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 244)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.5ms | Allocations: 4227)
+Completed 200 OK in 30ms (Views: 27.9ms | Allocations: 5437)
+
+
+Started GET "/styles/debug.css" for ::1 at 2021-04-05 13:00:55 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles/debug.css"):
+  
+Started GET "/styles/reset.css" for ::1 at 2021-04-05 13:00:55 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles/reset.css"):
+  
+Started GET "/styles/debug.css" for ::1 at 2021-04-05 13:00:56 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles/debug.css"):
+  
+Started GET "/" for ::1 at 2021-04-05 13:12:38 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 16.5ms | Allocations: 248)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 323.0ms | Allocations: 4231)
+Completed 200 OK in 412ms (Views: 374.0ms | Allocations: 5443)
+
+
+Started GET "/styles/reset.css" for ::1 at 2021-04-05 13:12:39 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles/reset.css"):
+  
+Started GET "/styles/debug.css" for ::1 at 2021-04-05 13:12:39 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles/debug.css"):
+  
+Started GET "/styles/debug.css" for ::1 at 2021-04-05 13:12:40 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles/debug.css"):
+  
+Started GET "/" for ::1 at 2021-04-05 13:18:19 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 243)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 35.6ms | Allocations: 4226)
+Completed 200 OK in 43ms (Views: 39.0ms | Allocations: 5437)
+
+
+Started GET "/" for ::1 at 2021-04-05 13:18:51 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 241)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 38.4ms | Allocations: 4211)
+Completed 200 OK in 45ms (Views: 41.6ms | Allocations: 5417)
+
+
+Started GET "/" for ::1 at 2021-04-05 13:19:09 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 242)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 27.0ms | Allocations: 4212)
+Completed 200 OK in 35ms (Views: 33.3ms | Allocations: 5417)
+
+
+Started GET "/" for ::1 at 2021-04-05 13:21:50 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 241)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 42.0ms | Allocations: 4211)
+Completed 200 OK in 51ms (Views: 49.7ms | Allocations: 5417)
+
+
+Started GET "/" for ::1 at 2021-04-05 13:39:37 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 35.6ms | Allocations: 246)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 114.7ms | Allocations: 4229)
+Completed 200 OK in 167ms (Views: 140.8ms | Allocations: 5441)
+
+
+Started GET "/" for ::1 at 2021-04-05 13:39:42 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 30.8ms | Allocations: 3821)
+Completed 200 OK in 33ms (Views: 31.6ms | Allocations: 4262)
+
+
+Started GET "/" for ::1 at 2021-04-05 13:40:15 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 241)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 29.9ms | Allocations: 4211)
+Completed 200 OK in 42ms (Views: 38.7ms | Allocations: 5415)
+
+
+Started GET "/" for ::1 at 2021-04-05 13:42:00 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 229)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 28.9ms | Allocations: 4199)
+Completed 200 OK in 35ms (Views: 33.5ms | Allocations: 5404)
+
+
+Started GET "/style.css" for ::1 at 2021-04-05 13:42:00 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/style.css"):
+  
+Started GET "/" for ::1 at 2021-04-05 13:43:17 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 229)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20.7ms | Allocations: 4212)
+Completed 200 OK in 30ms (Views: 27.5ms | Allocations: 5423)
+
+
+Started GET "/thestyle.css" for ::1 at 2021-04-05 13:43:18 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/thestyle.css"):
+  
+Started GET "/" for ::1 at 2021-04-05 13:44:44 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 232)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.1ms | Allocations: 4215)
+Completed 200 OK in 27ms (Views: 25.9ms | Allocations: 5427)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 13:44:44 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/articles" for ::1 at 2021-04-05 13:44:54 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mArticle Load (6.9ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:16
+  Rendered articles/index.html.erb within layouts/application (Duration: 394.4ms | Allocations: 6689)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 409.7ms | Allocations: 10363)
+Completed 200 OK in 422ms (Views: 413.8ms | ActiveRecord: 175.8ms | Allocations: 11364)
+
+
+Started GET "/" for ::1 at 2021-04-05 13:44:58 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 26.5ms | Allocations: 3821)
+Completed 200 OK in 28ms (Views: 27.4ms | ActiveRecord: 0.0ms | Allocations: 4266)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 13:44:58 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/" for ::1 at 2021-04-05 13:45:38 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 229)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20.1ms | Allocations: 4212)
+Completed 200 OK in 25ms (Views: 23.6ms | ActiveRecord: 0.0ms | Allocations: 5425)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 13:45:38 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/" for ::1 at 2021-04-05 13:45:39 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 3834)
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.0ms | Allocations: 4279)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 13:45:39 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/" for ::1 at 2021-04-05 13:47:04 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 239)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 32.5ms | Allocations: 4222)
+Completed 200 OK in 40ms (Views: 38.5ms | ActiveRecord: 0.0ms | Allocations: 5458)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 13:47:04 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/" for ::1 at 2021-04-05 13:50:00 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 90)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 33.2ms | Allocations: 3878)
+Completed 200 OK in 38ms (Views: 35.4ms | ActiveRecord: 0.0ms | Allocations: 4511)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 13:50:01 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/" for ::1 at 2021-04-05 13:52:06 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 90)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 110.1ms | Allocations: 12729)
+Completed 200 OK in 114ms (Views: 112.2ms | ActiveRecord: 0.0ms | Allocations: 13361)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 13:52:07 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/styles.css" for ::1 at 2021-04-05 13:52:07 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/" for ::1 at 2021-04-05 13:54:48 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 228)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 78.7ms | Allocations: 18258)
+Completed 200 OK in 87ms (Views: 84.4ms | ActiveRecord: 0.0ms | Allocations: 19471)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 13:54:49 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/styles.css" for ::1 at 2021-04-05 13:54:49 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/community.jpg"):
+  
+Started GET "/" for ::1 at 2021-04-05 13:55:52 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 231)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 25.8ms | Allocations: 4269)
+Completed 200 OK in 33ms (Views: 31.1ms | ActiveRecord: 0.0ms | Allocations: 5484)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 13:55:52 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/community.jpg"):
+  
+Started GET "/" for ::1 at 2021-04-05 13:56:07 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 223)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.4ms | Allocations: 4261)
+Completed 200 OK in 31ms (Views: 28.3ms | ActiveRecord: 0.0ms | Allocations: 5476)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/community.jpg"):
+  
+Started GET "/" for ::1 at 2021-04-05 13:56:08 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 25.7ms | Allocations: 3876)
+Completed 200 OK in 28ms (Views: 26.6ms | ActiveRecord: 0.0ms | Allocations: 4320)
+
+
+Started GET "/" for ::1 at 2021-04-05 13:56:09 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.2ms | Allocations: 3881)
+Completed 200 OK in 17ms (Views: 16.2ms | ActiveRecord: 0.0ms | Allocations: 4323)
+
+
+Started GET "/" for ::1 at 2021-04-05 13:56:30 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 233)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.4ms | Allocations: 4257)
+Completed 200 OK in 32ms (Views: 29.8ms | ActiveRecord: 0.0ms | Allocations: 5469)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 13:56:30 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/" for ::1 at 2021-04-05 13:56:40 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 226)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.2ms | Allocations: 4256)
+Completed 200 OK in 23ms (Views: 20.7ms | ActiveRecord: 0.0ms | Allocations: 5469)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 13:56:40 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/" for ::1 at 2021-04-05 13:56:46 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 227)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.5ms | Allocations: 4265)
+Completed 200 OK in 32ms (Views: 28.6ms | ActiveRecord: 0.0ms | Allocations: 5480)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 13:56:47 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/" for ::1 at 2021-04-05 14:13:17 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 39.6ms | Allocations: 228)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 194.9ms | Allocations: 17366)
+Completed 200 OK in 272ms (Views: 247.4ms | Allocations: 18577)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 14:13:18 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/ClipartKey_541645.png"):
+  
+Started GET "/" for ::1 at 2021-04-05 14:13:28 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.2ms | Allocations: 3889)
+Completed 200 OK in 23ms (Views: 22.0ms | Allocations: 4330)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 14:13:28 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/ClipartKey_541645.png"):
+  
+Started GET "/" for ::1 at 2021-04-05 14:14:19 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 28.8ms | Allocations: 3889)
+Completed 200 OK in 31ms (Views: 29.9ms | Allocations: 4329)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 14:14:19 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/styles.css" for ::1 at 2021-04-05 14:14:20 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/ClipartKey_541645.png"):
+  
+Started GET "/" for ::1 at 2021-04-05 14:15:16 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 91.9ms | Allocations: 17962)
+Completed 200 OK in 94ms (Views: 92.8ms | Allocations: 18402)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 14:15:16 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/styles.css" for ::1 at 2021-04-05 14:15:17 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/ClipartKey_541645.png"):
+  
+Started GET "/" for ::1 at 2021-04-05 14:15:21 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.9ms | Allocations: 3888)
+Completed 200 OK in 26ms (Views: 24.9ms | Allocations: 4328)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 14:15:22 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/" for ::1 at 2021-04-05 14:15:34 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 72.8ms | Allocations: 17589)
+Completed 200 OK in 74ms (Views: 73.6ms | Allocations: 18029)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 14:15:34 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/styles.css" for ::1 at 2021-04-05 14:15:34 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/ClipartKey_541645.png"):
+  
+Started GET "/" for ::1 at 2021-04-05 14:16:12 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 110.3ms | Allocations: 17528)
+Completed 200 OK in 114ms (Views: 111.9ms | Allocations: 17968)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 14:16:12 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/ClipartKey_541645.png"):
+  
+Started GET "/" for ::1 at 2021-04-05 14:16:16 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.4ms | Allocations: 3889)
+Completed 200 OK in 22ms (Views: 20.5ms | Allocations: 4329)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 14:16:16 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/" for ::1 at 2021-04-05 14:20:09 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 49.6ms | Allocations: 3892)
+Completed 200 OK in 52ms (Views: 50.9ms | Allocations: 4331)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 14:20:09 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/" for ::1 at 2021-04-05 14:21:06 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 96.4ms | Allocations: 18125)
+Completed 200 OK in 100ms (Views: 98.0ms | Allocations: 18565)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 14:21:06 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/styles.css" for ::1 at 2021-04-05 14:21:06 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/app/assets/images/ClipartKey_541645.png" for ::1 at 2021-04-05 14:21:07 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/images/ClipartKey_541645.png"):
+  
+Started GET "/" for ::1 at 2021-04-05 14:21:41 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 80.3ms | Allocations: 17624)
+Completed 200 OK in 83ms (Views: 81.1ms | Allocations: 18064)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 14:21:42 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/styles.css" for ::1 at 2021-04-05 14:21:42 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/app/assets/images/ClipartKey_541645.png" for ::1 at 2021-04-05 14:21:42 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/images/ClipartKey_541645.png"):
+  
+Started GET "/" for ::1 at 2021-04-05 14:23:41 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 89.9ms | Allocations: 18709)
+Completed 200 OK in 92ms (Views: 90.9ms | Allocations: 19149)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 14:23:41 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/styles.css" for ::1 at 2021-04-05 14:23:41 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/" for ::1 at 2021-04-05 14:31:06 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 6.3ms | Allocations: 240)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 168.0ms | Allocations: 18385)
+Completed 200 OK in 197ms (Views: 184.3ms | Allocations: 19595)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 14:31:07 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/logo2.png" for ::1 at 2021-04-05 14:31:07 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/logo2.png"):
+  
+Started GET "/styles.css" for ::1 at 2021-04-05 14:31:07 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/index.html.erb" for ::1 at 2021-04-05 14:31:14 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/index.html.erb"):
+  
+Started GET "/" for ::1 at 2021-04-05 14:31:27 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 24.2ms | Allocations: 3943)
+Completed 200 OK in 26ms (Views: 25.5ms | Allocations: 4384)
+
+
+Started GET "/" for ::1 at 2021-04-05 14:35:15 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 6.1ms | Allocations: 244)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 70.3ms | Allocations: 4297)
+Completed 200 OK in 97ms (Views: 89.1ms | Allocations: 5508)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 14:35:16 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/styles.css" for ::1 at 2021-04-05 14:35:16 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/" for ::1 at 2021-04-05 14:36:05 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 244)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 30.9ms | Allocations: 4298)
+Completed 200 OK in 37ms (Views: 35.5ms | Allocations: 5510)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 14:36:05 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/logo2.png" for ::1 at 2021-04-05 14:36:05 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/logo2.png"):
+  
+Started GET "/" for ::1 at 2021-04-05 14:37:40 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 242)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 48.4ms | Allocations: 4295)
+Completed 200 OK in 68ms (Views: 64.6ms | Allocations: 5507)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 14:37:40 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/ClipartKey_541645.png" for ::1 at 2021-04-05 14:37:40 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/ClipartKey_541645.png"):
+  
+Started GET "/" for ::1 at 2021-04-05 14:38:01 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 239)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 48.2ms | Allocations: 4292)
+Completed 200 OK in 60ms (Views: 56.7ms | Allocations: 5504)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 14:38:01 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/logo2.png" for ::1 at 2021-04-05 14:38:01 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/logo2.png"):
+  
+Started GET "/styles.css" for ::1 at 2021-04-05 14:38:02 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/" for ::1 at 2021-04-05 14:38:16 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.8ms | Allocations: 3901)
+Completed 200 OK in 26ms (Views: 24.7ms | Allocations: 4342)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 14:38:16 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/logo2.png" for ::1 at 2021-04-05 14:38:16 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/logo2.png"):
+  
+Started GET "/styles.css" for ::1 at 2021-04-05 14:38:16 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/" for ::1 at 2021-04-05 14:40:31 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 240)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 53.7ms | Allocations: 4290)
+Completed 200 OK in 65ms (Views: 63.2ms | Allocations: 5500)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 14:40:32 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/logo2.png" for ::1 at 2021-04-05 14:40:32 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/logo2.png"):
+  
+Started GET "/styles.css" for ::1 at 2021-04-05 14:40:32 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/" for ::1 at 2021-04-05 14:41:49 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 239)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 31.5ms | Allocations: 4290)
+Completed 200 OK in 39ms (Views: 37.0ms | Allocations: 5502)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 14:41:49 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/logo2.png" for ::1 at 2021-04-05 14:41:49 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/logo2.png"):
+  
+Started GET "/styles.css" for ::1 at 2021-04-05 14:41:49 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/" for ::1 at 2021-04-05 14:52:42 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 5.8ms | Allocations: 243)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 165.7ms | Allocations: 19684)
+Completed 200 OK in 187ms (Views: 179.4ms | Allocations: 20896)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 14:52:43 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/logo2.png" for ::1 at 2021-04-05 14:52:43 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/logo2.png"):
+  
+Started GET "/styles.css" for ::1 at 2021-04-05 14:52:43 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/community.jpg" for ::1 at 2021-04-05 14:52:43 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/community.jpg"):
+  
+Started GET "/" for ::1 at 2021-04-05 14:53:00 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 245)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 41.3ms | Allocations: 4298)
+Completed 200 OK in 49ms (Views: 46.0ms | Allocations: 5510)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 14:53:01 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/styles.css" for ::1 at 2021-04-05 14:53:01 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/community.jpg" for ::1 at 2021-04-05 14:53:01 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/community.jpg"):
+  
+Started GET "/" for ::1 at 2021-04-05 14:58:21 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 9.3ms | Allocations: 251)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 58.6ms | Allocations: 4304)
+Completed 200 OK in 79ms (Views: 74.7ms | Allocations: 5516)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 14:58:22 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/styles.css" for ::1 at 2021-04-05 14:58:22 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/community.jpg" for ::1 at 2021-04-05 14:58:22 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/community.jpg"):
+  
+Started GET "/" for ::1 at 2021-04-05 14:59:30 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 247)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 38.2ms | Allocations: 4297)
+Completed 200 OK in 50ms (Views: 48.7ms | Allocations: 5508)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 14:59:30 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/community.jpg" for ::1 at 2021-04-05 14:59:30 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/community.jpg"):
+  
+Started GET "/" for ::1 at 2021-04-05 14:59:49 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 250)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 24.5ms | Allocations: 4303)
+Completed 200 OK in 32ms (Views: 29.3ms | Allocations: 5515)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 14:59:49 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/styles.css" for ::1 at 2021-04-05 14:59:49 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/community.jpg" for ::1 at 2021-04-05 14:59:50 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/community.jpg"):
+  
+Started GET "/" for ::1 at 2021-04-05 14:59:52 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 27.1ms | Allocations: 3904)
+Completed 200 OK in 30ms (Views: 28.3ms | Allocations: 4346)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 14:59:52 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/" for ::1 at 2021-04-05 15:00:09 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 252)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 26.8ms | Allocations: 4294)
+Completed 200 OK in 37ms (Views: 35.2ms | Allocations: 5504)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 15:00:09 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/community.jpg" for ::1 at 2021-04-05 15:00:10 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/community.jpg"):
+  
+Started GET "/" for ::1 at 2021-04-05 15:00:24 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 254)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 25.8ms | Allocations: 4308)
+Completed 200 OK in 31ms (Views: 29.2ms | Allocations: 5520)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 15:00:24 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/community.jpg" for ::1 at 2021-04-05 15:00:24 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/community.jpg"):
+  
+Started GET "/" for ::1 at 2021-04-05 15:00:36 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 257)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 29.1ms | Allocations: 4310)
+Completed 200 OK in 36ms (Views: 34.2ms | Allocations: 5522)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 15:00:36 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/community.jpg" for ::1 at 2021-04-05 15:00:37 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/community.jpg"):
+  
+Started GET "/" for ::1 at 2021-04-05 15:00:44 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 258)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 26.1ms | Allocations: 4311)
+Completed 200 OK in 38ms (Views: 35.4ms | Allocations: 5523)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 15:00:44 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/community.jpg" for ::1 at 2021-04-05 15:00:44 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/community.jpg"):
+  
+Started GET "/" for ::1 at 2021-04-05 15:03:21 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 258)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 47.6ms | Allocations: 4311)
+Completed 200 OK in 60ms (Views: 57.2ms | Allocations: 5523)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 15:03:21 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/community.jpg" for ::1 at 2021-04-05 15:03:22 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/community.jpg"):
+  
+Started GET "/" for ::1 at 2021-04-05 15:08:27 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 258)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 107.4ms | Allocations: 18001)
+Completed 200 OK in 117ms (Views: 114.3ms | Allocations: 19212)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 15:08:27 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/styles.css" for ::1 at 2021-04-05 15:08:27 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/20780231-illustration-of-community-sketch-background.jpeg" for ::1 at 2021-04-05 15:08:28 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/20780231-illustration-of-community-sketch-background.jpeg"):
+  
+Started GET "/" for ::1 at 2021-04-05 15:08:30 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.7ms | Allocations: 3948)
+Completed 200 OK in 17ms (Views: 15.5ms | Allocations: 4389)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 15:08:30 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/20780231-illustration-of-community-sketch-background.jpeg" for ::1 at 2021-04-05 15:08:30 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/20780231-illustration-of-community-sketch-background.jpeg"):
+  
+Started GET "/" for ::1 at 2021-04-05 15:09:21 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 110.1ms | Allocations: 17805)
+Completed 200 OK in 112ms (Views: 111.2ms | Allocations: 18245)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 15:09:21 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/styles.css" for ::1 at 2021-04-05 15:09:22 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/20780231-illustration-of-community-sketch-background.jpeg" for ::1 at 2021-04-05 15:09:22 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/20780231-illustration-of-community-sketch-background.jpeg"):
+  
+Started GET "/" for ::1 at 2021-04-05 15:13:34 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 95.6ms | Allocations: 17488)
+Completed 200 OK in 98ms (Views: 97.2ms | Allocations: 17928)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 15:13:34 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/20780231-illustration-of-community-sketch-background.jpeg" for ::1 at 2021-04-05 15:13:35 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/20780231-illustration-of-community-sketch-background.jpeg"):
+  
+Started GET "/" for ::1 at 2021-04-05 15:13:57 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 95.0ms | Allocations: 17943)
+Completed 200 OK in 98ms (Views: 97.1ms | Allocations: 18383)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 15:13:57 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/20780231-illustration-of-community-sketch-background.jpeg" for ::1 at 2021-04-05 15:13:57 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/20780231-illustration-of-community-sketch-background.jpeg"):
+  
+Started GET "/" for ::1 at 2021-04-05 15:14:04 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 86.7ms | Allocations: 17947)
+Completed 200 OK in 89ms (Views: 87.9ms | Allocations: 18388)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 15:14:05 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/20780231-illustration-of-community-sketch-background.jpeg" for ::1 at 2021-04-05 15:14:05 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/20780231-illustration-of-community-sketch-background.jpeg"):
+  
+Started GET "/" for ::1 at 2021-04-05 15:14:14 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 70.0ms | Allocations: 18433)
+Completed 200 OK in 71ms (Views: 70.8ms | Allocations: 18873)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 15:14:14 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/styles.css" for ::1 at 2021-04-05 15:14:15 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/20780231-illustration-of-community-sketch-background.jpeg" for ::1 at 2021-04-05 15:14:15 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/20780231-illustration-of-community-sketch-background.jpeg"):
+  
+Started GET "/" for ::1 at 2021-04-05 15:14:28 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 96.5ms | Allocations: 18410)
+Completed 200 OK in 100ms (Views: 97.5ms | Allocations: 18849)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 15:14:28 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/styles.css" for ::1 at 2021-04-05 15:14:28 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/20780231-illustration-of-community-sketch-background.jpeg" for ::1 at 2021-04-05 15:14:28 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/20780231-illustration-of-community-sketch-background.jpeg"):
+  
+Started GET "/" for ::1 at 2021-04-05 15:15:47 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 94.9ms | Allocations: 18410)
+Completed 200 OK in 99ms (Views: 96.6ms | Allocations: 18849)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 15:15:47 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/styles.css" for ::1 at 2021-04-05 15:15:48 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/20780231-illustration-of-community-sketch-background.jpeg" for ::1 at 2021-04-05 15:15:48 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/20780231-illustration-of-community-sketch-background.jpeg"):
+  
+Started GET "/" for ::1 at 2021-04-05 15:15:58 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 193.0ms | Allocations: 18431)
+Completed 200 OK in 196ms (Views: 194.7ms | Allocations: 18871)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 15:15:59 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/styles.css" for ::1 at 2021-04-05 15:15:59 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/20780231-illustration-of-community-sketch-background.jpeg" for ::1 at 2021-04-05 15:15:59 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/20780231-illustration-of-community-sketch-background.jpeg"):
+  
+Started GET "/" for ::1 at 2021-04-05 15:16:44 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 116.3ms | Allocations: 19856)
+Completed 200 OK in 118ms (Views: 117.1ms | Allocations: 20296)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 15:16:44 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/styles.css" for ::1 at 2021-04-05 15:16:45 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/20780231-illustration-of-community-sketch-background.jpeg" for ::1 at 2021-04-05 15:16:45 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/20780231-illustration-of-community-sketch-background.jpeg"):
+  
+Started GET "/" for ::1 at 2021-04-05 15:17:05 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 110.6ms | Allocations: 18934)
+Completed 200 OK in 113ms (Views: 111.5ms | Allocations: 19374)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 15:17:06 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/styles.css" for ::1 at 2021-04-05 15:17:06 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/20780231-illustration-of-community-sketch-background.jpeg" for ::1 at 2021-04-05 15:17:06 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/20780231-illustration-of-community-sketch-background.jpeg"):
+  
+Started GET "/" for ::1 at 2021-04-05 15:17:40 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 101.7ms | Allocations: 18449)
+Completed 200 OK in 104ms (Views: 102.6ms | Allocations: 18889)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 15:17:40 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/styles.css" for ::1 at 2021-04-05 15:17:41 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/20780231-illustration-of-community-sketch-background.jpeg" for ::1 at 2021-04-05 15:17:41 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/20780231-illustration-of-community-sketch-background.jpeg"):
+  
+Started GET "/" for ::1 at 2021-04-05 15:18:41 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 258)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 36.6ms | Allocations: 4321)
+Completed 200 OK in 46ms (Views: 44.5ms | Allocations: 5531)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 15:18:41 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/styles.css" for ::1 at 2021-04-05 15:18:42 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/20780231-illustration-of-community-sketch-background.jpeg" for ::1 at 2021-04-05 15:18:42 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/20780231-illustration-of-community-sketch-background.jpeg"):
+  
+Started GET "/" for ::1 at 2021-04-05 15:18:49 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 258)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.8ms | Allocations: 4318)
+Completed 200 OK in 28ms (Views: 24.4ms | Allocations: 5529)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 15:18:49 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/20780231-illustration-of-community-sketch-background.jpeg" for ::1 at 2021-04-05 15:18:49 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/20780231-illustration-of-community-sketch-background.jpeg"):
+  
+Started GET "/" for ::1 at 2021-04-05 15:18:51 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.2ms | Allocations: 3914)
+Completed 200 OK in 21ms (Views: 19.2ms | Allocations: 4355)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 15:18:51 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/20780231-illustration-of-community-sketch-background.jpeg" for ::1 at 2021-04-05 15:18:52 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/20780231-illustration-of-community-sketch-background.jpeg"):
+  
+Started GET "/" for ::1 at 2021-04-05 15:21:33 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 257)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 40.8ms | Allocations: 4320)
+Completed 200 OK in 56ms (Views: 49.4ms | Allocations: 5530)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 15:21:33 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/styles.css" for ::1 at 2021-04-05 15:21:35 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/20780231-illustration-of-community-sketch-background.jpeg" for ::1 at 2021-04-05 15:21:35 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/20780231-illustration-of-community-sketch-background.jpeg"):
+  
+Started GET "/" for ::1 at 2021-04-05 15:21:57 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 259)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 32.6ms | Allocations: 4319)
+Completed 200 OK in 43ms (Views: 40.8ms | Allocations: 5530)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 15:21:57 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/styles.css" for ::1 at 2021-04-05 15:21:57 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/20780231-illustration-of-community-sketch-background.jpeg" for ::1 at 2021-04-05 15:21:58 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/20780231-illustration-of-community-sketch-background.jpeg"):
+  
+Started GET "/" for ::1 at 2021-04-05 15:22:07 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 5.5ms | Allocations: 260)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 51.6ms | Allocations: 4323)
+Completed 200 OK in 64ms (Views: 60.9ms | Allocations: 5534)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 15:22:07 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/styles.css" for ::1 at 2021-04-05 15:22:07 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/20780231-illustration-of-community-sketch-background.jpeg" for ::1 at 2021-04-05 15:22:07 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/20780231-illustration-of-community-sketch-background.jpeg"):
+  
+Started GET "/" for ::1 at 2021-04-05 15:22:15 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 266)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.4ms | Allocations: 4329)
+Completed 200 OK in 28ms (Views: 25.6ms | Allocations: 5541)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 15:22:15 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/20780231-illustration-of-community-sketch-background.jpeg" for ::1 at 2021-04-05 15:22:16 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/20780231-illustration-of-community-sketch-background.jpeg"):
+  
+Started GET "/" for ::1 at 2021-04-05 15:22:25 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 264)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.2ms | Allocations: 4324)
+Completed 200 OK in 23ms (Views: 20.5ms | Allocations: 5535)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 15:22:25 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/20780231-illustration-of-community-sketch-background.jpeg" for ::1 at 2021-04-05 15:22:26 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/20780231-illustration-of-community-sketch-background.jpeg"):
+  
+Started GET "/" for ::1 at 2021-04-05 15:22:39 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 261)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.5ms | Allocations: 4324)
+Completed 200 OK in 25ms (Views: 22.4ms | Allocations: 5536)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 15:22:39 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/styles.css" for ::1 at 2021-04-05 15:22:41 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/20780231-illustration-of-community-sketch-background.jpeg" for ::1 at 2021-04-05 15:22:41 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/20780231-illustration-of-community-sketch-background.jpeg"):
+  
+Started GET "/" for ::1 at 2021-04-05 15:22:53 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 261)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 31.2ms | Allocations: 4324)
+Completed 200 OK in 44ms (Views: 36.2ms | Allocations: 5536)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 15:22:53 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/styles.css" for ::1 at 2021-04-05 15:22:54 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/20780231-illustration-of-community-sketch-background.jpeg" for ::1 at 2021-04-05 15:22:54 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/20780231-illustration-of-community-sketch-background.jpeg"):
+  
+Started GET "/" for ::1 at 2021-04-05 15:23:01 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 255)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 72.5ms | Allocations: 4318)
+Completed 200 OK in 79ms (Views: 77.2ms | Allocations: 5529)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 15:23:02 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/20780231-illustration-of-community-sketch-background.jpeg" for ::1 at 2021-04-05 15:23:02 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/20780231-illustration-of-community-sketch-background.jpeg"):
+  
+Started GET "/" for ::1 at 2021-04-05 15:23:17 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 255)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 42.4ms | Allocations: 4315)
+Completed 200 OK in 50ms (Views: 48.4ms | Allocations: 5526)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 15:23:17 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/20780231-illustration-of-community-sketch-background.jpeg" for ::1 at 2021-04-05 15:23:17 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/20780231-illustration-of-community-sketch-background.jpeg"):
+  
+Started GET "/" for ::1 at 2021-04-05 15:23:30 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 261)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 27.2ms | Allocations: 4324)
+Completed 200 OK in 35ms (Views: 32.0ms | Allocations: 5536)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 15:23:31 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/20780231-illustration-of-community-sketch-background.jpeg" for ::1 at 2021-04-05 15:23:31 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/20780231-illustration-of-community-sketch-background.jpeg"):
+  
+Started GET "/" for ::1 at 2021-04-05 15:23:38 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 260)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 45.2ms | Allocations: 4320)
+Completed 200 OK in 57ms (Views: 51.1ms | Allocations: 5531)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 15:23:38 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/20780231-illustration-of-community-sketch-background.jpeg" for ::1 at 2021-04-05 15:23:38 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/20780231-illustration-of-community-sketch-background.jpeg"):
+  
+Started GET "/" for ::1 at 2021-04-05 15:23:43 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 262)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.3ms | Allocations: 4325)
+Completed 200 OK in 21ms (Views: 19.7ms | Allocations: 5536)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 15:23:43 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/20780231-illustration-of-community-sketch-background.jpeg" for ::1 at 2021-04-05 15:23:43 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/20780231-illustration-of-community-sketch-background.jpeg"):
+  
+Started GET "/" for ::1 at 2021-04-05 15:23:48 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 266)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.8ms | Allocations: 4329)
+Completed 200 OK in 27ms (Views: 24.6ms | Allocations: 5541)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 15:23:49 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/20780231-illustration-of-community-sketch-background.jpeg" for ::1 at 2021-04-05 15:23:49 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/20780231-illustration-of-community-sketch-background.jpeg"):
+  
+Started GET "/" for ::1 at 2021-04-05 15:26:15 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 266)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 127.2ms | Allocations: 19941)
+Completed 200 OK in 141ms (Views: 138.6ms | Allocations: 21152)
+
+
+Started GET "/logo2.png" for ::1 at 2021-04-05 15:26:15 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/logo2.png"):
+  
+Started GET "/styles.css" for ::1 at 2021-04-05 15:26:15 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/styles.css" for ::1 at 2021-04-05 15:26:16 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/20780231-illustration-of-community-sketch-background.jpeg" for ::1 at 2021-04-05 15:26:16 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/20780231-illustration-of-community-sketch-background.jpeg"):
+  
+Started GET "/" for ::1 at 2021-04-05 15:26:48 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 265)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 41.1ms | Allocations: 4834)
+Completed 200 OK in 58ms (Views: 55.0ms | Allocations: 6045)
+
+
+Started GET "/logo2.png" for ::1 at 2021-04-05 15:26:48 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/logo2.png"):
+  
+Started GET "/styles.css" for ::1 at 2021-04-05 15:26:48 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/styles.css" for ::1 at 2021-04-05 15:26:49 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/20780231-illustration-of-community-sketch-background.jpeg" for ::1 at 2021-04-05 15:26:50 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/20780231-illustration-of-community-sketch-background.jpeg"):
+  
+Started GET "/" for ::1 at 2021-04-05 15:26:53 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 27.4ms | Allocations: 3911)
+Completed 200 OK in 29ms (Views: 28.3ms | Allocations: 4352)
+
+
+Started GET "/logo2.png" for ::1 at 2021-04-05 15:26:53 -0400
+Started GET "/styles.css" for ::1 at 2021-04-05 15:26:53 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/logo2.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/20780231-illustration-of-community-sketch-background.jpeg" for ::1 at 2021-04-05 15:26:54 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/20780231-illustration-of-community-sketch-background.jpeg"):
+  
+Started GET "/" for ::1 at 2021-04-05 15:33:43 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 267)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 55.9ms | Allocations: 4324)
+Completed 200 OK in 88ms (Views: 76.0ms | Allocations: 5534)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 15:33:43 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/logo2.png" for ::1 at 2021-04-05 15:33:43 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/logo2.png"):
+  
+Started GET "/20780231-illustration-of-community-sketch-background.jpeg" for ::1 at 2021-04-05 15:33:43 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/20780231-illustration-of-community-sketch-background.jpeg"):
+  
+Started GET "/" for ::1 at 2021-04-05 15:36:10 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 31.9ms | Allocations: 3905)
+Completed 200 OK in 34ms (Views: 32.7ms | Allocations: 4346)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 15:36:10 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/logo2.png" for ::1 at 2021-04-05 15:36:11 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/logo2.png"):
+  
+Started GET "/styles.css" for ::1 at 2021-04-05 15:36:11 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/20780231-illustration-of-community-sketch-background.jpeg" for ::1 at 2021-04-05 15:36:11 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/20780231-illustration-of-community-sketch-background.jpeg"):
+  
+Started GET "/" for ::1 at 2021-04-05 15:36:14 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.2ms | Allocations: 3905)
+Completed 200 OK in 26ms (Views: 24.1ms | Allocations: 4345)
+
+
+Started GET "/logo2.png" for ::1 at 2021-04-05 15:36:15 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/logo2.png"):
+  
+Started GET "/styles.css" for ::1 at 2021-04-05 15:36:15 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/20780231-illustration-of-community-sketch-background.jpeg" for ::1 at 2021-04-05 15:36:16 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/20780231-illustration-of-community-sketch-background.jpeg"):
+  
+Started GET "/" for ::1 at 2021-04-05 15:36:30 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 37.6ms | Allocations: 3909)
+Completed 200 OK in 40ms (Views: 39.0ms | Allocations: 4350)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 15:36:30 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/logo2.png" for ::1 at 2021-04-05 15:36:30 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/logo2.png"):
+  
+Started GET "/20780231-illustration-of-community-sketch-background.jpeg" for ::1 at 2021-04-05 15:36:31 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/20780231-illustration-of-community-sketch-background.jpeg"):
+  
+Started GET "/" for ::1 at 2021-04-05 15:38:45 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 269)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 30.2ms | Allocations: 4326)
+Completed 200 OK in 37ms (Views: 35.9ms | Allocations: 5536)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 15:38:45 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/logo2.png" for ::1 at 2021-04-05 15:38:45 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/logo2.png"):
+  
+Started GET "/20780231-illustration-of-community-sketch-background.jpeg" for ::1 at 2021-04-05 15:38:46 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/20780231-illustration-of-community-sketch-background.jpeg"):
+  
+Started GET "/" for ::1 at 2021-04-05 15:39:04 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.8ms | Allocations: 3908)
+Completed 200 OK in 19ms (Views: 18.3ms | Allocations: 4349)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 15:39:05 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/logo2.png" for ::1 at 2021-04-05 15:39:05 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/logo2.png"):
+  
+Started GET "/20780231-illustration-of-community-sketch-background.jpeg" for ::1 at 2021-04-05 15:39:05 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/20780231-illustration-of-community-sketch-background.jpeg"):
+  
+Started GET "/" for ::1 at 2021-04-05 15:39:14 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | Allocations: 3908)
+Completed 200 OK in 17ms (Views: 15.6ms | Allocations: 4348)
+
+
+Started GET "/" for ::1 at 2021-04-05 15:39:23 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.4ms | Allocations: 3908)
+Completed 200 OK in 22ms (Views: 20.6ms | Allocations: 4348)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 15:39:23 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/logo2.png" for ::1 at 2021-04-05 15:39:23 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/logo2.png"):
+  
+Started GET "/20780231-illustration-of-community-sketch-background.jpeg" for ::1 at 2021-04-05 15:39:23 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/20780231-illustration-of-community-sketch-background.jpeg"):
+  
+Started GET "/" for ::1 at 2021-04-05 15:39:25 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 267)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.6ms | Allocations: 4330)
+Completed 200 OK in 25ms (Views: 22.5ms | Allocations: 5539)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 15:39:26 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/20780231-illustration-of-community-sketch-background.jpeg" for ::1 at 2021-04-05 15:39:26 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/20780231-illustration-of-community-sketch-background.jpeg"):
+  
+Started GET "/" for ::1 at 2021-04-05 15:40:21 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 267)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 39.2ms | Allocations: 4324)
+Completed 200 OK in 53ms (Views: 50.2ms | Allocations: 5536)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 15:40:21 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/styles.css" for ::1 at 2021-04-05 15:40:22 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/20780231-illustration-of-community-sketch-background.jpeg" for ::1 at 2021-04-05 15:40:22 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/20780231-illustration-of-community-sketch-background.jpeg"):
+  
+Started GET "/" for ::1 at 2021-04-05 15:41:57 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 268)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 41.9ms | Allocations: 4325)
+Completed 200 OK in 55ms (Views: 53.3ms | Allocations: 5537)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 15:41:58 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/styles.css" for ::1 at 2021-04-05 15:41:58 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/20780231-illustration-of-community-sketch-background.jpeg" for ::1 at 2021-04-05 15:41:58 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/20780231-illustration-of-community-sketch-background.jpeg"):
+  
+Started GET "/" for ::1 at 2021-04-05 15:42:04 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 269)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.9ms | Allocations: 4326)
+Completed 200 OK in 22ms (Views: 20.4ms | Allocations: 5538)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 15:42:04 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/20780231-illustration-of-community-sketch-background.jpeg" for ::1 at 2021-04-05 15:42:04 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/20780231-illustration-of-community-sketch-background.jpeg"):
+  
+Started GET "/" for ::1 at 2021-04-05 15:42:16 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.4ms | Allocations: 3908)
+Completed 200 OK in 16ms (Views: 15.4ms | Allocations: 4349)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 15:42:16 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/20780231-illustration-of-community-sketch-background.jpeg" for ::1 at 2021-04-05 15:42:17 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/20780231-illustration-of-community-sketch-background.jpeg"):
+  
+Started GET "/" for ::1 at 2021-04-05 15:44:04 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 38.9ms | Allocations: 3908)
+Completed 200 OK in 41ms (Views: 40.1ms | Allocations: 4348)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 15:44:04 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/20780231-illustration-of-community-sketch-background.jpeg" for ::1 at 2021-04-05 15:44:05 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/20780231-illustration-of-community-sketch-background.jpeg"):
+  
+Started GET "/" for ::1 at 2021-04-05 15:44:07 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.3ms | Allocations: 3908)
+Completed 200 OK in 17ms (Views: 15.7ms | Allocations: 4348)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 15:44:07 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/20780231-illustration-of-community-sketch-background.jpeg" for ::1 at 2021-04-05 15:44:08 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/20780231-illustration-of-community-sketch-background.jpeg"):
+  
+Started GET "/" for ::1 at 2021-04-05 15:44:12 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 44.0ms | Allocations: 4490)
+Completed 200 OK in 46ms (Views: 45.3ms | Allocations: 4933)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 15:44:12 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/20780231-illustration-of-community-sketch-background.jpeg" for ::1 at 2021-04-05 15:44:12 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/20780231-illustration-of-community-sketch-background.jpeg"):
+  
+Started GET "/" for ::1 at 2021-04-05 15:44:15 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 27.8ms | Allocations: 3908)
+Completed 200 OK in 30ms (Views: 29.3ms | Allocations: 4352)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 15:44:15 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/20780231-illustration-of-community-sketch-background.jpeg" for ::1 at 2021-04-05 15:44:15 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/20780231-illustration-of-community-sketch-background.jpeg"):
+  
+Started GET "/" for ::1 at 2021-04-05 15:44:16 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 39.9ms | Allocations: 3908)
+Completed 200 OK in 43ms (Views: 41.9ms | Allocations: 4351)
+
+
+Started GET "/20780231-illustration-of-community-sketch-background.jpeg" for ::1 at 2021-04-05 15:44:16 -0400
+Started GET "/styles.css" for ::1 at 2021-04-05 15:44:16 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/20780231-illustration-of-community-sketch-background.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started POST "/session" for ::1 at 2021-04-05 15:44:25 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "login"=>{"email"=>"a@me.com", "password"=>"[FILTERED]"}, "submit"=>"Submit"}
+  [1m[36mUser Load (49.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "a@me.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:3:in `create'
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 2275ms (ActiveRecord: 1094.0ms | Allocations: 10242)
+
+
+Started GET "/dashboard" for ::1 at 2021-04-05 15:44:28 -0400
+Processing by OpportunitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/index.html.erb within layouts/application
+  [1m[36mOpportunity Load (19.5ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."user_id" = $1 ORDER BY created_at DESC[0m  [["user_id", 1]]
+  ↳ app/views/opportunities/index.html.erb:11
+  Rendered opportunities/index.html.erb within layouts/application (Duration: 89.2ms | Allocations: 4399)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 187.9ms | Allocations: 8283)
+Completed 200 OK in 279ms (Views: 167.1ms | ActiveRecord: 33.9ms | Allocations: 10919)
+
+
+Started GET "/" for ::1 at 2021-04-05 15:44:48 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 46.7ms | Allocations: 3894)
+Completed 200 OK in 49ms (Views: 48.5ms | ActiveRecord: 0.0ms | Allocations: 4338)
+
+
+Started GET "/" for ::1 at 2021-04-05 16:37:45 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 12.2ms | Allocations: 270)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 166.5ms | Allocations: 4327)
+Completed 200 OK in 295ms (Views: 213.7ms | Allocations: 5537)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-05 16:37:45 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/20780231-illustration-of-community-sketch-background.jpeg" for ::1 at 2021-04-05 16:37:46 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/20780231-illustration-of-community-sketch-background.jpeg"):
+  
+Started GET "/articles" for ::1 at 2021-04-05 16:37:51 -0400
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mArticle Load (5.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:16
+  Rendered articles/index.html.erb within layouts/application (Duration: 312.6ms | Allocations: 6702)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 326.1ms | Allocations: 10450)
+Completed 200 OK in 341ms (Views: 328.5ms | ActiveRecord: 195.7ms | Allocations: 11769)
+
+
+Started GET "/" for ::1 at 2021-04-06 10:02:40 -0400
+  [1m[35m (8.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 489)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 240.7ms | Allocations: 17574)
+Completed 200 OK in 264ms (Views: 246.3ms | ActiveRecord: 0.0ms | Allocations: 20788)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-06 10:02:41 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/styles.css" for ::1 at 2021-04-06 10:02:41 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/20780231-illustration-of-community-sketch-background.jpeg" for ::1 at 2021-04-06 10:02:42 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/20780231-illustration-of-community-sketch-background.jpeg"):
+  
+Started GET "/" for ::1 at 2021-04-06 10:03:40 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 225)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 42.8ms | Allocations: 4273)
+Completed 200 OK in 55ms (Views: 52.0ms | ActiveRecord: 0.0ms | Allocations: 5495)
+
+
+Started GET "/" for ::1 at 2021-04-06 12:20:41 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 47.6ms | Allocations: 3910)
+Completed 200 OK in 61ms (Views: 53.2ms | Allocations: 4357)
+
+

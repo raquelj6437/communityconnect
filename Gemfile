@@ -9,6 +9,8 @@ gem 'rails', '~> 6.1.3.1'
 gem 'puma', '~> 5.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 6'
+# Provide a high performance framework for integrating Ruby on Rails with React
+gem 'react_on_rails', '~> 11.2', '>= 11.2.2'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 gem 'webpacker', '~> 5.0'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks

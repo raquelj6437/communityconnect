@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.header{
+    width: 1600px;
+    height: 800px;
+    background: url("ClipartKey_541645.png") center;
+    background-position: 100% 0;
+    background-size: cover;
+    position: relative;
+
+}
