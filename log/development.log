@@ -7667,3 +7667,79 @@ Processing by UsersController#index as HTML
 Completed 200 OK in 78ms (Views: 71.2ms | Allocations: 4331)
 
 
+Started GET "/hello_world" for ::1 at 2021-04-06 14:48:31 -0400
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HelloWorldController#index as HTML
+  Rendering layout layouts/hello_world.html.erb
+  Rendering hello_world/index.html.erb within layouts/hello_world
+  Rendered hello_world/index.html.erb within layouts/hello_world (Duration: 69.3ms | Allocations: 10264)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/adrianaalvarado/communityconnect/public/packs
+[Webpacker] Hash: 56da836968074bc2f45d
+Version: webpack 4.46.0
+Time: 2178ms
+Built at: 04/06/2021 2:48:36 PM
+                                            Asset      Size              Chunks                         Chunk Names
+           js/application-f826770d917d8a37c1d8.js   125 KiB         application  [emitted] [immutable]  application
+       js/application-f826770d917d8a37c1d8.js.map   139 KiB         application  [emitted] [dev]        application
+    js/hello-world-bundle-28654093c8e953fa1cc1.js  1.29 MiB  hello-world-bundle  [emitted] [immutable]  hello-world-bundle
+js/hello-world-bundle-28654093c8e953fa1cc1.js.map  1.48 MiB  hello-world-bundle  [emitted] [dev]        hello-world-bundle
+           js/hello_react-307c46b5aa4aeb5d8e36.js  1.09 MiB         hello_react  [emitted] [immutable]  hello_react
+       js/hello_react-307c46b5aa4aeb5d8e36.js.map  1.26 MiB         hello_react  [emitted] [dev]        hello_react
+                                    manifest.json  1.07 KiB                      [emitted]              
+Entrypoint application = js/application-f826770d917d8a37c1d8.js js/application-f826770d917d8a37c1d8.js.map
+Entrypoint hello_react = js/hello_react-307c46b5aa4aeb5d8e36.js js/hello_react-307c46b5aa4aeb5d8e36.js.map
+Entrypoint hello-world-bundle = js/hello-world-bundle-28654093c8e953fa1cc1.js js/hello-world-bundle-28654093c8e953fa1cc1.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello-world-bundle.js] 235 bytes {hello-world-bundle} [built]
+[./app/javascript/packs/hello_react.jsx] 1.07 KiB {hello_react} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello-world-bundle} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 35 hidden modules
+
+  Rendered layout layouts/hello_world.html.erb (Duration: 5178.9ms | Allocations: 14161)
+Completed 200 OK in 5201ms (Views: 5184.0ms | ActiveRecord: 0.0ms | Allocations: 17121)
+
+
+Started GET "/" for ::1 at 2021-04-06 14:48:42 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 227)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 136.6ms | Allocations: 15781)
+Completed 200 OK in 146ms (Views: 142.9ms | ActiveRecord: 0.0ms | Allocations: 16947)
+
+
+Started GET "/" for ::1 at 2021-04-06 14:48:50 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.4ms | Allocations: 3940)
+Completed 200 OK in 22ms (Views: 20.4ms | ActiveRecord: 0.0ms | Allocations: 4384)
+
+
+Started GET "/" for ::1 at 2021-04-06 14:48:50 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.5ms | Allocations: 3927)
+Completed 200 OK in 17ms (Views: 16.1ms | ActiveRecord: 0.0ms | Allocations: 4374)
+
+
+Started GET "/hello_world" for ::1 at 2021-04-06 14:48:53 -0400
+Processing by HelloWorldController#index as HTML
+  Rendering layout layouts/hello_world.html.erb
+  Rendering hello_world/index.html.erb within layouts/hello_world
+  Rendered hello_world/index.html.erb within layouts/hello_world (Duration: 1.0ms | Allocations: 356)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/hello_world.html.erb (Duration: 10.2ms | Allocations: 2632)
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.0ms | Allocations: 3064)
+
+
