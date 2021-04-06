@@ -4892,7 +4892,7 @@ Entrypoint hello_react = js/hello_react-431e60d99a811dd2b3d8.js js/hello_react-4
 [./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
 [./app/javascript/channels/index.js] 211 bytes {application} [built]
 [./app/javascript/packs/application.js] 492 bytes {application} [built]
-[./app/javascript/packs/hello_react.jsx] 1.07 KiB {hello_react} [built]
+[./app/javascript/packs/index.js] 1.07 KiB {hello_react} [built]
 [./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
     + 18 hidden modules
 
@@ -5001,7 +5001,7 @@ Entrypoint hello_react = js/hello_react-b572f8e34df56c063020.js js/hello_react-b
 [./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
 [./app/javascript/channels/index.js] 211 bytes {application} [built]
 [./app/javascript/packs/application.js] 492 bytes {application} [built]
-[./app/javascript/packs/hello_react.jsx] 1.05 KiB {hello_react} [built]
+[./app/javascript/packs/index.js] 1.05 KiB {hello_react} [built]
 [./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
     + 18 hidden modules
 
@@ -5043,7 +5043,7 @@ Entrypoint hello_react = js/hello_react-3c18e55205c3094a928f.js js/hello_react-3
 [./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
 [./app/javascript/channels/index.js] 211 bytes {application} [built]
 [./app/javascript/packs/application.js] 492 bytes {application} [built]
-[./app/javascript/packs/hello_react.jsx] 747 bytes {hello_react} [built]
+[./app/javascript/packs/index.js] 747 bytes {hello_react} [built]
 [./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
     + 13 hidden modules
 
@@ -5076,7 +5076,7 @@ Entrypoint hello_react = js/hello_react-4973169400dc14b22b18.js js/hello_react-4
 [./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
 [./app/javascript/channels/index.js] 211 bytes {application} [built]
 [./app/javascript/packs/application.js] 492 bytes {application} [built]
-[./app/javascript/packs/hello_react.jsx] 747 bytes {hello_react} [built]
+[./app/javascript/packs/index.js] 747 bytes {hello_react} [built]
 [./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
     + 13 hidden modules
 
@@ -5109,7 +5109,7 @@ Entrypoint hello_react = js/hello_react-3c18e55205c3094a928f.js js/hello_react-3
 [./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
 [./app/javascript/channels/index.js] 211 bytes {application} [built]
 [./app/javascript/packs/application.js] 492 bytes {application} [built]
-[./app/javascript/packs/hello_react.jsx] 747 bytes {hello_react} [built]
+[./app/javascript/packs/index.js] 747 bytes {hello_react} [built]
 [./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
     + 13 hidden modules
 
@@ -5142,7 +5142,7 @@ Entrypoint hello_react = js/hello_react-621363e0a0c71a862a01.js js/hello_react-6
 [./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
 [./app/javascript/channels/index.js] 211 bytes {application} [built]
 [./app/javascript/packs/application.js] 492 bytes {application} [built]
-[./app/javascript/packs/hello_react.jsx] 745 bytes {hello_react} [built]
+[./app/javascript/packs/index.js] 745 bytes {hello_react} [built]
 [./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
     + 13 hidden modules
 
@@ -5175,7 +5175,7 @@ Entrypoint hello_react = js/hello_react-b180e23af365905b6316.js js/hello_react-b
 [./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
 [./app/javascript/channels/index.js] 211 bytes {application} [built]
 [./app/javascript/packs/application.js] 492 bytes {application} [built]
-[./app/javascript/packs/hello_react.jsx] 745 bytes {hello_react} [built]
+[./app/javascript/packs/index.js] 745 bytes {hello_react} [built]
 [./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
     + 13 hidden modules
 
@@ -5268,7 +5268,7 @@ Entrypoint hello_react = js/hello_react-c2eb2e4145e742571723.js js/hello_react-c
 [./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
 [./app/javascript/channels/index.js] 211 bytes {application} [built]
 [./app/javascript/packs/application.js] 492 bytes {application} [built]
-[./app/javascript/packs/hello_react.jsx] 745 bytes {hello_react} [built]
+[./app/javascript/packs/index.js] 745 bytes {hello_react} [built]
 [./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello_react} [built]
 [./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
     + 38 hidden modules
@@ -5276,7 +5276,7 @@ Entrypoint hello_react = js/hello_react-c2eb2e4145e742571723.js js/hello_react-c
 ERROR in ./app/javascript/components/App.js
 Module not found: Error: Can't resolve './components/Navbar' in '/Users/adrianaalvarado/communityconnect/app/javascript/components'
  @ ./app/javascript/components/App.js 4:0-41 15:38-44
- @ ./app/javascript/packs/hello_react.jsx
+ @ ./app/javascript/packs/index.js
 
   Rendered layout layouts/application.html.erb (Duration: 10129.6ms | Allocations: 4951)
 Completed 200 OK in 10254ms (Views: 10148.8ms | Allocations: 5390)
@@ -7694,7 +7694,7 @@ Entrypoint hello-world-bundle = js/hello-world-bundle-28654093c8e953fa1cc1.js js
 [./app/javascript/channels/index.js] 211 bytes {application} [built]
 [./app/javascript/packs/application.js] 492 bytes {application} [built]
 [./app/javascript/packs/hello-world-bundle.js] 235 bytes {hello-world-bundle} [built]
-[./app/javascript/packs/hello_react.jsx] 1.07 KiB {hello_react} [built]
+[./app/javascript/packs/index.js] 1.07 KiB {hello_react} [built]
 [./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello-world-bundle} [built]
 [./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
     + 35 hidden modules
@@ -7741,5 +7741,53 @@ Processing by HelloWorldController#index as HTML
 [Webpacker] Everything's up-to-date. Nothing to do
   Rendered layout layouts/hello_world.html.erb (Duration: 10.2ms | Allocations: 2632)
 Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.0ms | Allocations: 3064)
+
+
+Started GET "/" for ::1 at 2021-04-06 15:12:39 -0400
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 445)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/adrianaalvarado/communityconnect/public/packs
+[Webpacker] Hash: 7737e4b95a5a7202d9f1
+Version: webpack 4.46.0
+Time: 2792ms
+Built at: 04/06/2021 3:12:46 PM
+                                            Asset      Size              Chunks                         Chunk Names
+           js/application-f826770d917d8a37c1d8.js   125 KiB         application  [emitted] [immutable]  application
+       js/application-f826770d917d8a37c1d8.js.map   139 KiB         application  [emitted] [dev]        application
+    js/hello-world-bundle-28654093c8e953fa1cc1.js  1.29 MiB  hello-world-bundle  [emitted] [immutable]  hello-world-bundle
+js/hello-world-bundle-28654093c8e953fa1cc1.js.map  1.48 MiB  hello-world-bundle  [emitted] [dev]        hello-world-bundle
+                 js/index-07a4bae79729ab5b6cf1.js  1.06 MiB               index  [emitted] [immutable]  index
+             js/index-07a4bae79729ab5b6cf1.js.map  1.22 MiB               index  [emitted] [dev]        index
+                                    manifest.json  1.02 KiB                      [emitted]              
+Entrypoint application = js/application-f826770d917d8a37c1d8.js js/application-f826770d917d8a37c1d8.js.map
+Entrypoint hello-world-bundle = js/hello-world-bundle-28654093c8e953fa1cc1.js js/hello-world-bundle-28654093c8e953fa1cc1.js.map
+Entrypoint index = js/index-07a4bae79729ab5b6cf1.js js/index-07a4bae79729ab5b6cf1.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./app/javascript/packs/hello-world-bundle.js] 235 bytes {hello-world-bundle} [built]
+[./app/javascript/packs/index.js] 738 bytes {index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello-world-bundle} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 36 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 6784.0ms | Allocations: 9883)
+Completed 200 OK in 6805ms (Views: 6790.2ms | ActiveRecord: 0.0ms | Allocations: 13134)
+
+
+Started GET "/" for ::1 at 2021-04-06 15:22:37 -0400
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/index.html.erb within layouts/application (Duration: 28.1ms | Allocations: 2819)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 74.9ms | Allocations: 10684)
+Completed 200 OK in 100ms (Views: 84.2ms | ActiveRecord: 0.0ms | Allocations: 13935)
 
 
