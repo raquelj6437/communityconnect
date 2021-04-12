@@ -9,6 +9,26 @@
       "js.map": [
         "/packs/js/application-f826770d917d8a37c1d8.js.map"
       ]
+    },
+    "hello-world-bundle": {
+      "js": [
+        "/packs/js/hello-world-bundle-28654093c8e953fa1cc1.js"
+      ],
+      "js.map": [
+        "/packs/js/hello-world-bundle-28654093c8e953fa1cc1.js.map"
+      ]
+    },
+    "index": {
+      "js": [
+        "/packs/js/index-07a4bae79729ab5b6cf1.js"
+      ],
+      "js.map": [
+        "/packs/js/index-07a4bae79729ab5b6cf1.js.map"
+      ]
     }
-  }
+  },
+  "hello-world-bundle.js": "/packs/js/hello-world-bundle-28654093c8e953fa1cc1.js",
+  "hello-world-bundle.js.map": "/packs/js/hello-world-bundle-28654093c8e953fa1cc1.js.map",
+  "index.js": "/packs/js/index-07a4bae79729ab5b6cf1.js",
+  "index.js.map": "/packs/js/index-07a4bae79729ab5b6cf1.js.map"
 }
