@@ -33,6 +33,12 @@ ActiveRecord::Schema.define(version: 2021_04_05_013905) do
     t.index ["user_id"], name: "index_opportunities_on_user_id"
   end
 
+  create_table "timesheets", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "name"
     t.string "email"
