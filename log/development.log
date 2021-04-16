@@ -7918,3 +7918,324 @@ Processing by OpportunitiesController#index as HTML
 Completed 200 OK in 14ms (Views: 10.3ms | ActiveRecord: 1.2ms | Allocations: 5260)
 
 
+Started GET "/dashboard" for ::1 at 2021-04-16 16:33:38 -0400
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by OpportunitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/index.html.erb within layouts/application
+  [1m[36mOpportunity Load (7.3ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."user_id" = $1 ORDER BY created_at DESC[0m  [["user_id", 5]]
+  ↳ app/views/opportunities/index.html.erb:11
+  Rendered opportunities/index.html.erb within layouts/application (Duration: 28.8ms | Allocations: 5406)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 76.1ms | Allocations: 13555)
+Completed 200 OK in 119ms (Views: 74.1ms | ActiveRecord: 16.0ms | Allocations: 19219)
+
+
+Started POST "/sessions/" for ::1 at 2021-04-16 16:33:40 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/sessions"):
+  
+Started GET "/dashboard" for ::1 at 2021-04-16 16:33:50 -0400
+Processing by OpportunitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/index.html.erb within layouts/application
+  [1m[36mOpportunity Load (1.6ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."user_id" = $1 ORDER BY created_at DESC[0m  [["user_id", 5]]
+  ↳ app/views/opportunities/index.html.erb:11
+  Rendered opportunities/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 914)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.6ms | Allocations: 4731)
+Completed 200 OK in 28ms (Views: 23.1ms | ActiveRecord: 1.6ms | Allocations: 5380)
+
+
+Started POST "/sessions/" for ::1 at 2021-04-16 16:34:01 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/sessions"):
+  
+Started POST "/sessions/" for ::1 at 2021-04-16 16:36:46 -0400
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [POST] "/sessions"):
+  
+Started GET "/dashboard" for ::1 at 2021-04-16 16:36:48 -0400
+Processing by OpportunitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/index.html.erb within layouts/application
+  [1m[36mOpportunity Load (2.0ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."user_id" = $1 ORDER BY created_at DESC[0m  [["user_id", 5]]
+  ↳ app/views/opportunities/index.html.erb:11
+  Rendered opportunities/index.html.erb within layouts/application (Duration: 42.7ms | Allocations: 5219)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 153.8ms | Allocations: 13343)
+Completed 200 OK in 186ms (Views: 153.9ms | ActiveRecord: 13.5ms | Allocations: 19287)
+
+
+Started GET "/" for ::1 at 2021-04-16 16:36:50 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/index.html.erb within layouts/application (Duration: 12.6ms | Allocations: 2426)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 31.2ms | Allocations: 6136)
+Completed 200 OK in 37ms (Views: 35.1ms | ActiveRecord: 0.0ms | Allocations: 7166)
+
+
+Started GET "/packs/js/index-07a4bae79729ab5b6cf1.js" for ::1 at 2021-04-16 16:36:51 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/index-07a4bae79729ab5b6cf1.js"):
+  
+Started POST "/session" for ::1 at 2021-04-16 16:37:00 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "login"=>{"email"=>"max@gmail.com", "password"=>"[FILTERED]"}, "submit"=>"Submit"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "max@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:3:in `create'
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 267ms (ActiveRecord: 7.2ms | Allocations: 6791)
+
+
+Started GET "/dashboard" for ::1 at 2021-04-16 16:37:00 -0400
+Processing by OpportunitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/index.html.erb within layouts/application
+  [1m[36mOpportunity Load (1.0ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."user_id" = $1 ORDER BY created_at DESC[0m  [["user_id", 5]]
+  ↳ app/views/opportunities/index.html.erb:11
+  Rendered opportunities/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 921)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 4738)
+Completed 200 OK in 12ms (Views: 9.2ms | ActiveRecord: 1.0ms | Allocations: 5376)
+
+
+Started DELETE "/sessions/" for ::1 at 2021-04-16 16:37:04 -0400
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Redirected to http://localhost:3000/login
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 289)
+
+
+Started GET "/login" for ::1 at 2021-04-16 16:37:04 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/login"):
+  
+Started GET "/" for ::1 at 2021-04-16 16:38:17 -0400
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/index.html.erb within layouts/application (Duration: 18.8ms | Allocations: 2824)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 52.7ms | Allocations: 10676)
+Completed 200 OK in 76ms (Views: 59.9ms | ActiveRecord: 0.0ms | Allocations: 13926)
+
+
+Started GET "/packs/js/index-07a4bae79729ab5b6cf1.js" for ::1 at 2021-04-16 16:38:17 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/index-07a4bae79729ab5b6cf1.js"):
+  
+Started POST "/session" for ::1 at 2021-04-16 16:38:22 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "login"=>{"email"=>"max@gmail.com", "password"=>"[FILTERED]"}, "submit"=>"Submit"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "max@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:3:in `create'
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 270ms (ActiveRecord: 10.7ms | Allocations: 8216)
+
+
+Started GET "/dashboard" for ::1 at 2021-04-16 16:38:22 -0400
+Processing by OpportunitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/index.html.erb within layouts/application
+  [1m[36mOpportunity Load (1.8ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."user_id" = $1 ORDER BY created_at DESC[0m  [["user_id", 5]]
+  ↳ app/views/opportunities/index.html.erb:11
+  Rendered opportunities/index.html.erb within layouts/application (Duration: 12.8ms | Allocations: 4591)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20.4ms | Allocations: 8465)
+Completed 200 OK in 30ms (Views: 18.3ms | ActiveRecord: 5.6ms | Allocations: 11118)
+
+
+Started DELETE "/session/" for ::1 at 2021-04-16 16:38:26 -0400
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Redirected to http://localhost:3000/login
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 283)
+
+
+Started GET "/login" for ::1 at 2021-04-16 16:38:26 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/login"):
+  
+Started GET "/" for ::1 at 2021-04-16 16:39:17 -0400
+  [1m[35m (4.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/index.html.erb within layouts/application (Duration: 18.4ms | Allocations: 2824)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 55.4ms | Allocations: 10672)
+Completed 200 OK in 79ms (Views: 63.3ms | ActiveRecord: 0.0ms | Allocations: 13922)
+
+
+Started GET "/packs/js/index-07a4bae79729ab5b6cf1.js" for ::1 at 2021-04-16 16:39:18 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/index-07a4bae79729ab5b6cf1.js"):
+  
+Started POST "/session" for ::1 at 2021-04-16 16:39:22 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "login"=>{"email"=>"max@gmail.com", "password"=>"[FILTERED]"}, "submit"=>"Submit"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "max@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:3:in `create'
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 270ms (ActiveRecord: 10.9ms | Allocations: 8194)
+
+
+Started GET "/dashboard" for ::1 at 2021-04-16 16:39:22 -0400
+Processing by OpportunitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/index.html.erb within layouts/application
+  [1m[36mOpportunity Load (1.7ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."user_id" = $1 ORDER BY created_at DESC[0m  [["user_id", 5]]
+  ↳ app/views/opportunities/index.html.erb:11
+  Rendered opportunities/index.html.erb within layouts/application (Duration: 12.4ms | Allocations: 4591)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.1ms | Allocations: 8463)
+Completed 200 OK in 31ms (Views: 19.5ms | ActiveRecord: 5.6ms | Allocations: 11115)
+
+
+Started DELETE "/session/" for ::1 at 2021-04-16 16:39:26 -0400
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Redirected to http://localhost:3000/login
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 284)
+
+
+Started GET "/login" for ::1 at 2021-04-16 16:39:26 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/login"):
+  
+Started GET "/" for ::1 at 2021-04-16 16:39:50 -0400
+  [1m[35m (3.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/index.html.erb within layouts/application (Duration: 20.5ms | Allocations: 2824)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 58.2ms | Allocations: 10672)
+Completed 200 OK in 81ms (Views: 65.8ms | ActiveRecord: 0.0ms | Allocations: 13922)
+
+
+Started GET "/packs/js/index-07a4bae79729ab5b6cf1.js" for ::1 at 2021-04-16 16:39:50 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/index-07a4bae79729ab5b6cf1.js"):
+  
+Started POST "/session" for ::1 at 2021-04-16 16:39:55 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "login"=>{"email"=>"max@gmail.com", "password"=>"[FILTERED]"}, "submit"=>"Submit"}
+  [1m[36mUser Load (6.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "max@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:3:in `create'
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 275ms (ActiveRecord: 15.9ms | Allocations: 8213)
+
+
+Started GET "/dashboard" for ::1 at 2021-04-16 16:39:55 -0400
+Processing by OpportunitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/index.html.erb within layouts/application
+  [1m[36mOpportunity Load (1.9ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."user_id" = $1 ORDER BY created_at DESC[0m  [["user_id", 5]]
+  ↳ app/views/opportunities/index.html.erb:11
+  Rendered opportunities/index.html.erb within layouts/application (Duration: 14.2ms | Allocations: 4591)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.7ms | Allocations: 8465)
+Completed 200 OK in 36ms (Views: 21.6ms | ActiveRecord: 6.6ms | Allocations: 11118)
+
+
+Started DELETE "/session" for ::1 at 2021-04-16 16:39:58 -0400
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Redirected to http://localhost:3000/login
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 283)
+
+
+Started GET "/login" for ::1 at 2021-04-16 16:39:58 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/login"):
+  
+Started GET "/" for ::1 at 2021-04-16 16:43:19 -0400
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/index.html.erb within layouts/application (Duration: 9.6ms | Allocations: 2824)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 29.9ms | Allocations: 10672)
+Completed 200 OK in 46ms (Views: 34.2ms | ActiveRecord: 0.0ms | Allocations: 13922)
+
+
+Started GET "/packs/js/index-07a4bae79729ab5b6cf1.js" for ::1 at 2021-04-16 16:43:19 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/index-07a4bae79729ab5b6cf1.js"):
+  
+Started POST "/session" for ::1 at 2021-04-16 16:43:24 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "login"=>{"email"=>"max@gmail.com", "password"=>"[FILTERED]"}, "submit"=>"Submit"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "max@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:3:in `create'
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 265ms (ActiveRecord: 9.3ms | Allocations: 8213)
+
+
+Started GET "/dashboard" for ::1 at 2021-04-16 16:43:25 -0400
+Processing by OpportunitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/index.html.erb within layouts/application
+  [1m[36mOpportunity Load (1.5ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."user_id" = $1 ORDER BY created_at DESC[0m  [["user_id", 5]]
+  ↳ app/views/opportunities/index.html.erb:11
+  Rendered opportunities/index.html.erb within layouts/application (Duration: 11.9ms | Allocations: 4591)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.7ms | Allocations: 8465)
+Completed 200 OK in 27ms (Views: 16.3ms | ActiveRecord: 5.9ms | Allocations: 11118)
+
+
+Started DELETE "/session" for ::1 at 2021-04-16 16:43:28 -0400
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 281)
+
+
+Started GET "/" for ::1 at 2021-04-16 16:43:28 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/index.html.erb within layouts/application (Duration: 6.5ms | Allocations: 2234)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.8ms | Allocations: 5917)
+Completed 200 OK in 21ms (Views: 20.5ms | ActiveRecord: 0.0ms | Allocations: 6361)
+
+
+Started GET "/packs/js/index-07a4bae79729ab5b6cf1.js" for ::1 at 2021-04-16 16:43:28 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/index-07a4bae79729ab5b6cf1.js"):
+  
+Started POST "/session" for ::1 at 2021-04-16 16:43:36 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "login"=>{"email"=>"max@gmail.com", "password"=>"[FILTERED]"}, "submit"=>"Submit"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "max@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:3:in `create'
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 246ms (ActiveRecord: 1.3ms | Allocations: 1083)
+
+
+Started GET "/dashboard" for ::1 at 2021-04-16 16:43:36 -0400
+Processing by OpportunitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/index.html.erb within layouts/application
+  [1m[36mOpportunity Load (0.9ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."user_id" = $1 ORDER BY created_at DESC[0m  [["user_id", 5]]
+  ↳ app/views/opportunities/index.html.erb:11
+  Rendered opportunities/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 920)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 4737)
+Completed 200 OK in 13ms (Views: 10.7ms | ActiveRecord: 0.9ms | Allocations: 5365)
+
+

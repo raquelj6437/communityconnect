@@ -12,7 +12,7 @@ class SessionsController < ApplicationController
 #destroy used to end session -- logout feature
     def destroy
         session.clear
-        redirect_to '/login'
+        redirect_to '/'
     end
 
     private
