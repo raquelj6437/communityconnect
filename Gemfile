@@ -13,6 +13,10 @@ gem 'sass-rails', '>= 6'
 gem 'react_on_rails', '~> 11.2', '>= 11.2.2'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 gem 'webpacker', '~> 5.0'
+
+#bootstrap and jquery
+gem 'jquery-rails'
+gem 'bootstrap-sass'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
