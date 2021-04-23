@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   post '/session' => 'sessions#create'
   post '/users' => 'users#create'
   get 'dashboard' => 'opportunities#index'
+  delete '/session', to: 'sessions#destroy'
 end
