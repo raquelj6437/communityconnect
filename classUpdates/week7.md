@@ -1,4 +1,4 @@
-### Build Sprint 6
+### Build Sprint 7
 In this sprint we spent the time learning React and trying to implement it to our app. We have been struggling because we realized it is difficult adding React to an existing ruby on rails app.
 
 ![screenshot](updateImgs/meeting.png)
