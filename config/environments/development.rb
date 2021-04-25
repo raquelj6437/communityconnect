@@ -92,7 +92,7 @@ Rails.application.configure do
   #   authentification: "plain",
   #   enable_starttls_auto: true,
   #   user_name: "joegirl522@gmail.com",
-  #   password: "joegirl52"
+  #   password: "password"
   #   # user_name: ENV["GMAIL_USERNAME"],
   #   # password: ENV["GMAIL_PASSWORD"]
   # }
