@@ -10714,3 +10714,598 @@ Processing by UsersController#index as HTML
 Completed 200 OK in 30ms (Views: 28.6ms | ActiveRecord: 0.0ms | Allocations: 7436)
 
 
+Started GET "/" for ::1 at 2021-04-25 11:03:16 -0400
+  [1m[35m (18.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+
+ActiveRecord::PendingMigrationError - Migrations are pending. To resolve this issue, run:
+        bin/rails db:migrate RAILS_ENV=development
+You have 1 pending migration:
+20210405013905_create_articles.rb:
+
+Started POST "/__better_errors/dc82ff9dfc8c53e4/variables" for ::1 at 2021-04-25 11:03:17 -0400
+  [1m[35m (7.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4346549080646495835)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateArticles (20210405013905)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (233.5ms)[0m  [1m[35mCREATE TABLE "articles" ("id" bigserial primary key, "title" character varying, "body" text, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (2.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210405013905"]]
+  [1m[36mTRANSACTION (2.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (27.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(4346549080646495835)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2021-04-25 11:03:40 -0400
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 460)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+/Users/rj/Desktop/code_stuff/communityconnect/node_modules/webpack-cli/bin/cli.js:281
+				throw err;
+				^
+
+Error: Cannot find module '/Users/rj/Desktop/code_stuff/communityconnect/node_modules/domain-browser/index.js'. Please verify that the package.json has a valid "main" entry
+    at tryPackage (internal/modules/cjs/loader.js:303:19)
+    at Function.Module._findPath (internal/modules/cjs/loader.js:516:18)
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:867:27)
+    at Function.resolve (/Users/rj/Desktop/code_stuff/communityconnect/node_modules/v8-compile-cache/v8-compile-cache.js:164:23)
+    at Object.<anonymous> (/Users/rj/Desktop/code_stuff/communityconnect/node_modules/node-libs-browser/index.js:10:31)
+    at Module._compile (/Users/rj/Desktop/code_stuff/communityconnect/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (/Users/rj/Desktop/code_stuff/communityconnect/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at Object.<anonymous> (/Users/rj/Desktop/code_stuff/communityconnect/node_modules/webpack/lib/node/NodeSourcePlugin.js:8:25)
+    at Module._compile (/Users/rj/Desktop/code_stuff/communityconnect/node_modules/v8-compile-cache/v8-compile-cache.js:192:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (/Users/rj/Desktop/code_stuff/communityconnect/node_modules/v8-compile-cache/v8-compile-cache.js:159:20)
+    at WebpackOptionsApply.process (/Users/rj/Desktop/code_stuff/communityconnect/node_modules/webpack/lib/WebpackOptionsApply.js:77:25)
+    at webpack (/Users/rj/Desktop/code_stuff/communityconnect/node_modules/webpack/lib/webpack.js:57:48)
+    at processOptions (/Users/rj/Desktop/code_stuff/communityconnect/node_modules/webpack-cli/bin/cli.js:272:16)
+    at /Users/rj/Desktop/code_stuff/communityconnect/node_modules/webpack-cli/bin/cli.js:364:3
+    at Object.parse (/Users/rj/Desktop/code_stuff/communityconnect/node_modules/yargs/yargs.js:576:18)
+    at /Users/rj/Desktop/code_stuff/communityconnect/node_modules/webpack-cli/bin/cli.js:49:8
+    at Object.<anonymous> (/Users/rj/Desktop/code_stuff/communityconnect/node_modules/webpack-cli/bin/cli.js:366:3)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19) {
+  code: 'MODULE_NOT_FOUND',
+  path: '/Users/rj/Desktop/code_stuff/communityconnect/node_modules/domain-browser/package.json',
+  requestPath: 'domain-browser'
+}
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7284.1ms | Allocations: 87151)
+Completed 200 OK in 7306ms (Views: 7290.1ms | ActiveRecord: 0.0ms | Allocations: 90401)
+
+
+Started GET "/packs/js/application-309e48eb78c6aa6a1fed.js" for ::1 at 2021-04-25 11:03:48 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-309e48eb78c6aa6a1fed.js"):
+  
+Started GET "/packs/js/frontend-eeba916426b5d2bb6eb5.js" for ::1 at 2021-04-25 11:03:48 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/frontend-eeba916426b5d2bb6eb5.js"):
+  
+  Rendering layout layouts/mailer.html.erb
+  Rendering opportunity_mailer/new_opportunity.html.erb within layouts/mailer
+  Rendered opportunity_mailer/new_opportunity.html.erb within layouts/mailer (Duration: 1.2ms | Allocations: 275)
+  Rendered layout layouts/mailer.html.erb (Duration: 2.5ms | Allocations: 492)
+  Rendering layout layouts/mailer.text.erb
+  Rendering opportunity_mailer/new_opportunity.text.erb within layouts/mailer
+  Rendered opportunity_mailer/new_opportunity.text.erb within layouts/mailer (Duration: 0.4ms | Allocations: 84)
+  Rendered layout layouts/mailer.text.erb (Duration: 1.3ms | Allocations: 240)
+OpportunityMailer#new_opportunity: processed outbound mail in 35.4ms
+  Rendering layout layouts/mailer.html.erb
+  Rendering opportunity_mailer/new_opportunity.html.erb within layouts/mailer
+  Rendered opportunity_mailer/new_opportunity.html.erb within layouts/mailer (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/mailer.html.erb (Duration: 0.4ms | Allocations: 94)
+  Rendering layout layouts/mailer.text.erb
+  Rendering opportunity_mailer/new_opportunity.text.erb within layouts/mailer
+  Rendered opportunity_mailer/new_opportunity.text.erb within layouts/mailer (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/mailer.text.erb (Duration: 0.7ms | Allocations: 94)
+OpportunityMailer#new_opportunity: processed outbound mail in 6.1ms
+Delivered mail 6085870d91a52_12162cd0-2d9@Raquels-MacBook-Pro.local.mail (579.4ms)
+Date: Sun, 25 Apr 2021 11:13:17 -0400
+From: from@example.com
+To: joegirl522@gmail.com
+Message-ID: <6085870d91a52_12162cd0-2d9@Raquels-MacBook-Pro.local.mail>
+Subject: Confirm Hours
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_608586d481c3f_12162cd0-3cd";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_608586d481c3f_12162cd0-3cd
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+To verify community service hours click here
+
+
+----==_mimepart_608586d481c3f_12162cd0-3cd
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>Opportunity#new_opportunity</h1>
+
+<p>
+  To verify community service hours click here:
+</p>
+
+  </body>
+</html>
+
+----==_mimepart_608586d481c3f_12162cd0-3cd--
+
+Delivered mail 6085870d91a52_12162cd0-2d9@Raquels-MacBook-Pro.local.mail (484.8ms)
+Date: Sun, 25 Apr 2021 11:13:17 -0400
+From: from@example.com
+To: joegirl522@gmail.com
+Message-ID: <6085870d91a52_12162cd0-2d9@Raquels-MacBook-Pro.local.mail>
+Subject: Confirm Hours
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_608586d481c3f_12162cd0-3cd";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_608586d481c3f_12162cd0-3cd
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+To verify community service hours click here
+
+
+----==_mimepart_608586d481c3f_12162cd0-3cd
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>Opportunity#new_opportunity</h1>
+
+<p>
+  To verify community service hours click here:
+</p>
+
+  </body>
+</html>
+
+----==_mimepart_608586d481c3f_12162cd0-3cd--
+
+Delivered mail 6085870d91a52_12162cd0-2d9@Raquels-MacBook-Pro.local.mail (320.2ms)
+Date: Sun, 25 Apr 2021 11:13:17 -0400
+From: from@example.com
+To: joegirl522@gmail.com
+Message-ID: <6085870d91a52_12162cd0-2d9@Raquels-MacBook-Pro.local.mail>
+Subject: Confirm Hours
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_608586d481c3f_12162cd0-3cd";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_608586d481c3f_12162cd0-3cd
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+To verify community service hours click here
+
+
+----==_mimepart_608586d481c3f_12162cd0-3cd
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>Opportunity#new_opportunity</h1>
+
+<p>
+  To verify community service hours click here:
+</p>
+
+  </body>
+</html>
+
+----==_mimepart_608586d481c3f_12162cd0-3cd--
+
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+In order to autoload safely at boot time, please wrap your code in a reloader
+callback this way:
+
+    Rails.application.reloader.to_prepare do
+      # Autoload classes and modules needed at boot time here.
+    end
+
+That block runs when the application boots, and every time there is a reload.
+For historical reasons, it may run twice, so it has to be idempotent.
+
+Check the "Autoloading and Reloading Constants" guide to learn more about how
+Rails autoloads and reloads.
+ (called from <main> at /Users/rj/Desktop/code_stuff/communityconnect/config/environment.rb:5)
+Delivered mail 6085870d91a52_12162cd0-2d9@Raquels-MacBook-Pro.local.mail (445.8ms)
+Date: Sun, 25 Apr 2021 11:13:17 -0400
+From: from@example.com
+To: joegirl522@gmail.com
+Message-ID: <6085870d91a52_12162cd0-2d9@Raquels-MacBook-Pro.local.mail>
+Subject: Confirm Hours
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_608586d481c3f_12162cd0-3cd";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_608586d481c3f_12162cd0-3cd
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+To verify community service hours click here
+
+
+----==_mimepart_608586d481c3f_12162cd0-3cd
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>Opportunity#new_opportunity</h1>
+
+<p>
+  To verify community service hours click here:
+</p>
+
+  </body>
+</html>
+
+----==_mimepart_608586d481c3f_12162cd0-3cd--
+
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+In order to autoload safely at boot time, please wrap your code in a reloader
+callback this way:
+
+    Rails.application.reloader.to_prepare do
+      # Autoload classes and modules needed at boot time here.
+    end
+
+That block runs when the application boots, and every time there is a reload.
+For historical reasons, it may run twice, so it has to be idempotent.
+
+Check the "Autoloading and Reloading Constants" guide to learn more about how
+Rails autoloads and reloads.
+ (called from <main> at /Users/rj/Desktop/code_stuff/communityconnect/config/environment.rb:5)
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+In order to autoload safely at boot time, please wrap your code in a reloader
+callback this way:
+
+    Rails.application.reloader.to_prepare do
+      # Autoload classes and modules needed at boot time here.
+    end
+
+That block runs when the application boots, and every time there is a reload.
+For historical reasons, it may run twice, so it has to be idempotent.
+
+Check the "Autoloading and Reloading Constants" guide to learn more about how
+Rails autoloads and reloads.
+ (called from <main> at /Users/rj/Desktop/code_stuff/communityconnect/config/environment.rb:5)
+Delivered mail 6085870d91a52_12162cd0-2d9@Raquels-MacBook-Pro.local.mail (354.5ms)
+Date: Sun, 25 Apr 2021 11:13:17 -0400
+From: from@example.com
+To: joegirl522@gmail.com
+Message-ID: <6085870d91a52_12162cd0-2d9@Raquels-MacBook-Pro.local.mail>
+Subject: Confirm Hours
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_608586d481c3f_12162cd0-3cd";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_608586d481c3f_12162cd0-3cd
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+To verify community service hours click here
+
+
+----==_mimepart_608586d481c3f_12162cd0-3cd
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>Opportunity#new_opportunity</h1>
+
+<p>
+  To verify community service hours click here:
+</p>
+
+  </body>
+</html>
+
+----==_mimepart_608586d481c3f_12162cd0-3cd--
+
+Delivered mail 6085870d91a52_12162cd0-2d9@Raquels-MacBook-Pro.local.mail (329.8ms)
+Date: Sun, 25 Apr 2021 11:13:17 -0400
+From: from@example.com
+To: joegirl522@gmail.com
+Message-ID: <6085870d91a52_12162cd0-2d9@Raquels-MacBook-Pro.local.mail>
+Subject: Confirm Hours
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_608586d481c3f_12162cd0-3cd";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_608586d481c3f_12162cd0-3cd
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+To verify community service hours click here
+
+
+----==_mimepart_608586d481c3f_12162cd0-3cd
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>Opportunity#new_opportunity</h1>
+
+<p>
+  To verify community service hours click here:
+</p>
+
+  </body>
+</html>
+
+----==_mimepart_608586d481c3f_12162cd0-3cd--
+
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+In order to autoload safely at boot time, please wrap your code in a reloader
+callback this way:
+
+    Rails.application.reloader.to_prepare do
+      # Autoload classes and modules needed at boot time here.
+    end
+
+That block runs when the application boots, and every time there is a reload.
+For historical reasons, it may run twice, so it has to be idempotent.
+
+Check the "Autoloading and Reloading Constants" guide to learn more about how
+Rails autoloads and reloads.
+ (called from <main> at /Users/rj/Desktop/code_stuff/communityconnect/config/environment.rb:5)
+Delivered mail 6085870d91a52_12162cd0-2d9@Raquels-MacBook-Pro.local.mail (332.7ms)
+Date: Sun, 25 Apr 2021 11:13:17 -0400
+From: from@example.com
+To: joegirl522@gmail.com
+Message-ID: <6085870d91a52_12162cd0-2d9@Raquels-MacBook-Pro.local.mail>
+Subject: Confirm Hours
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_608586d481c3f_12162cd0-3cd";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_608586d481c3f_12162cd0-3cd
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+To verify community service hours click here
+
+
+----==_mimepart_608586d481c3f_12162cd0-3cd
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>Opportunity#new_opportunity</h1>
+
+<p>
+  To verify community service hours click here:
+</p>
+
+  </body>
+</html>
+
+----==_mimepart_608586d481c3f_12162cd0-3cd--
+
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+In order to autoload safely at boot time, please wrap your code in a reloader
+callback this way:
+
+    Rails.application.reloader.to_prepare do
+      # Autoload classes and modules needed at boot time here.
+    end
+
+That block runs when the application boots, and every time there is a reload.
+For historical reasons, it may run twice, so it has to be idempotent.
+
+Check the "Autoloading and Reloading Constants" guide to learn more about how
+Rails autoloads and reloads.
+ (called from <main> at /Users/rj/Desktop/code_stuff/communityconnect/config/environment.rb:5)
+Delivered mail 6085870d91a52_12162cd0-2d9@Raquels-MacBook-Pro.local.mail (449.5ms)
+Date: Sun, 25 Apr 2021 11:13:17 -0400
+From: from@example.com
+To: joegirl522@gmail.com
+Message-ID: <6085870d91a52_12162cd0-2d9@Raquels-MacBook-Pro.local.mail>
+Subject: Confirm Hours
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_608586d481c3f_12162cd0-3cd";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_608586d481c3f_12162cd0-3cd
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+To verify community service hours click here
+
+
+----==_mimepart_608586d481c3f_12162cd0-3cd
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>Opportunity#new_opportunity</h1>
+
+<p>
+  To verify community service hours click here:
+</p>
+
+  </body>
+</html>
+
+----==_mimepart_608586d481c3f_12162cd0-3cd--
+
