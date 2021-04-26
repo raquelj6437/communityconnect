@@ -52,6 +52,7 @@ group :development do
   gem 'spring'
   gem 'guard', '~> 2.16', '>= 2.16.2'
   gem 'better_errors','~> 2.4'
+  gem 'figaro'
 end
 
 group :test do

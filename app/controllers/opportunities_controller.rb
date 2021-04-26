@@ -11,9 +11,7 @@ class OpportunitiesController < ApplicationController
         @opportunity = Opportunity.new(opportunity_params)
         @opportunity.user_id = session[:user_id]
         @opportunity.save
-
-        @email = Opportunity.find(params[:signature])
-
+        @email = @opportunity.signature
         OpportunityMailer.new_opportunity(@email).deliver_now
         redirect_to '/dashboard'
     end
