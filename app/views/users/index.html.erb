@@ -15,6 +15,21 @@
 
     <div class="container" id="container">
 	<div class="form-container sign-in-container">
+    <form action="/session" method="POST">
+    <h1>Sign In</h1>
+    <div class="social-container">
+        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+	    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+	    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+	</div>
+        <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>">
+        <input type="email" name="login[email]" placeholder="Email">
+        <input type="password" name="login[password]" placeholder="Password">
+        <button name="button" type="submit">Sign In</button>
+    </form>
+    </div>
+
+    <div class="form-container sign-up-container">
     <form action="/users" method="POST">
     <h1>Sign Up</h1>
     <div class="social-container">
@@ -28,21 +43,6 @@
         <input type="password" name="user[password]" placeholder="Password">
         <input type="password" name="user[password_confirmation]" placeholder="Password Confirmation">
         <button name="button" type="submit">Sign Up</button>
-    </form>
-    </div>
-
-    <div class="form-container sign-up-container">
-    <form action="/session" method="POST">
-    <h1>Sign In</h1>
-    <div class="social-container">
-        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-	    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-	    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-	</div>
-        <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>">
-        <input type="email" name="login[email]" placeholder="Email">
-        <input type="password" name="login[password]" placeholder="Password">
-        <button name="button" type="submit">Sign In</button>
     </form>
     </div>
 

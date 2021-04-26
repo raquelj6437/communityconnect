@@ -11840,3 +11840,371 @@ Started GET "/packs/js/application-309e48eb78c6aa6a1fed.js" for ::1 at 2021-04-2
   
 ActionController::RoutingError (No route matches [GET] "/packs/js/application-309e48eb78c6aa6a1fed.js"):
   
+Started GET "/" for ::1 at 2021-04-25 20:32:06 -0400
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 471)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 76.1ms | Allocations: 10332)
+Completed 200 OK in 100ms (Views: 83.9ms | ActiveRecord: 0.0ms | Allocations: 13591)
+
+
+Started GET "/packs/js/application-309e48eb78c6aa6a1fed.js" for ::1 at 2021-04-25 20:32:06 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-309e48eb78c6aa6a1fed.js"):
+  
+Started GET "/" for ::1 at 2021-04-25 20:36:31 -0400
+  [1m[35m (3.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 471)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: aa22147896b0b922dada
+Version: webpack 4.46.0
+Time: 11927ms
+Built at: 04/25/2021 8:36:47 PM
+                                            Asset      Size              Chunks                         Chunk Names
+           js/application-354ff6b1a2795240c02c.js   303 KiB         application  [emitted] [immutable]  application
+       js/application-354ff6b1a2795240c02c.js.map   319 KiB         application  [emitted] [dev]        application
+             js/bootstrap-cb372985be16db279520.js   181 KiB           bootstrap  [emitted] [immutable]  bootstrap
+         js/bootstrap-cb372985be16db279520.js.map   184 KiB           bootstrap  [emitted] [dev]        bootstrap
+              js/frontend-eeba916426b5d2bb6eb5.js  4.26 KiB            frontend  [emitted] [immutable]  frontend
+          js/frontend-eeba916426b5d2bb6eb5.js.map  3.98 KiB            frontend  [emitted] [dev]        frontend
+    js/hello-world-bundle-73f8333e4d2aa77e2c08.js  1.25 MiB  hello-world-bundle  [emitted] [immutable]  hello-world-bundle
+js/hello-world-bundle-73f8333e4d2aa77e2c08.js.map  1.44 MiB  hello-world-bundle  [emitted] [dev]        hello-world-bundle
+                 js/index-97426958ad4ce1118a35.js  4.08 KiB               index  [emitted] [immutable]  index
+             js/index-97426958ad4ce1118a35.js.map   3.8 KiB               index  [emitted] [dev]        index
+                                    manifest.json  1.65 KiB                      [emitted]              
+Entrypoint application = js/application-354ff6b1a2795240c02c.js js/application-354ff6b1a2795240c02c.js.map
+Entrypoint bootstrap = js/bootstrap-cb372985be16db279520.js js/bootstrap-cb372985be16db279520.js.map
+Entrypoint frontend = js/frontend-eeba916426b5d2bb6eb5.js js/frontend-eeba916426b5d2bb6eb5.js.map
+Entrypoint hello-world-bundle = js/hello-world-bundle-73f8333e4d2aa77e2c08.js js/hello-world-bundle-73f8333e4d2aa77e2c08.js.map
+Entrypoint index = js/index-97426958ad4ce1118a35.js js/index-97426958ad4ce1118a35.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 518 bytes {application} [built]
+[./app/javascript/packs/bootstrap.js] 177 KiB {bootstrap} {application} [built]
+[./app/javascript/packs/frontend.js] 390 bytes {frontend} [built]
+[./app/javascript/packs/hello-world-bundle.js] 235 bytes {hello-world-bundle} [built]
+[./app/javascript/packs/index.js] 226 bytes {index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {hello-world-bundle} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 28 hidden modules
+
+ERROR in ./app/javascript/packs/hello-world-bundle.js
+Module not found: Error: Can't resolve '../bundles/HelloWorld/components/HelloWorld' in '/Users/adrianaalvarado/communityconnect/app/javascript/packs'
+ @ ./app/javascript/packs/hello-world-bundle.js 2:0-69 5:14-24
+
+ERROR in ./app/javascript/packs/bootstrap.js
+Module not found: Error: Can't resolve '@popperjs/core' in '/Users/adrianaalvarado/communityconnect/app/javascript/packs'
+ @ ./app/javascript/packs/bootstrap.js 57:90-115
+
+  Rendered layout layouts/application.html.erb (Duration: 15775.9ms | Allocations: 11529)
+Completed 200 OK in 15806ms (Views: 15784.5ms | ActiveRecord: 0.0ms | Allocations: 14788)
+
+
+Started GET "/" for ::1 at 2021-04-25 20:38:25 -0400
+  [1m[35m (25.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 471)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 5f8513770d1851f01363
+Version: webpack 4.46.0
+Time: 2845ms
+Built at: 04/25/2021 8:38:32 PM
+                                     Asset      Size       Chunks                         Chunk Names
+    js/application-354ff6b1a2795240c02c.js   303 KiB  application  [emitted] [immutable]  application
+js/application-354ff6b1a2795240c02c.js.map   319 KiB  application  [emitted] [dev]        application
+      js/bootstrap-cb372985be16db279520.js   181 KiB    bootstrap  [emitted] [immutable]  bootstrap
+  js/bootstrap-cb372985be16db279520.js.map   184 KiB    bootstrap  [emitted] [dev]        bootstrap
+       js/frontend-eeba916426b5d2bb6eb5.js  4.26 KiB     frontend  [emitted] [immutable]  frontend
+   js/frontend-eeba916426b5d2bb6eb5.js.map  3.98 KiB     frontend  [emitted] [dev]        frontend
+          js/index-97426958ad4ce1118a35.js  4.08 KiB        index  [emitted] [immutable]  index
+      js/index-97426958ad4ce1118a35.js.map   3.8 KiB        index  [emitted] [dev]        index
+                             manifest.json  1.27 KiB               [emitted]              
+Entrypoint application = js/application-354ff6b1a2795240c02c.js js/application-354ff6b1a2795240c02c.js.map
+Entrypoint bootstrap = js/bootstrap-cb372985be16db279520.js js/bootstrap-cb372985be16db279520.js.map
+Entrypoint frontend = js/frontend-eeba916426b5d2bb6eb5.js js/frontend-eeba916426b5d2bb6eb5.js.map
+Entrypoint index = js/index-97426958ad4ce1118a35.js js/index-97426958ad4ce1118a35.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 518 bytes {application} [built]
+[./app/javascript/packs/bootstrap.js] 177 KiB {bootstrap} {application} [built]
+[./app/javascript/packs/frontend.js] 390 bytes {frontend} [built]
+[./app/javascript/packs/index.js] 226 bytes {index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+ERROR in ./app/javascript/packs/bootstrap.js
+Module not found: Error: Can't resolve '@popperjs/core' in '/Users/adrianaalvarado/communityconnect/app/javascript/packs'
+ @ ./app/javascript/packs/bootstrap.js 57:90-115
+
+  Rendered layout layouts/application.html.erb (Duration: 7638.9ms | Allocations: 11473)
+Completed 200 OK in 7663ms (Views: 7645.3ms | ActiveRecord: 0.0ms | Allocations: 14732)
+
+
+Started GET "/" for ::1 at 2021-04-25 20:43:12 -0400
+  [1m[35m (35.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 471)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 87.2ms | Allocations: 10296)
+Completed 200 OK in 129ms (Views: 96.5ms | ActiveRecord: 0.0ms | Allocations: 13555)
+
+
+Started GET "/" for ::1 at 2021-04-25 20:43:19 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 27.1ms | Allocations: 4996)
+Completed 200 OK in 35ms (Views: 33.8ms | ActiveRecord: 0.0ms | Allocations: 5454)
+
+
+Started GET "/" for ::1 at 2021-04-25 20:58:14 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 174.5ms | Allocations: 5002)
+Completed 200 OK in 188ms (Views: 178.6ms | Allocations: 5454)
+
+
+Started GET "/" for ::1 at 2021-04-25 20:58:25 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 26.0ms | Allocations: 5008)
+Completed 200 OK in 28ms (Views: 26.9ms | Allocations: 5460)
+
+
+Started GET "/" for ::1 at 2021-04-25 21:02:14 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 256)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 31.6ms | Allocations: 5419)
+Completed 200 OK in 43ms (Views: 39.9ms | Allocations: 6643)
+
+
+Started GET "/" for ::1 at 2021-04-25 21:07:58 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 39.4ms | Allocations: 4994)
+Completed 200 OK in 51ms (Views: 42.5ms | Allocations: 5442)
+
+
+Started GET "/" for ::1 at 2021-04-25 21:14:58 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 85)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 09bf85bcae5158ac09a3
+Version: webpack 4.46.0
+Time: 2062ms
+Built at: 04/25/2021 9:15:05 PM
+                                     Asset      Size       Chunks                         Chunk Names
+    js/application-c5bd0d85f3037592dc54.js   126 KiB  application  [emitted] [immutable]  application
+js/application-c5bd0d85f3037592dc54.js.map   139 KiB  application  [emitted] [dev]        application
+      js/bootstrap-cb372985be16db279520.js   181 KiB    bootstrap  [emitted] [immutable]  bootstrap
+  js/bootstrap-cb372985be16db279520.js.map   184 KiB    bootstrap  [emitted] [dev]        bootstrap
+       js/frontend-8709e76fc9e1909bc275.js  4.31 KiB     frontend  [emitted] [immutable]  frontend
+   js/frontend-8709e76fc9e1909bc275.js.map  4.02 KiB     frontend  [emitted] [dev]        frontend
+          js/index-97426958ad4ce1118a35.js  4.08 KiB        index  [emitted] [immutable]  index
+      js/index-97426958ad4ce1118a35.js.map   3.8 KiB        index  [emitted] [dev]        index
+                             manifest.json  1.27 KiB               [emitted]              
+Entrypoint application = js/application-c5bd0d85f3037592dc54.js js/application-c5bd0d85f3037592dc54.js.map
+Entrypoint bootstrap = js/bootstrap-cb372985be16db279520.js js/bootstrap-cb372985be16db279520.js.map
+Entrypoint frontend = js/frontend-8709e76fc9e1909bc275.js js/frontend-8709e76fc9e1909bc275.js.map
+Entrypoint index = js/index-97426958ad4ce1118a35.js js/index-97426958ad4ce1118a35.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 520 bytes {application} [built]
+[./app/javascript/packs/bootstrap.js] 177 KiB {bootstrap} [built]
+[./app/javascript/packs/frontend.js] 441 bytes {frontend} {application} [built]
+[./app/javascript/packs/index.js] 226 bytes {index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+ERROR in ./app/javascript/packs/bootstrap.js
+Module not found: Error: Can't resolve '@popperjs/core' in '/Users/adrianaalvarado/communityconnect/app/javascript/packs'
+ @ ./app/javascript/packs/bootstrap.js 57:90-115
+
+  Rendered layout layouts/application.html.erb (Duration: 7281.1ms | Allocations: 6173)
+Completed 200 OK in 7294ms (Views: 7284.6ms | Allocations: 6625)
+
+
+Started GET "/" for ::1 at 2021-04-25 21:16:56 -0400
+  [1m[35m (28.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 471)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/adrianaalvarado/communityconnect/public/packs
+[Webpacker] Hash: b315612aa014f3ecee22
+Version: webpack 4.46.0
+Time: 2942ms
+Built at: 04/25/2021 9:17:02 PM
+                                     Asset      Size       Chunks                         Chunk Names
+    js/application-c5bd0d85f3037592dc54.js   126 KiB  application  [emitted] [immutable]  application
+js/application-c5bd0d85f3037592dc54.js.map   139 KiB  application  [emitted] [dev]        application
+      js/bootstrap-ec8b3525e4c3b1ee7f83.js   336 KiB    bootstrap  [emitted] [immutable]  bootstrap
+  js/bootstrap-ec8b3525e4c3b1ee7f83.js.map   276 KiB    bootstrap  [emitted] [dev]        bootstrap
+       js/frontend-8709e76fc9e1909bc275.js  4.31 KiB     frontend  [emitted] [immutable]  frontend
+   js/frontend-8709e76fc9e1909bc275.js.map  4.02 KiB     frontend  [emitted] [dev]        frontend
+          js/index-97426958ad4ce1118a35.js  4.08 KiB        index  [emitted] [immutable]  index
+      js/index-97426958ad4ce1118a35.js.map   3.8 KiB        index  [emitted] [dev]        index
+                             manifest.json  1.27 KiB               [emitted]              
+Entrypoint application = js/application-c5bd0d85f3037592dc54.js js/application-c5bd0d85f3037592dc54.js.map
+Entrypoint bootstrap = js/bootstrap-ec8b3525e4c3b1ee7f83.js js/bootstrap-ec8b3525e4c3b1ee7f83.js.map
+Entrypoint frontend = js/frontend-8709e76fc9e1909bc275.js js/frontend-8709e76fc9e1909bc275.js.map
+Entrypoint index = js/index-97426958ad4ce1118a35.js js/index-97426958ad4ce1118a35.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 520 bytes {application} [built]
+[./app/javascript/packs/bootstrap.js] 177 KiB {bootstrap} [built]
+[./app/javascript/packs/frontend.js] 441 bytes {frontend} {application} [built]
+[./app/javascript/packs/index.js] 226 bytes {index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 61 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 5759.6ms | Allocations: 11531)
+Completed 200 OK in 5780ms (Views: 5765.8ms | ActiveRecord: 0.0ms | Allocations: 14790)
+
+
+Started GET "/" for ::1 at 2021-04-25 21:18:50 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 36.4ms | Allocations: 4996)
+Completed 200 OK in 42ms (Views: 38.5ms | ActiveRecord: 0.0ms | Allocations: 5456)
+
+
+Started GET "/" for ::1 at 2021-04-25 21:20:51 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 1923.5ms | Allocations: 51674)
+Completed 200 OK in 1925ms (Views: 1924.3ms | ActiveRecord: 0.0ms | Allocations: 52128)
+
+
+Started GET "/" for ::1 at 2021-04-25 21:21:40 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 1847.6ms | Allocations: 49998)
+Completed 200 OK in 1849ms (Views: 1848.4ms | ActiveRecord: 0.0ms | Allocations: 50449)
+
+
+Started GET "/" for ::1 at 2021-04-25 21:22:45 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 1788.4ms | Allocations: 50859)
+Completed 200 OK in 1791ms (Views: 1789.6ms | ActiveRecord: 0.0ms | Allocations: 51314)
+
+
+Started GET "/" for ::1 at 2021-04-25 21:24:08 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 1745.1ms | Allocations: 50859)
+Completed 200 OK in 1747ms (Views: 1745.8ms | Allocations: 51307)
+
+
+Started POST "/session" for ::1 at 2021-04-25 21:24:12 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "login"=>{"email"=>"", "password"=>"[FILTERED]"}, "button"=>""}
+  [1m[36mUser Load (6.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:3:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 187ms (ActiveRecord: 94.4ms | Allocations: 7735)
+
+
+Started GET "/" for ::1 at 2021-04-25 21:24:12 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | Allocations: 4998)
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.0ms | Allocations: 5449)
+
+
+Started POST "/users" for ::1 at 2021-04-25 21:24:30 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"a", "email"=>"adr@me.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "button"=>""}
+  [1m[36mTRANSACTION (26.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mUser Create (13.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "a"], ["email", "adr@me.com"], ["created_at", "2021-04-26 01:24:30.612529"], ["updated_at", "2021-04-26 01:24:30.612529"], ["password_digest", "$2a$12$SHj3FvFWwli0jns9kQtqLe5lbVr5.JyDfwWUiIYSWuoFW/hgwvn5K"]]
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (4.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+Redirected to http://localhost:3000/opportunities
+Completed 302 Found in 350ms (ActiveRecord: 55.6ms | Allocations: 6876)
+
+
+Started GET "/opportunities" for ::1 at 2021-04-25 21:24:30 -0400
+Processing by OpportunitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/index.html.erb within layouts/application
+  [1m[36mOpportunity Load (37.4ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."user_id" = $1 ORDER BY created_at DESC[0m  [["user_id", 3]]
+  ↳ app/views/opportunities/index.html.erb:11
+  Rendered opportunities/index.html.erb within layouts/application (Duration: 41.2ms | Allocations: 1268)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 62.0ms | Allocations: 6251)
+Completed 200 OK in 81ms (Views: 28.8ms | ActiveRecord: 40.3ms | Allocations: 8913)
+
+
+Started GET "/opportunities" for ::1 at 2021-04-25 21:24:34 -0400
+Processing by OpportunitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/index.html.erb within layouts/application
+  [1m[36mOpportunity Load (2.3ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."user_id" = $1 ORDER BY created_at DESC[0m  [["user_id", 3]]
+  ↳ app/views/opportunities/index.html.erb:11
+  Rendered opportunities/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 906)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 24.0ms | Allocations: 5817)
+Completed 200 OK in 30ms (Views: 22.6ms | ActiveRecord: 2.3ms | Allocations: 6458)
+
+
+Started GET "/" for ::1 at 2021-04-25 21:24:36 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.2ms | Allocations: 5010)
+Completed 200 OK in 17ms (Views: 15.7ms | ActiveRecord: 0.0ms | Allocations: 5462)
+
+
