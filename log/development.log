@@ -11309,3 +11309,278 @@ Content-Transfer-Encoding: 7bit
 
 ----==_mimepart_608586d481c3f_12162cd0-3cd--
 
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+In order to autoload safely at boot time, please wrap your code in a reloader
+callback this way:
+
+    Rails.application.reloader.to_prepare do
+      # Autoload classes and modules needed at boot time here.
+    end
+
+That block runs when the application boots, and every time there is a reload.
+For historical reasons, it may run twice, so it has to be idempotent.
+
+Check the "Autoloading and Reloading Constants" guide to learn more about how
+Rails autoloads and reloads.
+ (called from <main> at /Users/adrianaalvarado/communityconnect/config/environment.rb:5)
+Started GET "/" for ::1 at 2021-04-25 15:57:25 -0400
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 583)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 2540.9ms | Allocations: 84788)
+Completed 200 OK in 2574ms (Views: 2551.2ms | ActiveRecord: 0.0ms | Allocations: 89084)
+
+
+Started GET "/packs/js/frontend-eeba916426b5d2bb6eb5.js" for ::1 at 2021-04-25 15:57:28 -0400
+Started GET "/packs/js/application-309e48eb78c6aa6a1fed.js" for ::1 at 2021-04-25 15:57:28 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/frontend-eeba916426b5d2bb6eb5.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-309e48eb78c6aa6a1fed.js"):
+  
+Started GET "/" for ::1 at 2021-04-25 15:59:44 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 255)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 33.4ms | Allocations: 7573)
+Completed 200 OK in 38ms (Views: 36.3ms | ActiveRecord: 0.0ms | Allocations: 8799)
+
+
+Started GET "/" for ::1 at 2021-04-25 16:00:14 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 44.1ms | Allocations: 7052)
+Completed 200 OK in 46ms (Views: 45.0ms | ActiveRecord: 0.0ms | Allocations: 7495)
+
+
+Started GET "/" for ::1 at 2021-04-25 16:00:19 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 40.2ms | Allocations: 7054)
+Completed 200 OK in 44ms (Views: 42.1ms | ActiveRecord: 0.0ms | Allocations: 7506)
+
+
+Started GET "/packs/js/application-309e48eb78c6aa6a1fed.js" for ::1 at 2021-04-25 16:00:20 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-309e48eb78c6aa6a1fed.js"):
+  
+Started GET "/packs/js/frontend-eeba916426b5d2bb6eb5.js" for ::1 at 2021-04-25 16:00:20 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/frontend-eeba916426b5d2bb6eb5.js"):
+  
+Started GET "/" for ::1 at 2021-04-25 16:00:38 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 250)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 41.6ms | Allocations: 5470)
+Completed 200 OK in 55ms (Views: 51.6ms | ActiveRecord: 0.0ms | Allocations: 6702)
+
+
+Started GET "/packs/js/application-309e48eb78c6aa6a1fed.js" for ::1 at 2021-04-25 16:00:38 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-309e48eb78c6aa6a1fed.js"):
+  
+Started GET "/" for ::1 at 2021-04-25 16:01:36 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 55.1ms | Allocations: 5049)
+Completed 200 OK in 67ms (Views: 59.2ms | ActiveRecord: 0.0ms | Allocations: 5493)
+
+
+Started GET "/" for ::1 at 2021-04-25 16:01:41 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 60.7ms | Allocations: 5030)
+Completed 200 OK in 65ms (Views: 64.0ms | ActiveRecord: 0.0ms | Allocations: 5480)
+
+
+Started GET "/packs/js/application-309e48eb78c6aa6a1fed.js" for ::1 at 2021-04-25 16:01:41 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-309e48eb78c6aa6a1fed.js"):
+  
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+In order to autoload safely at boot time, please wrap your code in a reloader
+callback this way:
+
+    Rails.application.reloader.to_prepare do
+      # Autoload classes and modules needed at boot time here.
+    end
+
+That block runs when the application boots, and every time there is a reload.
+For historical reasons, it may run twice, so it has to be idempotent.
+
+Check the "Autoloading and Reloading Constants" guide to learn more about how
+Rails autoloads and reloads.
+ (called from <main> at /Users/adrianaalvarado/communityconnect/config/environment.rb:5)
+Started GET "/" for ::1 at 2021-04-25 16:20:48 -0400
+  [1m[35m (4.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 473)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 124.4ms | Allocations: 10355)
+Completed 200 OK in 155ms (Views: 133.2ms | ActiveRecord: 0.0ms | Allocations: 13625)
+
+
+Started GET "/packs/js/application-309e48eb78c6aa6a1fed.js" for ::1 at 2021-04-25 16:20:48 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-309e48eb78c6aa6a1fed.js"):
+  
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+In order to autoload safely at boot time, please wrap your code in a reloader
+callback this way:
+
+    Rails.application.reloader.to_prepare do
+      # Autoload classes and modules needed at boot time here.
+    end
+
+That block runs when the application boots, and every time there is a reload.
+For historical reasons, it may run twice, so it has to be idempotent.
+
+Check the "Autoloading and Reloading Constants" guide to learn more about how
+Rails autoloads and reloads.
+ (called from <main> at /Users/adrianaalvarado/communityconnect/config/environment.rb:5)
+Started GET "/" for ::1 at 2021-04-25 16:21:09 -0400
+  [1m[35m (2.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 473)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 83.1ms | Allocations: 10355)
+Completed 200 OK in 104ms (Views: 90.1ms | ActiveRecord: 0.0ms | Allocations: 13625)
+
+
+Started GET "/packs/js/application-309e48eb78c6aa6a1fed.js" for ::1 at 2021-04-25 16:21:09 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-309e48eb78c6aa6a1fed.js"):
+  
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+In order to autoload safely at boot time, please wrap your code in a reloader
+callback this way:
+
+    Rails.application.reloader.to_prepare do
+      # Autoload classes and modules needed at boot time here.
+    end
+
+That block runs when the application boots, and every time there is a reload.
+For historical reasons, it may run twice, so it has to be idempotent.
+
+Check the "Autoloading and Reloading Constants" guide to learn more about how
+Rails autoloads and reloads.
+ (called from <main> at /Users/adrianaalvarado/communityconnect/config/environment.rb:5)
+Started GET "/" for ::1 at 2021-04-25 20:07:56 -0400
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 473)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 96.1ms | Allocations: 10355)
+Completed 200 OK in 119ms (Views: 101.2ms | ActiveRecord: 0.0ms | Allocations: 13616)
+
+
+Started GET "/packs/js/application-309e48eb78c6aa6a1fed.js" for ::1 at 2021-04-25 20:07:57 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-309e48eb78c6aa6a1fed.js"):
+  
+Started GET "/" for ::1 at 2021-04-25 20:09:37 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 254)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 24.1ms | Allocations: 5460)
+Completed 200 OK in 29ms (Views: 26.8ms | ActiveRecord: 0.0ms | Allocations: 6684)
+
+
+Started POST "/users" for ::1 at 2021-04-25 20:09:47 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"a", "email"=>"dfjhb@me.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "button"=>""}
+  [1m[36mTRANSACTION (25.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mUser Create (14.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "a"], ["email", "dfjhb@me.com"], ["created_at", "2021-04-26 00:09:47.820507"], ["updated_at", "2021-04-26 00:09:47.820507"], ["password_digest", "$2a$12$5NjC8QEQdNqm4BltQZHGa.I6GG1zPlF4DZzlSBWl.LxgdBI6NOCI."]]
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (29.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+Redirected to http://localhost:3000/opportunities
+Completed 302 Found in 494ms (ActiveRecord: 165.6ms | Allocations: 12524)
+
+
+Started GET "/opportunities" for ::1 at 2021-04-25 20:09:47 -0400
+Processing by OpportunitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/index.html.erb within layouts/application
+  [1m[36mOpportunity Load (34.1ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."user_id" = $1 ORDER BY created_at DESC[0m  [["user_id", 2]]
+  ↳ app/views/opportunities/index.html.erb:11
+  Rendered opportunities/index.html.erb within layouts/application (Duration: 42.8ms | Allocations: 1866)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 70.7ms | Allocations: 6869)
+Completed 200 OK in 106ms (Views: 40.3ms | ActiveRecord: 37.3ms | Allocations: 9895)
+
+
