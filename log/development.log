@@ -11592,3 +11592,338 @@ Processing by UsersController#index as HTML
 Completed 200 OK in 58ms (Views: 56.2ms | ActiveRecord: 0.0ms | Allocations: 7573)
 
 
+Started GET "/users" for ::1 at 2021-04-25 20:04:44 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 92)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 88.9ms | Allocations: 7171)
+Completed 200 OK in 100ms (Views: 92.1ms | Allocations: 7811)
+
+
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+Started POST "/session" for ::1 at 2021-04-25 20:05:57 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "login"=>{"email"=>"b@b.com", "password"=>"[FILTERED]"}, "button"=>""}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "b@b.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:3:in `create'
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 560ms (ActiveRecord: 53.0ms | Allocations: 8857)
+
+
+Started GET "/dashboard" for ::1 at 2021-04-25 20:05:58 -0400
+Processing by OpportunitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/index.html.erb within layouts/application
+  [1m[36mOpportunity Load (27.8ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."user_id" = $1 ORDER BY created_at DESC[0m  [["user_id", 2]]
+  ↳ app/views/opportunities/index.html.erb:11
+  Rendered opportunities/index.html.erb within layouts/application (Duration: 87.3ms | Allocations: 4616)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 121.4ms | Allocations: 11723)
+Completed 200 OK in 278ms (Views: 93.5ms | ActiveRecord: 95.7ms | Allocations: 14555)
+
+
+Started GET "/opportunities/new" for ::1 at 2021-04-25 20:06:24 -0400
+Processing by OpportunitiesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/new.html.erb within layouts/application
+  Rendered opportunities/new.html.erb within layouts/application (Duration: 400.8ms | Allocations: 19860)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 465.0ms | Allocations: 26803)
+Completed 200 OK in 469ms (Views: 466.0ms | ActiveRecord: 0.0ms | Allocations: 27424)
+
+
+Started POST "/opportunities" for ::1 at 2021-04-25 20:06:43 -0400
+Processing by OpportunitiesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "opportunity"=>{"organization"=>"google", "date"=>"", "hours"=>"", "signature"=>"joegirl52@ymail.com"}, "commit"=>"Add Opportunity"}
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/opportunities_controller.rb:13:in `create'
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/opportunities_controller.rb:13:in `create'
+  [1m[36mOpportunity Create (220.7ms)[0m  [1m[32mINSERT INTO "opportunities" ("organization", "date", "hours", "signature", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["organization", "google"], ["date", ""], ["hours", ""], ["signature", "joegirl52@ymail.com"], ["created_at", "2021-04-26 00:06:44.063442"], ["updated_at", "2021-04-26 00:06:44.063442"], ["user_id", 2]]
+  ↳ app/controllers/opportunities_controller.rb:13:in `create'
+  [1m[36mTRANSACTION (25.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/opportunities_controller.rb:13:in `create'
+  Rendering layout layouts/mailer.html.erb
+  Rendering opportunity_mailer/new_opportunity.html.erb within layouts/mailer
+  Rendered opportunity_mailer/new_opportunity.html.erb within layouts/mailer (Duration: 3.8ms | Allocations: 112)
+  Rendered layout layouts/mailer.html.erb (Duration: 4.5ms | Allocations: 288)
+  Rendering layout layouts/mailer.text.erb
+  Rendering opportunity_mailer/new_opportunity.text.erb within layouts/mailer
+  Rendered opportunity_mailer/new_opportunity.text.erb within layouts/mailer (Duration: 0.7ms | Allocations: 104)
+  Rendered layout layouts/mailer.text.erb (Duration: 1.7ms | Allocations: 260)
+OpportunityMailer#new_opportunity: processed outbound mail in 34.2ms
+Delivered mail 6086041485fd4_12064401089930@Raquels-MacBook-Pro.local.mail (474.1ms)
+Date: Sun, 25 Apr 2021 20:06:44 -0400
+From: joegirl522@gmail.com
+To: joegirl52@ymail.com
+Message-ID: <6086041485fd4_12064401089930@Raquels-MacBook-Pro.local.mail>
+Subject: Confirm Hours
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_608604147cabd_12064401089899";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_608604147cabd_12064401089899
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+To verify community service hours click here
+
+
+----==_mimepart_608604147cabd_12064401089899
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>Confirm Hours</h1>
+
+<p>
+  To verify community service hours click here:
+</p>
+
+  </body>
+</html>
+
+----==_mimepart_608604147cabd_12064401089899--
+
+Completed 500 Internal Server Error in 1144ms (ActiveRecord: 249.4ms | Allocations: 36214)
+
+
+
+Net::SMTPAuthenticationError - 530-5.7.0 Authentication Required. Learn more at:
+  app/controllers/opportunities_controller.rb:15:in `create'
+
+Started POST "/__better_errors/20360df0454d9e8a/variables" for ::1 at 2021-04-25 20:06:45 -0400
+Started GET "/opportunities/new" for ::1 at 2021-04-25 20:07:24 -0400
+Processing by OpportunitiesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/new.html.erb within layouts/application
+  Rendered opportunities/new.html.erb within layouts/application (Duration: 10.8ms | Allocations: 4995)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 184.6ms | Allocations: 11942)
+Completed 200 OK in 189ms (Views: 185.8ms | ActiveRecord: 0.0ms | Allocations: 12415)
+
+
+Started POST "/opportunities" for ::1 at 2021-04-25 20:07:32 -0400
+Processing by OpportunitiesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "opportunity"=>{"organization"=>"", "date"=>"", "hours"=>"", "signature"=>"joegirl522@gmail.com"}, "commit"=>"Add Opportunity"}
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/opportunities_controller.rb:13:in `create'
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/opportunities_controller.rb:13:in `create'
+  [1m[36mOpportunity Create (0.9ms)[0m  [1m[32mINSERT INTO "opportunities" ("organization", "date", "hours", "signature", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["organization", ""], ["date", ""], ["hours", ""], ["signature", "joegirl522@gmail.com"], ["created_at", "2021-04-26 00:07:32.455455"], ["updated_at", "2021-04-26 00:07:32.455455"], ["user_id", 2]]
+  ↳ app/controllers/opportunities_controller.rb:13:in `create'
+  [1m[36mTRANSACTION (8.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/opportunities_controller.rb:13:in `create'
+  Rendering layout layouts/mailer.html.erb
+  Rendering opportunity_mailer/new_opportunity.html.erb within layouts/mailer
+  Rendered opportunity_mailer/new_opportunity.html.erb within layouts/mailer (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/mailer.html.erb (Duration: 0.2ms | Allocations: 114)
+  Rendering layout layouts/mailer.text.erb
+  Rendering opportunity_mailer/new_opportunity.text.erb within layouts/mailer
+  Rendered opportunity_mailer/new_opportunity.text.erb within layouts/mailer (Duration: 0.0ms | Allocations: 38)
+  Rendered layout layouts/mailer.text.erb (Duration: 0.2ms | Allocations: 114)
+OpportunityMailer#new_opportunity: processed outbound mail in 21.0ms
+Delivered mail 608604447f230_12064401090171@Raquels-MacBook-Pro.local.mail (337.5ms)
+Date: Sun, 25 Apr 2021 20:07:32 -0400
+From: joegirl522@gmail.com
+To: joegirl522@gmail.com
+Message-ID: <608604447f230_12064401090171@Raquels-MacBook-Pro.local.mail>
+Subject: Confirm Hours
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_608604447dba5_120644010900b9";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_608604447dba5_120644010900b9
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+To verify community service hours click here
+
+
+----==_mimepart_608604447dba5_120644010900b9
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>Confirm Hours</h1>
+
+<p>
+  To verify community service hours click here:
+</p>
+
+  </body>
+</html>
+
+----==_mimepart_608604447dba5_120644010900b9--
+
+Completed 500 Internal Server Error in 432ms (ActiveRecord: 11.4ms | Allocations: 17470)
+
+
+
+Net::SMTPAuthenticationError - 530-5.7.0 Authentication Required. Learn more at:
+  app/controllers/opportunities_controller.rb:15:in `create'
+
+Started POST "/__better_errors/f991bff4e44a5e17/variables" for ::1 at 2021-04-25 20:07:33 -0400
+Started GET "/" for ::1 at 2021-04-25 20:08:41 -0400
+  [1m[35m (2.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 476)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 540.2ms | Allocations: 12442)
+Completed 200 OK in 561ms (Views: 546.9ms | ActiveRecord: 0.0ms | Allocations: 15702)
+
+
+Started POST "/session" for ::1 at 2021-04-25 20:08:47 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "login"=>{"email"=>"b@b.com", "password"=>"[FILTERED]"}, "button"=>""}
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "b@b.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:3:in `create'
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 482ms (ActiveRecord: 33.8ms | Allocations: 8252)
+
+
+Started GET "/dashboard" for ::1 at 2021-04-25 20:08:48 -0400
+Processing by OpportunitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/index.html.erb within layouts/application
+  [1m[36mOpportunity Load (93.2ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."user_id" = $1 ORDER BY created_at DESC[0m  [["user_id", 2]]
+  ↳ app/views/opportunities/index.html.erb:11
+  Rendered opportunities/index.html.erb within layouts/application (Duration: 119.1ms | Allocations: 4643)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 145.7ms | Allocations: 11761)
+Completed 200 OK in 208ms (Views: 51.8ms | ActiveRecord: 135.3ms | Allocations: 14426)
+
+
+Started GET "/opportunities/new" for ::1 at 2021-04-25 20:08:51 -0400
+Processing by OpportunitiesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/new.html.erb within layouts/application
+  Rendered opportunities/new.html.erb within layouts/application (Duration: 75.2ms | Allocations: 15405)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 97.6ms | Allocations: 22334)
+Completed 200 OK in 100ms (Views: 98.2ms | ActiveRecord: 0.0ms | Allocations: 22966)
+
+
+Started POST "/opportunities" for ::1 at 2021-04-25 20:08:59 -0400
+Processing by OpportunitiesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "opportunity"=>{"organization"=>"", "date"=>"", "hours"=>"", "signature"=>"joegirl522@gmail.com"}, "commit"=>"Add Opportunity"}
+  [1m[36mTRANSACTION (6.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/opportunities_controller.rb:13:in `create'
+  [1m[36mUser Load (36.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/opportunities_controller.rb:13:in `create'
+  [1m[36mOpportunity Create (2.8ms)[0m  [1m[32mINSERT INTO "opportunities" ("organization", "date", "hours", "signature", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["organization", ""], ["date", ""], ["hours", ""], ["signature", "joegirl522@gmail.com"], ["created_at", "2021-04-26 00:08:59.291365"], ["updated_at", "2021-04-26 00:08:59.291365"], ["user_id", 2]]
+  ↳ app/controllers/opportunities_controller.rb:13:in `create'
+  [1m[36mTRANSACTION (9.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/opportunities_controller.rb:13:in `create'
+  Rendering layout layouts/mailer.html.erb
+  Rendering opportunity_mailer/new_opportunity.html.erb within layouts/mailer
+  Rendered opportunity_mailer/new_opportunity.html.erb within layouts/mailer (Duration: 0.5ms | Allocations: 113)
+  Rendered layout layouts/mailer.html.erb (Duration: 1.6ms | Allocations: 289)
+  Rendering layout layouts/mailer.text.erb
+  Rendering opportunity_mailer/new_opportunity.text.erb within layouts/mailer
+  Rendered opportunity_mailer/new_opportunity.text.erb within layouts/mailer (Duration: 0.6ms | Allocations: 104)
+  Rendered layout layouts/mailer.text.erb (Duration: 1.4ms | Allocations: 260)
+OpportunityMailer#new_opportunity: processed outbound mail in 12.7ms
+Delivered mail 6086049b5546f_125b7500087074@Raquels-MacBook-Pro.local.mail (1637.1ms)
+Date: Sun, 25 Apr 2021 20:08:59 -0400
+From: joegirl522@gmail.com
+To: joegirl522@gmail.com
+Message-ID: <6086049b5546f_125b7500087074@Raquels-MacBook-Pro.local.mail>
+Subject: Confirm Hours
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_6086049b519ec_125b7500086973";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_6086049b519ec_125b7500086973
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+To verify community service hours click here
+
+
+----==_mimepart_6086049b519ec_125b7500086973
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>Confirm Hours</h1>
+
+<p>
+  To verify community service hours click here:
+</p>
+
+  </body>
+</html>
+
+----==_mimepart_6086049b519ec_125b7500086973--
+
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 1785ms (ActiveRecord: 55.5ms | Allocations: 31353)
+
+
+Started GET "/dashboard" for ::1 at 2021-04-25 20:09:00 -0400
+Processing by OpportunitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/index.html.erb within layouts/application
+  [1m[36mOpportunity Load (0.9ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."user_id" = $1 ORDER BY created_at DESC[0m  [["user_id", 2]]
+  ↳ app/views/opportunities/index.html.erb:11
+  Rendered opportunities/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 985)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 68.8ms | Allocations: 8042)
+Completed 200 OK in 73ms (Views: 68.6ms | ActiveRecord: 0.9ms | Allocations: 8683)
+
+
