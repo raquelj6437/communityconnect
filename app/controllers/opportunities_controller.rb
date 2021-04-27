@@ -19,6 +19,12 @@ class OpportunitiesController < ApplicationController
         @opportunity = Opportunity.find(params[:id])
     end
 
+    def destroy
+        Opportunity.find(params[:id]).destroy
+        flash[:success] = "Opportunity destroyed."
+        redirect_to '/dashboard'
+    end
+    
     private
 
     def opportunity_params
