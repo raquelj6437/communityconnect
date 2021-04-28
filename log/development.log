@@ -13871,3 +13871,862 @@ Did you mean?  action
   app/controllers/sessions_controller.rb:3:in `create'
 
 Started POST "/__better_errors/4bbefd0188d80017/variables" for ::1 at 2021-04-27 21:16:55 -0400
+Started GET "/" for ::1 at 2021-04-27 21:36:27 -0400
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 7.3ms | Allocations: 579)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 1567.6ms | Allocations: 84337)
+Completed 200 OK in 1618ms (Views: 1582.1ms | ActiveRecord: 0.0ms | Allocations: 88624)
+
+
+Started GET "/" for ::1 at 2021-04-27 21:36:29 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 86)
+[Webpacker] Everything's up-to-date. Nothing to do
+Started GET "/packs/js/application-c5bd0d85f3037592dc54.js" for ::1 at 2021-04-27 21:36:29 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-c5bd0d85f3037592dc54.js"):
+  
+  Rendered layout layouts/application.html.erb (Duration: 173.3ms | Allocations: 17482)
+Completed 200 OK in 175ms (Views: 174.1ms | ActiveRecord: 0.0ms | Allocations: 18023)
+
+
+Started POST "/session" for ::1 at 2021-04-27 21:36:33 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "login"=>{"email"=>"max@gmail.com", "password"=>"[FILTERED]"}, "button"=>""}
+  [1m[36mUser Load (4.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "max@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:3:in `create'
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 331ms (ActiveRecord: 40.5ms | Allocations: 8761)
+
+
+Started GET "/dashboard" for ::1 at 2021-04-27 21:36:33 -0400
+Processing by OpportunitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/index.html.erb within layouts/application
+  [1m[36mOpportunity Load (28.3ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."user_id" = $1 ORDER BY created_at DESC[0m  [["user_id", 5]]
+  ↳ app/views/opportunities/index.html.erb:11
+  Rendered opportunities/index.html.erb within layouts/application (Duration: 56.8ms | Allocations: 7882)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 69.8ms | Allocations: 12868)
+Completed 200 OK in 81ms (Views: 39.0ms | ActiveRecord: 34.4ms | Allocations: 15851)
+
+
+Started GET "/packs/js/application-c5bd0d85f3037592dc54.js" for ::1 at 2021-04-27 21:36:33 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-c5bd0d85f3037592dc54.js"):
+  
+Started DELETE "/opportunities/21" for ::1 at 2021-04-27 21:36:37 -0400
+Processing by OpportunitiesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"21"}
+  [1m[36mOpportunity Load (1.6ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."id" = $1 LIMIT $2[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/opportunities_controller.rb:24:in `destroy'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/opportunities_controller.rb:25:in `destroy'
+  [1m[36mOpportunity Destroy (5.6ms)[0m  [1m[31mDELETE FROM "opportunities" WHERE "opportunities"."id" = $1[0m  [["id", 21]]
+  ↳ app/controllers/opportunities_controller.rb:25:in `destroy'
+  [1m[36mTRANSACTION (5.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/opportunities_controller.rb:25:in `destroy'
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 38ms (ActiveRecord: 13.8ms | Allocations: 3047)
+
+
+Started GET "/dashboard" for ::1 at 2021-04-27 21:36:37 -0400
+Processing by OpportunitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/index.html.erb within layouts/application
+  [1m[36mOpportunity Load (2.5ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."user_id" = $1 ORDER BY created_at DESC[0m  [["user_id", 5]]
+  ↳ app/views/opportunities/index.html.erb:11
+  Rendered opportunities/index.html.erb within layouts/application (Duration: 15.1ms | Allocations: 3929)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 26.9ms | Allocations: 8858)
+Completed 200 OK in 47ms (Views: 26.1ms | ActiveRecord: 2.5ms | Allocations: 9475)
+
+
+Started GET "/packs/js/application-c5bd0d85f3037592dc54.js" for ::1 at 2021-04-27 21:36:37 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-c5bd0d85f3037592dc54.js"):
+  
+Started DELETE "/opportunities/20" for ::1 at 2021-04-27 21:36:38 -0400
+Processing by OpportunitiesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"20"}
+  [1m[36mOpportunity Load (2.5ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/opportunities_controller.rb:24:in `destroy'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/opportunities_controller.rb:25:in `destroy'
+  [1m[36mOpportunity Destroy (3.7ms)[0m  [1m[31mDELETE FROM "opportunities" WHERE "opportunities"."id" = $1[0m  [["id", 20]]
+  ↳ app/controllers/opportunities_controller.rb:25:in `destroy'
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/opportunities_controller.rb:25:in `destroy'
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 37ms (ActiveRecord: 9.3ms | Allocations: 2737)
+
+
+Started GET "/dashboard" for ::1 at 2021-04-27 21:36:39 -0400
+Processing by OpportunitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/index.html.erb within layouts/application
+  [1m[36mOpportunity Load (2.1ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."user_id" = $1 ORDER BY created_at DESC[0m  [["user_id", 5]]
+  ↳ app/views/opportunities/index.html.erb:11
+  Rendered opportunities/index.html.erb within layouts/application (Duration: 17.4ms | Allocations: 3792)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 28.1ms | Allocations: 8720)
+Completed 200 OK in 50ms (Views: 26.9ms | ActiveRecord: 2.1ms | Allocations: 9336)
+
+
+Started GET "/packs/js/application-c5bd0d85f3037592dc54.js" for ::1 at 2021-04-27 21:36:39 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-c5bd0d85f3037592dc54.js"):
+  
+Started DELETE "/opportunities/22" for ::1 at 2021-04-27 21:36:40 -0400
+Processing by OpportunitiesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"22"}
+  [1m[36mOpportunity Load (1.5ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/opportunities_controller.rb:24:in `destroy'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/opportunities_controller.rb:25:in `destroy'
+  [1m[36mOpportunity Destroy (1.5ms)[0m  [1m[31mDELETE FROM "opportunities" WHERE "opportunities"."id" = $1[0m  [["id", 22]]
+  ↳ app/controllers/opportunities_controller.rb:25:in `destroy'
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/opportunities_controller.rb:25:in `destroy'
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 22ms (ActiveRecord: 6.0ms | Allocations: 2734)
+
+
+Started GET "/dashboard" for ::1 at 2021-04-27 21:36:40 -0400
+Processing by OpportunitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/index.html.erb within layouts/application
+  [1m[36mOpportunity Load (2.8ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."user_id" = $1 ORDER BY created_at DESC[0m  [["user_id", 5]]
+  ↳ app/views/opportunities/index.html.erb:11
+  Rendered opportunities/index.html.erb within layouts/application (Duration: 12.7ms | Allocations: 3655)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.7ms | Allocations: 8582)
+Completed 200 OK in 49ms (Views: 22.0ms | ActiveRecord: 2.8ms | Allocations: 9198)
+
+
+Started GET "/packs/js/application-c5bd0d85f3037592dc54.js" for ::1 at 2021-04-27 21:36:40 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-c5bd0d85f3037592dc54.js"):
+  
+Started DELETE "/opportunities/19" for ::1 at 2021-04-27 21:36:41 -0400
+Processing by OpportunitiesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"19"}
+  [1m[36mOpportunity Load (1.0ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/opportunities_controller.rb:24:in `destroy'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/opportunities_controller.rb:25:in `destroy'
+  [1m[36mOpportunity Destroy (1.6ms)[0m  [1m[31mDELETE FROM "opportunities" WHERE "opportunities"."id" = $1[0m  [["id", 19]]
+  ↳ app/controllers/opportunities_controller.rb:25:in `destroy'
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/opportunities_controller.rb:25:in `destroy'
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 13ms (ActiveRecord: 5.4ms | Allocations: 2751)
+
+
+Started GET "/dashboard" for ::1 at 2021-04-27 21:36:41 -0400
+Processing by OpportunitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/index.html.erb within layouts/application
+  [1m[36mOpportunity Load (26.1ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."user_id" = $1 ORDER BY created_at DESC[0m  [["user_id", 5]]
+  ↳ app/views/opportunities/index.html.erb:11
+  Rendered opportunities/index.html.erb within layouts/application (Duration: 36.6ms | Allocations: 3518)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 53.2ms | Allocations: 8435)
+Completed 200 OK in 56ms (Views: 27.8ms | ActiveRecord: 26.1ms | Allocations: 9053)
+
+
+Started GET "/packs/js/application-c5bd0d85f3037592dc54.js" for ::1 at 2021-04-27 21:36:41 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-c5bd0d85f3037592dc54.js"):
+  
+Started DELETE "/opportunities/23" for ::1 at 2021-04-27 21:36:43 -0400
+Processing by OpportunitiesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"23"}
+  [1m[36mOpportunity Load (1.6ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/opportunities_controller.rb:24:in `destroy'
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/opportunities_controller.rb:25:in `destroy'
+  [1m[36mOpportunity Destroy (1.2ms)[0m  [1m[31mDELETE FROM "opportunities" WHERE "opportunities"."id" = $1[0m  [["id", 23]]
+  ↳ app/controllers/opportunities_controller.rb:25:in `destroy'
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/opportunities_controller.rb:25:in `destroy'
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 32ms (ActiveRecord: 6.0ms | Allocations: 2737)
+
+
+Started GET "/dashboard" for ::1 at 2021-04-27 21:36:43 -0400
+Processing by OpportunitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/index.html.erb within layouts/application
+  [1m[36mOpportunity Load (27.1ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."user_id" = $1 ORDER BY created_at DESC[0m  [["user_id", 5]]
+  ↳ app/views/opportunities/index.html.erb:11
+  Rendered opportunities/index.html.erb within layouts/application (Duration: 36.8ms | Allocations: 3381)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 46.8ms | Allocations: 8309)
+Completed 200 OK in 50ms (Views: 20.5ms | ActiveRecord: 27.1ms | Allocations: 8925)
+
+
+Started GET "/packs/js/application-c5bd0d85f3037592dc54.js" for ::1 at 2021-04-27 21:36:44 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-c5bd0d85f3037592dc54.js"):
+  
+Started DELETE "/opportunities/24" for ::1 at 2021-04-27 21:36:45 -0400
+Processing by OpportunitiesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"24"}
+  [1m[36mOpportunity Load (1.8ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/opportunities_controller.rb:24:in `destroy'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/opportunities_controller.rb:25:in `destroy'
+  [1m[36mOpportunity Destroy (1.3ms)[0m  [1m[31mDELETE FROM "opportunities" WHERE "opportunities"."id" = $1[0m  [["id", 24]]
+  ↳ app/controllers/opportunities_controller.rb:25:in `destroy'
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/opportunities_controller.rb:25:in `destroy'
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 32ms (ActiveRecord: 5.7ms | Allocations: 2752)
+
+
+Started GET "/dashboard" for ::1 at 2021-04-27 21:36:45 -0400
+Processing by OpportunitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/index.html.erb within layouts/application
+  [1m[36mOpportunity Load (2.0ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."user_id" = $1 ORDER BY created_at DESC[0m  [["user_id", 5]]
+  ↳ app/views/opportunities/index.html.erb:11
+  Rendered opportunities/index.html.erb within layouts/application (Duration: 9.3ms | Allocations: 3244)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 24.1ms | Allocations: 8163)
+Completed 200 OK in 51ms (Views: 23.2ms | ActiveRecord: 2.0ms | Allocations: 8780)
+
+
+Started GET "/packs/js/application-c5bd0d85f3037592dc54.js" for ::1 at 2021-04-27 21:36:45 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-c5bd0d85f3037592dc54.js"):
+  
+Started DELETE "/opportunities/25" for ::1 at 2021-04-27 21:36:46 -0400
+Processing by OpportunitiesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"25"}
+  [1m[36mOpportunity Load (1.1ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  ↳ app/controllers/opportunities_controller.rb:24:in `destroy'
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/opportunities_controller.rb:25:in `destroy'
+  [1m[36mOpportunity Destroy (1.5ms)[0m  [1m[31mDELETE FROM "opportunities" WHERE "opportunities"."id" = $1[0m  [["id", 25]]
+  ↳ app/controllers/opportunities_controller.rb:25:in `destroy'
+  [1m[36mTRANSACTION (26.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/opportunities_controller.rb:25:in `destroy'
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 39ms (ActiveRecord: 30.6ms | Allocations: 2735)
+
+
+Started GET "/dashboard" for ::1 at 2021-04-27 21:36:46 -0400
+Processing by OpportunitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/index.html.erb within layouts/application
+  [1m[36mOpportunity Load (2.3ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."user_id" = $1 ORDER BY created_at DESC[0m  [["user_id", 5]]
+  ↳ app/views/opportunities/index.html.erb:11
+  Rendered opportunities/index.html.erb within layouts/application (Duration: 13.9ms | Allocations: 3107)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 25.0ms | Allocations: 8035)
+Completed 200 OK in 29ms (Views: 23.7ms | ActiveRecord: 2.3ms | Allocations: 8652)
+
+
+Started GET "/packs/js/application-c5bd0d85f3037592dc54.js" for ::1 at 2021-04-27 21:36:46 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-c5bd0d85f3037592dc54.js"):
+  
+Started DELETE "/opportunities/27" for ::1 at 2021-04-27 21:36:46 -0400
+Processing by OpportunitiesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"27"}
+  [1m[36mOpportunity Load (1.9ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."id" = $1 LIMIT $2[0m  [["id", 27], ["LIMIT", 1]]
+  ↳ app/controllers/opportunities_controller.rb:24:in `destroy'
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/opportunities_controller.rb:25:in `destroy'
+  [1m[36mOpportunity Destroy (2.1ms)[0m  [1m[31mDELETE FROM "opportunities" WHERE "opportunities"."id" = $1[0m  [["id", 27]]
+  ↳ app/controllers/opportunities_controller.rb:25:in `destroy'
+  [1m[36mTRANSACTION (27.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/opportunities_controller.rb:25:in `destroy'
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 44ms (ActiveRecord: 33.0ms | Allocations: 2734)
+
+
+Started GET "/dashboard" for ::1 at 2021-04-27 21:36:46 -0400
+Processing by OpportunitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/index.html.erb within layouts/application
+  [1m[36mOpportunity Load (1.8ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."user_id" = $1 ORDER BY created_at DESC[0m  [["user_id", 5]]
+  ↳ app/views/opportunities/index.html.erb:11
+  Rendered opportunities/index.html.erb within layouts/application (Duration: 7.9ms | Allocations: 2970)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.6ms | Allocations: 7898)
+Completed 200 OK in 23ms (Views: 17.7ms | ActiveRecord: 1.8ms | Allocations: 8514)
+
+
+Started GET "/packs/js/application-c5bd0d85f3037592dc54.js" for ::1 at 2021-04-27 21:36:46 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-c5bd0d85f3037592dc54.js"):
+  
+Started DELETE "/opportunities/28" for ::1 at 2021-04-27 21:36:48 -0400
+Processing by OpportunitiesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"28"}
+  [1m[36mOpportunity Load (1.3ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  ↳ app/controllers/opportunities_controller.rb:24:in `destroy'
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/opportunities_controller.rb:25:in `destroy'
+  [1m[36mOpportunity Destroy (1.7ms)[0m  [1m[31mDELETE FROM "opportunities" WHERE "opportunities"."id" = $1[0m  [["id", 28]]
+  ↳ app/controllers/opportunities_controller.rb:25:in `destroy'
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/opportunities_controller.rb:25:in `destroy'
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 16ms (ActiveRecord: 6.8ms | Allocations: 2734)
+
+
+Started GET "/dashboard" for ::1 at 2021-04-27 21:36:48 -0400
+Processing by OpportunitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/index.html.erb within layouts/application
+  [1m[36mOpportunity Load (2.0ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."user_id" = $1 ORDER BY created_at DESC[0m  [["user_id", 5]]
+  ↳ app/views/opportunities/index.html.erb:11
+  Rendered opportunities/index.html.erb within layouts/application (Duration: 8.2ms | Allocations: 2833)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.3ms | Allocations: 7760)
+Completed 200 OK in 39ms (Views: 18.3ms | ActiveRecord: 2.0ms | Allocations: 8376)
+
+
+Started GET "/packs/js/application-c5bd0d85f3037592dc54.js" for ::1 at 2021-04-27 21:36:48 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-c5bd0d85f3037592dc54.js"):
+  
+Started DELETE "/opportunities/29" for ::1 at 2021-04-27 21:36:49 -0400
+Processing by OpportunitiesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"29"}
+  [1m[36mOpportunity Load (1.4ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."id" = $1 LIMIT $2[0m  [["id", 29], ["LIMIT", 1]]
+  ↳ app/controllers/opportunities_controller.rb:24:in `destroy'
+  [1m[36mTRANSACTION (2.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/opportunities_controller.rb:25:in `destroy'
+  [1m[36mOpportunity Destroy (2.8ms)[0m  [1m[31mDELETE FROM "opportunities" WHERE "opportunities"."id" = $1[0m  [["id", 29]]
+  ↳ app/controllers/opportunities_controller.rb:25:in `destroy'
+  [1m[36mTRANSACTION (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/opportunities_controller.rb:25:in `destroy'
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 28ms (ActiveRecord: 9.1ms | Allocations: 2734)
+
+
+Started GET "/dashboard" for ::1 at 2021-04-27 21:36:49 -0400
+Processing by OpportunitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/index.html.erb within layouts/application
+  [1m[36mOpportunity Load (1.6ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."user_id" = $1 ORDER BY created_at DESC[0m  [["user_id", 5]]
+  ↳ app/views/opportunities/index.html.erb:11
+  Rendered opportunities/index.html.erb within layouts/application (Duration: 7.9ms | Allocations: 2696)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.4ms | Allocations: 7624)
+Completed 200 OK in 42ms (Views: 21.6ms | ActiveRecord: 1.6ms | Allocations: 8241)
+
+
+Started GET "/packs/js/application-c5bd0d85f3037592dc54.js" for ::1 at 2021-04-27 21:36:49 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-c5bd0d85f3037592dc54.js"):
+  
+Started DELETE "/opportunities/18" for ::1 at 2021-04-27 21:36:50 -0400
+Processing by OpportunitiesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"18"}
+  [1m[36mOpportunity Load (1.0ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/opportunities_controller.rb:24:in `destroy'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/opportunities_controller.rb:25:in `destroy'
+  [1m[36mOpportunity Destroy (1.4ms)[0m  [1m[31mDELETE FROM "opportunities" WHERE "opportunities"."id" = $1[0m  [["id", 18]]
+  ↳ app/controllers/opportunities_controller.rb:25:in `destroy'
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/opportunities_controller.rb:25:in `destroy'
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 26ms (ActiveRecord: 5.3ms | Allocations: 2734)
+
+
+Started GET "/dashboard" for ::1 at 2021-04-27 21:36:50 -0400
+Processing by OpportunitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/index.html.erb within layouts/application
+  [1m[36mOpportunity Load (1.9ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."user_id" = $1 ORDER BY created_at DESC[0m  [["user_id", 5]]
+  ↳ app/views/opportunities/index.html.erb:11
+  Rendered opportunities/index.html.erb within layouts/application (Duration: 11.9ms | Allocations: 2559)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 25.0ms | Allocations: 7487)
+Completed 200 OK in 54ms (Views: 24.3ms | ActiveRecord: 1.9ms | Allocations: 8103)
+
+
+Started GET "/packs/js/application-c5bd0d85f3037592dc54.js" for ::1 at 2021-04-27 21:36:50 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-c5bd0d85f3037592dc54.js"):
+  
+Started DELETE "/opportunities/16" for ::1 at 2021-04-27 21:36:50 -0400
+Processing by OpportunitiesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"16"}
+  [1m[36mOpportunity Load (1.1ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/opportunities_controller.rb:24:in `destroy'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/opportunities_controller.rb:25:in `destroy'
+  [1m[36mOpportunity Destroy (1.4ms)[0m  [1m[31mDELETE FROM "opportunities" WHERE "opportunities"."id" = $1[0m  [["id", 16]]
+  ↳ app/controllers/opportunities_controller.rb:25:in `destroy'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/opportunities_controller.rb:25:in `destroy'
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 14ms (ActiveRecord: 5.2ms | Allocations: 2734)
+
+
+Started GET "/dashboard" for ::1 at 2021-04-27 21:36:50 -0400
+Processing by OpportunitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/index.html.erb within layouts/application
+  [1m[36mOpportunity Load (1.5ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."user_id" = $1 ORDER BY created_at DESC[0m  [["user_id", 5]]
+  ↳ app/views/opportunities/index.html.erb:11
+  Rendered opportunities/index.html.erb within layouts/application (Duration: 7.1ms | Allocations: 2422)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.1ms | Allocations: 7349)
+Completed 200 OK in 35ms (Views: 17.3ms | ActiveRecord: 1.5ms | Allocations: 7965)
+
+
+Started GET "/packs/js/application-c5bd0d85f3037592dc54.js" for ::1 at 2021-04-27 21:36:50 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-c5bd0d85f3037592dc54.js"):
+  
+Started DELETE "/opportunities/26" for ::1 at 2021-04-27 21:36:51 -0400
+Processing by OpportunitiesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"26"}
+  [1m[36mOpportunity Load (26.4ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/opportunities_controller.rb:24:in `destroy'
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/opportunities_controller.rb:25:in `destroy'
+  [1m[36mOpportunity Destroy (1.6ms)[0m  [1m[31mDELETE FROM "opportunities" WHERE "opportunities"."id" = $1[0m  [["id", 26]]
+  ↳ app/controllers/opportunities_controller.rb:25:in `destroy'
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/opportunities_controller.rb:25:in `destroy'
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 42ms (ActiveRecord: 31.8ms | Allocations: 2734)
+
+
+Started GET "/dashboard" for ::1 at 2021-04-27 21:36:51 -0400
+Processing by OpportunitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/index.html.erb within layouts/application
+  [1m[36mOpportunity Load (1.6ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."user_id" = $1 ORDER BY created_at DESC[0m  [["user_id", 5]]
+  ↳ app/views/opportunities/index.html.erb:11
+  Rendered opportunities/index.html.erb within layouts/application (Duration: 6.9ms | Allocations: 2284)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20.9ms | Allocations: 7212)
+Completed 200 OK in 48ms (Views: 20.9ms | ActiveRecord: 1.6ms | Allocations: 7829)
+
+
+Started GET "/packs/js/application-c5bd0d85f3037592dc54.js" for ::1 at 2021-04-27 21:36:51 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-c5bd0d85f3037592dc54.js"):
+  
+Started DELETE "/opportunities/15" for ::1 at 2021-04-27 21:36:51 -0400
+Processing by OpportunitiesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"15"}
+  [1m[36mOpportunity Load (1.9ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/opportunities_controller.rb:24:in `destroy'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/opportunities_controller.rb:25:in `destroy'
+  [1m[36mOpportunity Destroy (1.6ms)[0m  [1m[31mDELETE FROM "opportunities" WHERE "opportunities"."id" = $1[0m  [["id", 15]]
+  ↳ app/controllers/opportunities_controller.rb:25:in `destroy'
+  [1m[36mTRANSACTION (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/opportunities_controller.rb:25:in `destroy'
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 18ms (ActiveRecord: 7.4ms | Allocations: 2734)
+
+
+Started GET "/dashboard" for ::1 at 2021-04-27 21:36:51 -0400
+Processing by OpportunitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/index.html.erb within layouts/application
+  [1m[36mOpportunity Load (1.7ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."user_id" = $1 ORDER BY created_at DESC[0m  [["user_id", 5]]
+  ↳ app/views/opportunities/index.html.erb:11
+  Rendered opportunities/index.html.erb within layouts/application (Duration: 6.6ms | Allocations: 2147)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.5ms | Allocations: 7075)
+Completed 200 OK in 46ms (Views: 18.1ms | ActiveRecord: 1.7ms | Allocations: 7691)
+
+
+Started GET "/packs/js/application-c5bd0d85f3037592dc54.js" for ::1 at 2021-04-27 21:36:51 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-c5bd0d85f3037592dc54.js"):
+  
+Started DELETE "/opportunities/17" for ::1 at 2021-04-27 21:36:52 -0400
+Processing by OpportunitiesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"17"}
+  [1m[36mOpportunity Load (1.1ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/opportunities_controller.rb:24:in `destroy'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/opportunities_controller.rb:25:in `destroy'
+  [1m[36mOpportunity Destroy (2.0ms)[0m  [1m[31mDELETE FROM "opportunities" WHERE "opportunities"."id" = $1[0m  [["id", 17]]
+  ↳ app/controllers/opportunities_controller.rb:25:in `destroy'
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/opportunities_controller.rb:25:in `destroy'
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 28ms (ActiveRecord: 6.7ms | Allocations: 2734)
+
+
+Started GET "/dashboard" for ::1 at 2021-04-27 21:36:52 -0400
+Processing by OpportunitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/index.html.erb within layouts/application
+  [1m[36mOpportunity Load (1.4ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."user_id" = $1 ORDER BY created_at DESC[0m  [["user_id", 5]]
+  ↳ app/views/opportunities/index.html.erb:11
+  Rendered opportunities/index.html.erb within layouts/application (Duration: 6.1ms | Allocations: 2010)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.3ms | Allocations: 6937)
+Completed 200 OK in 43ms (Views: 16.6ms | ActiveRecord: 1.4ms | Allocations: 7553)
+
+
+Started GET "/packs/js/application-c5bd0d85f3037592dc54.js" for ::1 at 2021-04-27 21:36:53 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-c5bd0d85f3037592dc54.js"):
+  
+Started DELETE "/opportunities/14" for ::1 at 2021-04-27 21:36:53 -0400
+Processing by OpportunitiesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"14"}
+  [1m[36mOpportunity Load (1.4ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."id" = $1 LIMIT $2[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/opportunities_controller.rb:24:in `destroy'
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/opportunities_controller.rb:25:in `destroy'
+  [1m[36mOpportunity Destroy (1.3ms)[0m  [1m[31mDELETE FROM "opportunities" WHERE "opportunities"."id" = $1[0m  [["id", 14]]
+  ↳ app/controllers/opportunities_controller.rb:25:in `destroy'
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/opportunities_controller.rb:25:in `destroy'
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 16ms (ActiveRecord: 6.3ms | Allocations: 2734)
+
+
+Started GET "/dashboard" for ::1 at 2021-04-27 21:36:53 -0400
+Processing by OpportunitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/index.html.erb within layouts/application
+  [1m[36mOpportunity Load (1.5ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."user_id" = $1 ORDER BY created_at DESC[0m  [["user_id", 5]]
+  ↳ app/views/opportunities/index.html.erb:11
+  Rendered opportunities/index.html.erb within layouts/application (Duration: 6.0ms | Allocations: 1873)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.8ms | Allocations: 6801)
+Completed 200 OK in 30ms (Views: 17.1ms | ActiveRecord: 1.5ms | Allocations: 7418)
+
+
+Started GET "/packs/js/application-c5bd0d85f3037592dc54.js" for ::1 at 2021-04-27 21:36:53 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-c5bd0d85f3037592dc54.js"):
+  
+Started DELETE "/opportunities/13" for ::1 at 2021-04-27 21:36:54 -0400
+Processing by OpportunitiesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"13"}
+  [1m[36mOpportunity Load (1.1ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/opportunities_controller.rb:24:in `destroy'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/opportunities_controller.rb:25:in `destroy'
+  [1m[36mOpportunity Destroy (1.2ms)[0m  [1m[31mDELETE FROM "opportunities" WHERE "opportunities"."id" = $1[0m  [["id", 13]]
+  ↳ app/controllers/opportunities_controller.rb:25:in `destroy'
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/opportunities_controller.rb:25:in `destroy'
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 21ms (ActiveRecord: 5.4ms | Allocations: 2734)
+
+
+Started GET "/dashboard" for ::1 at 2021-04-27 21:36:54 -0400
+Processing by OpportunitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/index.html.erb within layouts/application
+  [1m[36mOpportunity Load (1.8ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."user_id" = $1 ORDER BY created_at DESC[0m  [["user_id", 5]]
+  ↳ app/views/opportunities/index.html.erb:11
+  Rendered opportunities/index.html.erb within layouts/application (Duration: 6.1ms | Allocations: 1736)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.7ms | Allocations: 6664)
+Completed 200 OK in 47ms (Views: 17.8ms | ActiveRecord: 1.8ms | Allocations: 7281)
+
+
+Started GET "/packs/js/application-c5bd0d85f3037592dc54.js" for ::1 at 2021-04-27 21:36:54 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-c5bd0d85f3037592dc54.js"):
+  
+Started DELETE "/opportunities/12" for ::1 at 2021-04-27 21:36:55 -0400
+Processing by OpportunitiesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"12"}
+  [1m[36mOpportunity Load (1.5ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/opportunities_controller.rb:24:in `destroy'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/opportunities_controller.rb:25:in `destroy'
+  [1m[36mOpportunity Destroy (1.1ms)[0m  [1m[31mDELETE FROM "opportunities" WHERE "opportunities"."id" = $1[0m  [["id", 12]]
+  ↳ app/controllers/opportunities_controller.rb:25:in `destroy'
+  [1m[36mTRANSACTION (27.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/opportunities_controller.rb:25:in `destroy'
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 41ms (ActiveRecord: 31.8ms | Allocations: 2734)
+
+
+Started GET "/dashboard" for ::1 at 2021-04-27 21:36:55 -0400
+Processing by OpportunitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/index.html.erb within layouts/application
+  [1m[36mOpportunity Load (2.8ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."user_id" = $1 ORDER BY created_at DESC[0m  [["user_id", 5]]
+  ↳ app/views/opportunities/index.html.erb:11
+  Rendered opportunities/index.html.erb within layouts/application (Duration: 6.3ms | Allocations: 1599)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.5ms | Allocations: 6526)
+Completed 200 OK in 20ms (Views: 14.5ms | ActiveRecord: 2.8ms | Allocations: 7142)
+
+
+Started GET "/packs/js/application-c5bd0d85f3037592dc54.js" for ::1 at 2021-04-27 21:36:55 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-c5bd0d85f3037592dc54.js"):
+  
+Started DELETE "/opportunities/11" for ::1 at 2021-04-27 21:36:56 -0400
+Processing by OpportunitiesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"11"}
+  [1m[36mOpportunity Load (2.0ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/opportunities_controller.rb:24:in `destroy'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/opportunities_controller.rb:25:in `destroy'
+  [1m[36mOpportunity Destroy (1.9ms)[0m  [1m[31mDELETE FROM "opportunities" WHERE "opportunities"."id" = $1[0m  [["id", 11]]
+  ↳ app/controllers/opportunities_controller.rb:25:in `destroy'
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/opportunities_controller.rb:25:in `destroy'
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 37ms (ActiveRecord: 6.8ms | Allocations: 2734)
+
+
+Started GET "/dashboard" for ::1 at 2021-04-27 21:36:56 -0400
+Processing by OpportunitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/index.html.erb within layouts/application
+  [1m[36mOpportunity Load (3.4ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."user_id" = $1 ORDER BY created_at DESC[0m  [["user_id", 5]]
+  ↳ app/views/opportunities/index.html.erb:11
+  Rendered opportunities/index.html.erb within layouts/application (Duration: 8.3ms | Allocations: 1462)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.0ms | Allocations: 6390)
+Completed 200 OK in 50ms (Views: 20.0ms | ActiveRecord: 3.4ms | Allocations: 7007)
+
+
+Started GET "/packs/js/application-c5bd0d85f3037592dc54.js" for ::1 at 2021-04-27 21:36:56 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-c5bd0d85f3037592dc54.js"):
+  
+Started DELETE "/opportunities/10" for ::1 at 2021-04-27 21:36:57 -0400
+Processing by OpportunitiesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"10"}
+  [1m[36mOpportunity Load (2.4ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/opportunities_controller.rb:24:in `destroy'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/opportunities_controller.rb:25:in `destroy'
+  [1m[36mOpportunity Destroy (1.8ms)[0m  [1m[31mDELETE FROM "opportunities" WHERE "opportunities"."id" = $1[0m  [["id", 10]]
+  ↳ app/controllers/opportunities_controller.rb:25:in `destroy'
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/opportunities_controller.rb:25:in `destroy'
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 37ms (ActiveRecord: 7.7ms | Allocations: 2734)
+
+
+Started GET "/dashboard" for ::1 at 2021-04-27 21:36:57 -0400
+Processing by OpportunitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/index.html.erb within layouts/application
+  [1m[36mOpportunity Load (2.7ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."user_id" = $1 ORDER BY created_at DESC[0m  [["user_id", 5]]
+  ↳ app/views/opportunities/index.html.erb:11
+  Rendered opportunities/index.html.erb within layouts/application (Duration: 8.2ms | Allocations: 1324)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20.0ms | Allocations: 6252)
+Completed 200 OK in 46ms (Views: 19.4ms | ActiveRecord: 2.7ms | Allocations: 6868)
+
+
+Started GET "/packs/js/application-c5bd0d85f3037592dc54.js" for ::1 at 2021-04-27 21:36:57 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-c5bd0d85f3037592dc54.js"):
+  
+Started DELETE "/opportunities/9" for ::1 at 2021-04-27 21:36:59 -0400
+Processing by OpportunitiesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"9"}
+  [1m[36mOpportunity Load (1.8ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/opportunities_controller.rb:24:in `destroy'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/opportunities_controller.rb:25:in `destroy'
+  [1m[36mOpportunity Destroy (1.3ms)[0m  [1m[31mDELETE FROM "opportunities" WHERE "opportunities"."id" = $1[0m  [["id", 9]]
+  ↳ app/controllers/opportunities_controller.rb:25:in `destroy'
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/opportunities_controller.rb:25:in `destroy'
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 19ms (ActiveRecord: 6.2ms | Allocations: 2734)
+
+
+Started GET "/dashboard" for ::1 at 2021-04-27 21:36:59 -0400
+Processing by OpportunitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/index.html.erb within layouts/application
+  [1m[36mOpportunity Load (2.0ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."user_id" = $1 ORDER BY created_at DESC[0m  [["user_id", 5]]
+  ↳ app/views/opportunities/index.html.erb:11
+  Rendered opportunities/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 1187)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.9ms | Allocations: 6114)
+Completed 200 OK in 45ms (Views: 17.2ms | ActiveRecord: 2.0ms | Allocations: 6730)
+
+
+Started GET "/packs/js/application-c5bd0d85f3037592dc54.js" for ::1 at 2021-04-27 21:36:59 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-c5bd0d85f3037592dc54.js"):
+  
+Started DELETE "/opportunities/8" for ::1 at 2021-04-27 21:36:59 -0400
+Processing by OpportunitiesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"8"}
+  [1m[36mOpportunity Load (1.4ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/opportunities_controller.rb:24:in `destroy'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/opportunities_controller.rb:25:in `destroy'
+  [1m[36mOpportunity Destroy (1.9ms)[0m  [1m[31mDELETE FROM "opportunities" WHERE "opportunities"."id" = $1[0m  [["id", 8]]
+  ↳ app/controllers/opportunities_controller.rb:25:in `destroy'
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/opportunities_controller.rb:25:in `destroy'
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 27ms (ActiveRecord: 6.3ms | Allocations: 2734)
+
+
+Started GET "/dashboard" for ::1 at 2021-04-27 21:36:59 -0400
+Processing by OpportunitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/index.html.erb within layouts/application
+  [1m[36mOpportunity Load (2.9ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."user_id" = $1 ORDER BY created_at DESC[0m  [["user_id", 5]]
+  ↳ app/views/opportunities/index.html.erb:11
+  Rendered opportunities/index.html.erb within layouts/application (Duration: 7.7ms | Allocations: 1050)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20.3ms | Allocations: 5978)
+Completed 200 OK in 48ms (Views: 19.1ms | ActiveRecord: 2.9ms | Allocations: 6595)
+
+
+Started GET "/packs/js/application-c5bd0d85f3037592dc54.js" for ::1 at 2021-04-27 21:37:00 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-c5bd0d85f3037592dc54.js"):
+  
+Started DELETE "/session" for ::1 at 2021-04-27 21:37:58 -0400
+  
+ActionController::RoutingError (No route matches [DELETE] "/session"):
+  
+Started DELETE "/session" for ::1 at 2021-04-27 21:38:06 -0400
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 348)
+
+
+Started GET "/" for ::1 at 2021-04-27 21:38:06 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 100)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.2ms | Allocations: 5094)
+Completed 200 OK in 16ms (Views: 15.5ms | ActiveRecord: 0.0ms | Allocations: 5721)
+
+
+Started GET "/packs/js/application-c5bd0d85f3037592dc54.js" for ::1 at 2021-04-27 21:38:06 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-c5bd0d85f3037592dc54.js"):
+  
+Started POST "/session" for ::1 at 2021-04-27 21:38:10 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "login"=>{"email"=>"max@gmail.com", "password"=>"[FILTERED]"}, "button"=>""}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "max@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:3:in `create'
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 280ms (ActiveRecord: 10.3ms | Allocations: 6276)
+
+
+Started GET "/dashboard" for ::1 at 2021-04-27 21:38:10 -0400
+Processing by OpportunitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/index.html.erb within layouts/application
+  [1m[36mOpportunity Load (1.6ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."user_id" = $1 ORDER BY created_at DESC[0m  [["user_id", 5]]
+  ↳ app/views/opportunities/index.html.erb:11
+  Rendered opportunities/index.html.erb within layouts/application (Duration: 16.7ms | Allocations: 4389)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 25.9ms | Allocations: 9375)
+Completed 200 OK in 49ms (Views: 22.9ms | ActiveRecord: 9.0ms | Allocations: 11313)
+
+
+Started GET "/packs/js/application-c5bd0d85f3037592dc54.js" for ::1 at 2021-04-27 21:38:10 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-c5bd0d85f3037592dc54.js"):
+  
+Started DELETE "/session" for ::1 at 2021-04-27 21:38:13 -0400
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 293)
+
+
+Started GET "/" for ::1 at 2021-04-27 21:38:13 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 92)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.8ms | Allocations: 5003)
+Completed 200 OK in 13ms (Views: 12.5ms | ActiveRecord: 0.0ms | Allocations: 5444)
+
+
+Started GET "/packs/js/application-c5bd0d85f3037592dc54.js" for ::1 at 2021-04-27 21:38:13 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-c5bd0d85f3037592dc54.js"):
+  
+Started POST "/session" for ::1 at 2021-04-27 21:38:16 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "login"=>{"email"=>"max@gmail.com", "password"=>"[FILTERED]"}, "button"=>""}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "max@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:3:in `create'
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 246ms (ActiveRecord: 1.6ms | Allocations: 1066)
+
+
+Started GET "/dashboard" for ::1 at 2021-04-27 21:38:16 -0400
+Processing by OpportunitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/index.html.erb within layouts/application
+  [1m[36mOpportunity Load (1.4ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."user_id" = $1 ORDER BY created_at DESC[0m  [["user_id", 5]]
+  ↳ app/views/opportunities/index.html.erb:11
+  Rendered opportunities/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1050)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 5978)
+Completed 200 OK in 13ms (Views: 10.3ms | ActiveRecord: 1.4ms | Allocations: 6587)
+
+
+Started GET "/packs/js/application-c5bd0d85f3037592dc54.js" for ::1 at 2021-04-27 21:38:16 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-c5bd0d85f3037592dc54.js"):
+  
+Started DELETE "/opportunities/30" for ::1 at 2021-04-27 21:38:19 -0400
+Processing by OpportunitiesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"30"}
+  [1m[36mOpportunity Load (1.6ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ app/controllers/opportunities_controller.rb:24:in `destroy'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/opportunities_controller.rb:25:in `destroy'
+  [1m[36mOpportunity Destroy (1.5ms)[0m  [1m[31mDELETE FROM "opportunities" WHERE "opportunities"."id" = $1[0m  [["id", 30]]
+  ↳ app/controllers/opportunities_controller.rb:25:in `destroy'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/opportunities_controller.rb:25:in `destroy'
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 15ms (ActiveRecord: 5.7ms | Allocations: 2873)
+
+
+Started GET "/dashboard" for ::1 at 2021-04-27 21:38:19 -0400
+Processing by OpportunitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/index.html.erb within layouts/application
+  [1m[36mOpportunity Load (2.2ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."user_id" = $1 ORDER BY created_at DESC[0m  [["user_id", 5]]
+  ↳ app/views/opportunities/index.html.erb:11
+  Rendered opportunities/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 899)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.1ms | Allocations: 5827)
+Completed 200 OK in 32ms (Views: 15.8ms | ActiveRecord: 2.2ms | Allocations: 6443)
+
+
+Started GET "/packs/js/application-c5bd0d85f3037592dc54.js" for ::1 at 2021-04-27 21:38:19 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-c5bd0d85f3037592dc54.js"):
+  
