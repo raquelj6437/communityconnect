@@ -1,5 +1,6 @@
-class OpportunitiesController < ApplicationController
+class OpportunitiesController < ApplicationController#ActiveRecord::Base
     skip_before_action :verify_authenticity_token
+
     def index
         @opportunity = Opportunity.where(:user_id => session[:user_id]).order("created_at DESC")
     end

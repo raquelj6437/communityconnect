@@ -14,7 +14,7 @@
                 <td><%= opportunity.date%></td>
                 <td><%= opportunity.hours%></td>
                 <td><%= opportunity.signature%></td>
-                <td><%= button_to "Delete", opportunity, method: :delete %></td>
+                <td><%= button_to "Delete", opportunity,:confirm => "Are you sure?", method: :delete %></td>
             </tr>
         <%end%>
       </table>
