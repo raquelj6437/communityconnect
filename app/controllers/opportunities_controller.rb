@@ -1,4 +1,4 @@
-class OpportunitiesController < ApplicationController#ActiveRecord::Base
+class OpportunitiesController < ApplicationController
     skip_before_action :verify_authenticity_token
 
     def index
@@ -19,6 +19,8 @@ class OpportunitiesController < ApplicationController#ActiveRecord::Base
 
     def show
         @opportunity = Opportunity.find(params[:id])
+        @opportunity.update_attribute('signature', 'Verified')
+        redirect_to '/employerverify'
     end
 
     def destroy
