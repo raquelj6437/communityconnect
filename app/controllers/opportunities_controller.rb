@@ -1,4 +1,5 @@
 class OpportunitiesController < ApplicationController
+    skip_before_action :verify_authenticity_token
     def index
         @opportunity = Opportunity.where(:user_id => session[:user_id]).order("created_at DESC")
     end
@@ -20,11 +21,12 @@ class OpportunitiesController < ApplicationController
     end
 
     def destroy
-        Opportunity.find(params[:id]).destroy
+        @opportunity = Opportunity.find(params[:id])
+        @opportunity.destroy
         flash[:success] = "Opportunity destroyed."
         redirect_to '/dashboard'
     end
-    
+
     private
 
     def opportunity_params
