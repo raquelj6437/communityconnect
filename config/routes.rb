@@ -10,5 +10,6 @@ Rails.application.routes.draw do
   post '/users' => 'users#create'
   get 'dashboard' => 'opportunities#index'
   get 'employerverify' => 'employer_verify#index'
+  get 'opportunity/:id' => 'opportunities#show'
   delete '/session' => 'sessions#destroy'
 end
