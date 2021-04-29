@@ -1,12 +1,32 @@
-<section>
-    <h1>Community Connect</h1>
 
-      <table>
+
+
+<link rel="stylesheet" href="styles/styles.css">
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #e3f2fd;>
+<a class="navbar-brand" href="#" > <h1 style="color:#316566">Community Connect</h1></a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNavDropdown">
+
+
+</div>
+</nav>
+
+
+
+<section class="container">
+    
+    <link rel="stylesheet" href="styles.css">
+
+      <table class="table table-bordered  table-striped rounded">
         <tr>
-          <th>Organization:</th>
-          <th>Date:</th>
-          <th>Hours:</th>
-          <th>Signature:</th>
+          <th style="color:#316566">Organization:</th>
+          <th style="color:#316566">Date:</th>
+          <th style="color:#316566">Hours:</th>
+          <th style="color:#316566">Signature:</th>
+          <th></th>
         </tr>
         <% @opportunity.each do |opportunity| %>
             <tr>
@@ -14,11 +34,17 @@
                 <td><%= opportunity.date%></td>
                 <td><%= opportunity.hours%></td>
                 <td><%= opportunity.signature%></td>
+                <td><%= button_to "Delete", opportunity,:data => {:confirm => 'Are you sure?'}, method: :delete,class: "btn btn-success" %></td>
             </tr>
         <%end%>
       </table>
-    <%= button_to "ADD OPPORTUNITY", 'opportunities/new', method: :get %>
-    <%= button_to "OPPORTUNITY LIST", 'services/', method: :get %>
-    <%= button_to "Log out", '/session', method: :delete %>
+    <%= button_to "ADD OPPORTUNITY", 'opportunities/new', method: :get ,class: "btn btn-success" %>
+      
+    &nbsp;
+    <%= button_to "OPPORTUNITY LIST", 'services/', method: :get,class: "btn btn-success"  %>
+    &nbsp;
+    <%= button_to "Log out", '/session', method: :delete, class: "btn btn-success" %>
+
+      
 </section>
 

@@ -1,0 +1,2 @@
+class Employerverify < ApplicationRecord
+end

@@ -1,5 +1,5 @@
-<h1>Confirm Hours</h1>
-
+<p> <%= @opportunity.user.name%> completed <%= @opportunity.hours%> hours volunteering at <%= @opportunity.organization%> on <%= @opportunity.date%></p>
 <p>
   To verify community service hours click here:
 </p>
+<%= link_to "Confirm", "community-connect-1.herokuapp.com/opportunity/" + (@opportunity.id).to_s %>

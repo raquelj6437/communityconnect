@@ -5,9 +5,8 @@ class OpportunityMailer < ApplicationMailer
   #
   #   en.opportunity_mailer.new_opportunity.subject
   #
-  def new_opportunity(email)
-    @email = email
-
-    mail to: @email, subject: "Confirm Hours"
+  def new_opportunity(opportunity)
+    @opportunity = opportunity
+    mail to: @opportunity.signature, subject: "Confirm Hours for #{@opportunity.user.name}"
   end
 end

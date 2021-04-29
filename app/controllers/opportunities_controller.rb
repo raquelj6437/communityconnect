@@ -1,4 +1,6 @@
 class OpportunitiesController < ApplicationController
+    skip_before_action :verify_authenticity_token
+
     def index
         @opportunity = Opportunity.where(:user_id => session[:user_id]).order("created_at DESC")
     end
@@ -11,13 +13,21 @@ class OpportunitiesController < ApplicationController
         @opportunity = Opportunity.new(opportunity_params)
         @opportunity.user_id = session[:user_id]
         @opportunity.save
-        @email = @opportunity.signature
-        OpportunityMailer.new_opportunity(@email).deliver_now
+        OpportunityMailer.new_opportunity(@opportunity).deliver_now
         redirect_to '/dashboard'
     end
 
     def show
         @opportunity = Opportunity.find(params[:id])
+        @opportunity.update_attribute('signature', 'Verified')
+        redirect_to '/employerverify'
+    end
+
+    def destroy
+        @opportunity = Opportunity.find(params[:id])
+        @opportunity.destroy
+        flash[:success] = "Opportunity destroyed."
+        redirect_to '/dashboard'
     end
 
     private

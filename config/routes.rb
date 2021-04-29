@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  post 'opportunity_token' => 'opportunity_token#create'
   # root 'pages#index'
   get 'hello_world', to: 'hello_world#index'
   resources :articles
@@ -8,5 +9,7 @@ Rails.application.routes.draw do
   post '/session' => 'sessions#create'
   post '/users' => 'users#create'
   get 'dashboard' => 'opportunities#index'
-  delete '/session', to: 'sessions#destroy'
+  get 'employerverify' => 'employer_verify#index'
+  get 'opportunity/:id' => 'opportunities#show'
+  delete '/session' => 'sessions#destroy'
 end
