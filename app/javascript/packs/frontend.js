@@ -9,3 +9,9 @@ signUpButton.addEventListener('click', () =>
 signInButton.addEventListener('click', () => 
 	container.classList.remove("right-panel-active"));
 }
+
+window.onload=function(){
+    function toggleSidebar(ref){
+        document.getElementById("sidebar").classList.toggle('active');
+      }
+}
