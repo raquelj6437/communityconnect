@@ -16986,3 +16986,291 @@ Processing by OpportunitiesController#index as HTML
 Completed 200 OK in 20ms (Views: 16.2ms | ActiveRecord: 1.9ms | Allocations: 6663)
 
 
+Started GET "/rails/mailers/opportunity_mailer/new_opportunity" for ::1 at 2021-04-28 10:42:34 -0400
+Processing by Rails::MailersController#preview as HTML
+  Parameters: {"path"=>"opportunity_mailer/new_opportunity"}
+OpportunityMailer#new_opportunity: processed outbound mail in 4.8ms
+Completed 500 Internal Server Error in 117ms (Allocations: 2923)
+
+
+
+ArgumentError - wrong number of arguments (given 0, expected 1):
+  app/mailers/opportunity_mailer.rb:8:in `new_opportunity'
+
+Started POST "/__better_errors/1524f7977d361bfd/variables" for ::1 at 2021-04-28 10:42:37 -0400
+OpportunityMailer#new_opportunity: processed outbound mail in 21.7ms
+  [1m[36mOpportunity Load (2.6ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" ORDER BY "opportunities"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mOpportunity Load (0.5ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" ORDER BY "opportunities"."id" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 2]]
+  [1m[36mOpportunity Load (0.6ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" ORDER BY "opportunities"."id" ASC LIMIT $1 OFFSET $2[0m  [["LIMIT", 1], ["OFFSET", 3]]
+Started GET "/" for ::1 at 2021-04-28 10:46:07 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 19.3ms | Allocations: 257)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 198.4ms | Allocations: 5489)
+Completed 200 OK in 229ms (Views: 219.7ms | Allocations: 6739)
+
+
+Started GET "/packs/js/application-c5bd0d85f3037592dc54.js" for ::1 at 2021-04-28 10:46:08 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-c5bd0d85f3037592dc54.js"):
+  
+Started POST "/session" for ::1 at 2021-04-28 10:46:18 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "login"=>{"email"=>"b@b.com", "password"=>"[FILTERED]"}, "button"=>""}
+  [1m[36mUser Load (5.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "b@b.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:3:in `create'
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 390ms (ActiveRecord: 18.2ms | Allocations: 8849)
+
+
+Started GET "/dashboard" for ::1 at 2021-04-28 10:46:18 -0400
+Processing by OpportunitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/index.html.erb within layouts/application
+  [1m[36mOpportunity Load (6.6ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."user_id" = $1 ORDER BY created_at DESC[0m  [["user_id", 2]]
+  ↳ app/views/opportunities/index.html.erb:11
+  Rendered opportunities/index.html.erb within layouts/application (Duration: 30.1ms | Allocations: 4455)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 107.6ms | Allocations: 9530)
+Completed 200 OK in 237ms (Views: 110.4ms | ActiveRecord: 6.6ms | Allocations: 11482)
+
+
+Started DELETE "/opportunities/49" for ::1 at 2021-04-28 10:46:20 -0400
+Processing by OpportunitiesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"49"}
+  [1m[36mOpportunity Load (1.4ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."id" = $1 LIMIT $2[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/controllers/opportunities_controller.rb:27:in `destroy'
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/opportunities_controller.rb:28:in `destroy'
+  [1m[36mOpportunity Destroy (11.3ms)[0m  [1m[31mDELETE FROM "opportunities" WHERE "opportunities"."id" = $1[0m  [["id", 49]]
+  ↳ app/controllers/opportunities_controller.rb:28:in `destroy'
+  [1m[36mTRANSACTION (11.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/opportunities_controller.rb:28:in `destroy'
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 44ms (ActiveRecord: 25.9ms | Allocations: 2887)
+
+
+Started GET "/dashboard" for ::1 at 2021-04-28 10:46:20 -0400
+Processing by OpportunitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/index.html.erb within layouts/application
+  [1m[36mOpportunity Load (44.8ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."user_id" = $1 ORDER BY created_at DESC[0m  [["user_id", 2]]
+  ↳ app/views/opportunities/index.html.erb:11
+  Rendered opportunities/index.html.erb within layouts/application (Duration: 53.8ms | Allocations: 900)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 71.0ms | Allocations: 5917)
+Completed 200 OK in 138ms (Views: 29.8ms | ActiveRecord: 44.8ms | Allocations: 6533)
+
+
+Started GET "/opportunities/new" for ::1 at 2021-04-28 10:46:22 -0400
+Processing by OpportunitiesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/new.html.erb within layouts/application
+  Rendered opportunities/new.html.erb within layouts/application (Duration: 207.5ms | Allocations: 5883)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 230.6ms | Allocations: 10771)
+Completed 200 OK in 234ms (Views: 231.9ms | ActiveRecord: 0.0ms | Allocations: 11356)
+
+
+Started POST "/opportunities" for ::1 at 2021-04-28 10:47:09 -0400
+Processing by OpportunitiesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "opportunity"=>{"organization"=>"google", "date"=>"3/22", "hours"=>"5", "signature"=>"joegirl522@gmail.com"}, "commit"=>"Add Opportunity"}
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/opportunities_controller.rb:15:in `create'
+  [1m[36mUser Load (6.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/opportunities_controller.rb:15:in `create'
+  [1m[36mOpportunity Create (68.0ms)[0m  [1m[32mINSERT INTO "opportunities" ("organization", "date", "hours", "signature", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["organization", "google"], ["date", "3/22"], ["hours", "5"], ["signature", "joegirl522@gmail.com"], ["created_at", "2021-04-28 14:47:09.850156"], ["updated_at", "2021-04-28 14:47:09.850156"], ["user_id", 2]]
+  ↳ app/controllers/opportunities_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (5.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/opportunities_controller.rb:15:in `create'
+  Rendering layout layouts/mailer.html.erb
+  Rendering opportunity_mailer/new_opportunity.html.erb within layouts/mailer
+  Rendered opportunity_mailer/new_opportunity.html.erb within layouts/mailer (Duration: 0.8ms | Allocations: 218)
+  Rendered layout layouts/mailer.html.erb (Duration: 6.8ms | Allocations: 392)
+  Rendering layout layouts/mailer.text.erb
+  Rendering opportunity_mailer/new_opportunity.text.erb within layouts/mailer
+  Rendered opportunity_mailer/new_opportunity.text.erb within layouts/mailer (Duration: 5.8ms | Allocations: 103)
+  Rendered layout layouts/mailer.text.erb (Duration: 7.5ms | Allocations: 256)
+OpportunityMailer#new_opportunity: processed outbound mail in 63.0ms
+Delivered mail 6089756df3546_20f5507876542@Raquels-MacBook-Pro.local.mail (1285.6ms)
+Date: Wed, 28 Apr 2021 10:47:09 -0400
+From: Communityconnecttech@gmail.com
+To: joegirl522@gmail.com
+Message-ID: <6089756df3546_20f5507876542@Raquels-MacBook-Pro.local.mail>
+Subject: Confirm Hours for b
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_6089756deb68c_20f5507876495";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_6089756deb68c_20f5507876495
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+To verify community service hours click here
+
+
+----==_mimepart_6089756deb68c_20f5507876495
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <p> b completed 5 volunteering at google on 3/22</p>
+<p>
+  To verify community service hours click here:
+</p>
+<a href="community-connect-1.herokuapp.com/opportunity/50">Confirm</a>
+
+  </body>
+</html>
+
+----==_mimepart_6089756deb68c_20f5507876495--
+
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 1452ms (ActiveRecord: 81.9ms | Allocations: 20401)
+
+
+Started GET "/dashboard" for ::1 at 2021-04-28 10:47:11 -0400
+Processing by OpportunitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/index.html.erb within layouts/application
+  [1m[36mOpportunity Load (1.4ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."user_id" = $1 ORDER BY created_at DESC[0m  [["user_id", 2]]
+  ↳ app/views/opportunities/index.html.erb:11
+  Rendered opportunities/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1353)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.0ms | Allocations: 6588)
+Completed 200 OK in 28ms (Views: 23.3ms | ActiveRecord: 1.4ms | Allocations: 7954)
+
+
+  [1m[36mOpportunity Load (0.6ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" ORDER BY "opportunities"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mOpportunity Load (3.9ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" ORDER BY "opportunities"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/mailer.html.erb
+  Rendering opportunity_mailer/new_opportunity.html.erb within layouts/mailer
+  Rendered opportunity_mailer/new_opportunity.html.erb within layouts/mailer (Duration: 3.6ms | Allocations: 406)
+  Rendered layout layouts/mailer.html.erb (Duration: 10.4ms | Allocations: 603)
+  Rendering layout layouts/mailer.text.erb
+  Rendering opportunity_mailer/new_opportunity.text.erb within layouts/mailer
+  Rendered opportunity_mailer/new_opportunity.text.erb within layouts/mailer (Duration: 1.1ms | Allocations: 84)
+  Rendered layout layouts/mailer.text.erb (Duration: 2.3ms | Allocations: 240)
+OpportunityMailer#new_opportunity: processed outbound mail in 125.0ms
+Delivered mail 608975e9c920e_4fe8ce485992@Raquels-MacBook-Pro.local.mail (3243.8ms)
+Date: Wed, 28 Apr 2021 10:49:13 -0400
+From: Communityconnecttech@gmail.com
+To: joegirl522@gmail.com
+Message-ID: <608975e9c920e_4fe8ce485992@Raquels-MacBook-Pro.local.mail>
+Subject: Confirm Hours for b
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_608975d0d90de_4fe8ce4858b9";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_608975d0d90de_4fe8ce4858b9
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+To verify community service hours click here
+
+
+----==_mimepart_608975d0d90de_4fe8ce4858b9
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <p> b completed 5 hours volunteering at google on 3/22</p>
+<p>
+  To verify community service hours click here:
+</p>
+<a href="community-connect-1.herokuapp.com/opportunity/50">Confirm</a>
+
+  </body>
+</html>
+
+----==_mimepart_608975d0d90de_4fe8ce4858b9--
+
+Started GET "/" for ::1 at 2021-04-29 15:32:23 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 32.1ms | Allocations: 257)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 336.2ms | Allocations: 5534)
+Completed 200 OK in 638ms (Views: 477.1ms | Allocations: 6757)
+
+
+Started POST "/session" for ::1 at 2021-04-29 15:32:37 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "login"=>{"email"=>"b@b.com", "password"=>"[FILTERED]"}, "button"=>""}
+  [1m[36mUser Load (12.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "b@b.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:3:in `create'
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 1576ms (ActiveRecord: 208.9ms | Allocations: 4251)
+
+
+Started GET "/dashboard" for ::1 at 2021-04-29 15:32:39 -0400
+Processing by OpportunitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/index.html.erb within layouts/application
+  [1m[36mOpportunity Load (27.3ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."user_id" = $1 ORDER BY created_at DESC[0m  [["user_id", 2]]
+  ↳ app/views/opportunities/index.html.erb:11
+  Rendered opportunities/index.html.erb within layouts/application (Duration: 78.7ms | Allocations: 1353)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 208.8ms | Allocations: 6398)
+Completed 200 OK in 309ms (Views: 200.9ms | ActiveRecord: 27.3ms | Allocations: 7559)
+
+
+Started GET "/services/" for ::1 at 2021-04-29 15:32:47 -0400
+Processing by ServicesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering services/index.html.erb within layouts/application
+  Rendered services/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 151)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.1ms | Allocations: 5177)
+Completed 200 OK in 31ms (Views: 26.7ms | ActiveRecord: 0.0ms | Allocations: 6194)
+
+
+Started DELETE "/session" for ::1 at 2021-04-29 15:33:00 -0400
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 305)
+
+
+Started GET "/" for ::1 at 2021-04-29 15:33:01 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 93)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 170.1ms | Allocations: 5088)
+Completed 200 OK in 177ms (Views: 175.4ms | ActiveRecord: 0.0ms | Allocations: 5530)
+
+
