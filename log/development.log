@@ -25072,3 +25072,120 @@ Started GET "/services/list.css" for ::1 at 2021-04-30 10:26:22 -0400
 AbstractController::ActionNotFound - The action 'show' could not be found for ServicesController
 Did you mean?  index:
 
+  [1m[36mOpportunity Load (0.8ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" ORDER BY "opportunities"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/mailer.html.erb
+  Rendering opportunity_mailer/new_opportunity.html.erb within layouts/mailer
+  Rendered opportunity_mailer/new_opportunity.html.erb within layouts/mailer (Duration: 17.4ms | Allocations: 404)
+  Rendered layout layouts/mailer.html.erb (Duration: 23.8ms | Allocations: 601)
+  Rendering layout layouts/mailer.text.erb
+  Rendering opportunity_mailer/new_opportunity.text.erb within layouts/mailer
+  Rendered opportunity_mailer/new_opportunity.text.erb within layouts/mailer (Duration: 5.5ms | Allocations: 84)
+  Rendered layout layouts/mailer.text.erb (Duration: 6.5ms | Allocations: 240)
+OpportunityMailer#new_opportunity: processed outbound mail in 296.9ms
+Delivered mail 608c39c63f5f0_d39cce4-468@Raquels-MacBook-Pro.local.mail (1488.6ms)
+Date: Fri, 30 Apr 2021 13:09:26 -0400
+From: Communityconnecttech@gmail.com
+To: joegirl52@ymail.com
+Message-ID: <608c39c63f5f0_d39cce4-468@Raquels-MacBook-Pro.local.mail>
+Subject: Confirm Hours for b
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_608c39c0ad01c_d39cce4-59a";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_608c39c0ad01c_d39cce4-59a
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+To verify community service hours click here
+
+
+----==_mimepart_608c39c0ad01c_d39cce4-59a
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <p> b completed  hours volunteering at nbc on .</p>
+<p>
+  To verify community service hours click here:
+</p>
+<a href="Confirm">#&lt;Opportunity:0x00007fc8d6f1f508&gt;</a>
+link_to "Confirm", "community-connect-1.herokuapp.com/opportunity/" + (@opportunity.id).to_s
+
+  </body>
+</html>
+
+----==_mimepart_608c39c0ad01c_d39cce4-59a--
+
+  [1m[36mOpportunity Load (0.7ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" ORDER BY "opportunities"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/mailer.html.erb
+  Rendering opportunity_mailer/new_opportunity.html.erb within layouts/mailer
+  Rendered opportunity_mailer/new_opportunity.html.erb within layouts/mailer (Duration: 6.2ms | Allocations: 432)
+  Rendered layout layouts/mailer.html.erb (Duration: 14.1ms | Allocations: 629)
+  Rendering layout layouts/mailer.text.erb
+  Rendering opportunity_mailer/new_opportunity.text.erb within layouts/mailer
+  Rendered opportunity_mailer/new_opportunity.text.erb within layouts/mailer (Duration: 0.8ms | Allocations: 84)
+  Rendered layout layouts/mailer.text.erb (Duration: 1.9ms | Allocations: 240)
+OpportunityMailer#new_opportunity: processed outbound mail in 239.4ms
+Delivered mail 608c3a472f59f_d4cbce4-4c4@Raquels-MacBook-Pro.local.mail (1377.2ms)
+Date: Fri, 30 Apr 2021 13:11:35 -0400
+From: Communityconnecttech@gmail.com
+To: joegirl52@ymail.com
+Message-ID: <608c3a472f59f_d4cbce4-4c4@Raquels-MacBook-Pro.local.mail>
+Subject: Confirm Hours for b
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_608c3a3f832bc_d4cbce4-51f";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_608c3a3f832bc_d4cbce4-51f
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+To verify community service hours click here
+
+
+----==_mimepart_608c3a3f832bc_d4cbce4-51f
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <p> b completed  hours volunteering at nbc on .</p>
+<p>
+  To verify community service hours click here:
+</p>
+<form class="button_to" method="post" action="community-connect-1.herokuapp.com/opportunity/55"><input type="submit" value="Confirm" /></form>
+
+  </body>
+</html>
+
+----==_mimepart_608c3a3f832bc_d4cbce4-51f--
+
