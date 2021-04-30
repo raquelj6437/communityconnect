@@ -13,6 +13,3 @@ Turbolinks.start()
 ActiveStorage.start()
 
 require("packs/frontend")
-require("packs/navbar")
-
-
