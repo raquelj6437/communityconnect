@@ -25959,3 +25959,1097 @@ Processing by UsersController#index as HTML
 Completed 200 OK in 42ms (Views: 41.6ms | ActiveRecord: 0.0ms | Allocations: 9318)
 
 
+Started GET "/" for ::1 at 2021-04-30 13:09:29 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/index.html.erb within layouts/application (Duration: 17.3ms | Allocations: 2258)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 2.5ms | Allocations: 592)
+  Rendered layout layouts/application.html.erb (Duration: 40.0ms | Allocations: 8878)
+Completed 200 OK in 42ms (Views: 40.9ms | ActiveRecord: 0.0ms | Allocations: 9324)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:09:35 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/index.html.erb within layouts/application (Duration: 7.1ms | Allocations: 2258)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 2.4ms | Allocations: 593)
+  Rendered layout layouts/application.html.erb (Duration: 25.8ms | Allocations: 8881)
+Completed 200 OK in 28ms (Views: 26.6ms | ActiveRecord: 0.0ms | Allocations: 9322)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:13:54 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/index.html.erb within layouts/application (Duration: 18.2ms | Allocations: 2491)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 3.2ms | Allocations: 765)
+  Rendered layout layouts/application.html.erb (Duration: 40.9ms | Allocations: 9697)
+Completed 200 OK in 51ms (Views: 48.6ms | Allocations: 10916)
+
+
+Started DELETE "/session" for ::1 at 2021-04-30 13:15:16 -0400
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (Allocations: 384)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:15:16 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/index.html.erb within layouts/application (Duration: 14.1ms | Allocations: 2268)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 2.6ms | Allocations: 595)
+  Rendered layout layouts/application.html.erb (Duration: 2281.3ms | Allocations: 78557)
+Completed 200 OK in 2283ms (Views: 2282.2ms | Allocations: 78996)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:18:00 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/index.html.erb within layouts/application (Duration: 22.6ms | Allocations: 2489)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 3.6ms | Allocations: 899)
+  Rendered layout layouts/application.html.erb (Duration: 49.7ms | Allocations: 9812)
+Completed 200 OK in 58ms (Views: 54.2ms | Allocations: 11033)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:18:15 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/index.html.erb within layouts/application (Duration: 8.5ms | Allocations: 2486)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 18.4ms | Allocations: 4422)
+  Rendered layout layouts/application.html.erb (Duration: 53.0ms | Allocations: 13341)
+Completed 500 Internal Server Error in 59ms (Allocations: 14539)
+
+
+
+ActionView::SyntaxErrorInTemplate - Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sliding Menu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-menu">
+      <br>
+      <br>
+        <ul>
+                <li class="menu-item"><%= image_tag 'logo2.png', size: "50x50" %></li>
+                <li><a href="../services/" class="menu-item"><i class="fa fa-paper-plane"></i> &nbsp Find Opportunities</a></li>
+                <li class="menu-item"><i class="fa fa-globe"></i> &nbsp Saved Opportunties</li>
+                <li><a href="../opportunities/" class="menu-item"><i class="fa fa-bell"></i> &nbsp Timesheet</a></li>
+                <li class="menu-item"><%= button_to '/session', method: :delete do %> <i class="fa fa-sign-out-alt"></i>&nbsp Log Out<% end %> </li>
+                <li class="menu-item"><%= button_to '/session', method: :delete do %> <i class="fa fa-sign-out-alt"></i> &nbsp Log Out</li>
+        </ul>
+    </div>
+</body>
+</html>:
+  app/views/layouts/application.html.erb:18
+
+Started POST "/__better_errors/737025c57dea789f/variables" for ::1 at 2021-04-30 13:18:15 -0400
+Started GET "/" for ::1 at 2021-04-30 13:18:22 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/index.html.erb within layouts/application (Duration: 8.7ms | Allocations: 2486)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 2.4ms | Allocations: 899)
+  Rendered layout layouts/application.html.erb (Duration: 26.9ms | Allocations: 9816)
+Completed 200 OK in 34ms (Views: 31.7ms | Allocations: 11029)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:20:58 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/index.html.erb within layouts/application (Duration: 18.4ms | Allocations: 2486)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 4.0ms | Allocations: 760)
+  Rendered layout layouts/application.html.erb (Duration: 42.7ms | Allocations: 9679)
+Completed 200 OK in 48ms (Views: 45.5ms | Allocations: 10888)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:21:29 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/index.html.erb within layouts/application (Duration: 15.8ms | Allocations: 2486)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 2.4ms | Allocations: 778)
+  Rendered layout layouts/application.html.erb (Duration: 39.1ms | Allocations: 9689)
+Completed 200 OK in 46ms (Views: 43.6ms | Allocations: 10897)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:21:41 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/index.html.erb within layouts/application (Duration: 9.3ms | Allocations: 2486)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 3.0ms | Allocations: 779)
+  Rendered layout layouts/application.html.erb (Duration: 35.4ms | Allocations: 9709)
+Completed 200 OK in 46ms (Views: 42.9ms | Allocations: 10923)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:21:55 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/index.html.erb within layouts/application (Duration: 5.8ms | Allocations: 2491)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 2.3ms | Allocations: 783)
+  Rendered layout layouts/application.html.erb (Duration: 24.2ms | Allocations: 9732)
+Completed 200 OK in 31ms (Views: 28.3ms | Allocations: 10950)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:22:50 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/index.html.erb within layouts/application (Duration: 8.4ms | Allocations: 2486)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 2.4ms | Allocations: 765)
+  Rendered layout layouts/application.html.erb (Duration: 27.6ms | Allocations: 9682)
+Completed 200 OK in 33ms (Views: 31.5ms | Allocations: 10896)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:23:22 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 253)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 2.3ms | Allocations: 760)
+  Rendered layout layouts/application.html.erb (Duration: 20.6ms | Allocations: 7596)
+Completed 200 OK in 28ms (Views: 25.1ms | Allocations: 8805)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:26:31 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.9ms | Allocations: 595)
+  Rendered layout layouts/application.html.erb (Duration: 1551.1ms | Allocations: 63599)
+Completed 200 OK in 1553ms (Views: 1552.1ms | Allocations: 64038)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:26:42 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 2.0ms | Allocations: 595)
+  Rendered layout layouts/application.html.erb (Duration: 1404.0ms | Allocations: 63114)
+Completed 200 OK in 1407ms (Views: 1404.9ms | Allocations: 63553)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:26:52 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 2.7ms | Allocations: 592)
+  Rendered layout layouts/application.html.erb (Duration: 33.4ms | Allocations: 7405)
+Completed 200 OK in 35ms (Views: 34.4ms | Allocations: 7843)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:28:10 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 12.1ms | Allocations: 595)
+  Rendered layout layouts/application.html.erb (Duration: 1775.2ms | Allocations: 61279)
+Completed 200 OK in 1779ms (Views: 1776.3ms | Allocations: 61718)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:28:22 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 2.1ms | Allocations: 592)
+  Rendered layout layouts/application.html.erb (Duration: 22.1ms | Allocations: 7341)
+Completed 200 OK in 25ms (Views: 23.8ms | Allocations: 7781)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:28:31 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.2ms | Allocations: 595)
+  Rendered layout layouts/application.html.erb (Duration: 1605.4ms | Allocations: 61673)
+Completed 200 OK in 1607ms (Views: 1606.2ms | Allocations: 62111)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:28:52 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 2.2ms | Allocations: 595)
+  Rendered layout layouts/application.html.erb (Duration: 1408.4ms | Allocations: 63140)
+Completed 200 OK in 1411ms (Views: 1409.5ms | Allocations: 63579)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:29:04 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.6ms | Allocations: 592)
+  Rendered layout layouts/application.html.erb (Duration: 23.9ms | Allocations: 7344)
+Completed 200 OK in 26ms (Views: 24.8ms | Allocations: 7783)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:30:29 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 3.0ms | Allocations: 595)
+  Rendered layout layouts/application.html.erb (Duration: 1785.3ms | Allocations: 63530)
+Completed 200 OK in 1787ms (Views: 1785.9ms | Allocations: 63968)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:30:33 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.1ms | Allocations: 592)
+  Rendered layout layouts/application.html.erb (Duration: 13.7ms | Allocations: 6823)
+Completed 200 OK in 15ms (Views: 14.4ms | Allocations: 7263)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:30:39 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.1ms | Allocations: 595)
+  Rendered layout layouts/application.html.erb (Duration: 1736.6ms | Allocations: 63565)
+Completed 200 OK in 1739ms (Views: 1737.4ms | Allocations: 64004)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:31:00 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.9ms | Allocations: 595)
+  Rendered layout layouts/application.html.erb (Duration: 1379.6ms | Allocations: 63051)
+Completed 200 OK in 1381ms (Views: 1380.5ms | Allocations: 63491)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:31:11 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.9ms | Allocations: 595)
+  Rendered layout layouts/application.html.erb (Duration: 1397.5ms | Allocations: 63070)
+Completed 200 OK in 1399ms (Views: 1398.2ms | Allocations: 63510)
+
+
+Started DELETE "/session" for ::1 at 2021-04-30 13:31:17 -0400
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (Allocations: 276)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:31:17 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 91)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 3.4ms | Allocations: 595)
+  Rendered layout layouts/application.html.erb (Duration: 35.9ms | Allocations: 6854)
+Completed 200 OK in 39ms (Views: 37.4ms | Allocations: 7291)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:31:33 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.1ms | Allocations: 595)
+  Rendered layout layouts/application.html.erb (Duration: 1399.1ms | Allocations: 64440)
+Completed 200 OK in 1401ms (Views: 1400.1ms | Allocations: 64878)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:31:49 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 2.4ms | Allocations: 595)
+  Rendered layout layouts/application.html.erb (Duration: 1423.9ms | Allocations: 62578)
+Completed 200 OK in 1426ms (Views: 1425.1ms | Allocations: 63017)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:32:00 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.3ms | Allocations: 592)
+  Rendered layout layouts/application.html.erb (Duration: 26.1ms | Allocations: 7334)
+Completed 200 OK in 27ms (Views: 26.7ms | Allocations: 7773)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:39:32 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 257)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 6.3ms | Allocations: 766)
+  Rendered layout layouts/application.html.erb (Duration: 2052.1ms | Allocations: 64271)
+Completed 200 OK in 2064ms (Views: 2060.7ms | Allocations: 65483)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:39:48 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.1ms | Allocations: 595)
+  Rendered layout layouts/application.html.erb (Duration: 1586.3ms | Allocations: 62669)
+Completed 200 OK in 1588ms (Views: 1587.0ms | Allocations: 63108)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:40:02 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 3.2ms | Allocations: 595)
+  Rendered layout layouts/application.html.erb (Duration: 24.6ms | Allocations: 6869)
+Completed 200 OK in 26ms (Views: 25.6ms | Allocations: 7309)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:43:08 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 257)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 4.1ms | Allocations: 765)
+  Rendered layout layouts/application.html.erb (Duration: 35.8ms | Allocations: 8118)
+Completed 200 OK in 45ms (Views: 41.0ms | Allocations: 9330)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:43:46 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.7ms | Allocations: 595)
+  Rendered layout layouts/application.html.erb (Duration: 1646.8ms | Allocations: 61244)
+Completed 200 OK in 1650ms (Views: 1647.6ms | Allocations: 61684)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:44:12 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 255)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 2.3ms | Allocations: 764)
+  Rendered layout layouts/application.html.erb (Duration: 18.1ms | Allocations: 7584)
+Completed 200 OK in 24ms (Views: 22.0ms | Allocations: 8798)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:44:27 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.1ms | Allocations: 595)
+  Rendered layout layouts/application.html.erb (Duration: 1687.3ms | Allocations: 63464)
+Completed 200 OK in 1689ms (Views: 1688.0ms | Allocations: 63903)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:44:43 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.0ms | Allocations: 595)
+  Rendered layout layouts/application.html.erb (Duration: 1363.4ms | Allocations: 63983)
+Completed 200 OK in 1365ms (Views: 1364.0ms | Allocations: 64422)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:44:58 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.3ms | Allocations: 595)
+  Rendered layout layouts/application.html.erb (Duration: 1734.6ms | Allocations: 64418)
+Completed 200 OK in 1737ms (Views: 1735.4ms | Allocations: 64857)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:46:10 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 257)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.8ms | Allocations: 767)
+  Rendered layout layouts/application.html.erb (Duration: 1503.4ms | Allocations: 64736)
+Completed 200 OK in 1511ms (Views: 1508.9ms | Allocations: 65949)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:48:50 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 2.2ms | Allocations: 595)
+  Rendered layout layouts/application.html.erb (Duration: 1420.2ms | Allocations: 62639)
+Completed 200 OK in 1422ms (Views: 1421.2ms | Allocations: 63078)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:49:10 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 4.1ms | Allocations: 595)
+  Rendered layout layouts/application.html.erb (Duration: 1805.7ms | Allocations: 63604)
+Completed 200 OK in 1807ms (Views: 1806.6ms | Allocations: 64043)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:49:33 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.1ms | Allocations: 595)
+  Rendered layout layouts/application.html.erb (Duration: 1377.2ms | Allocations: 64045)
+Completed 200 OK in 1379ms (Views: 1377.9ms | Allocations: 64484)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:49:43 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.6ms | Allocations: 595)
+  Rendered layout layouts/application.html.erb (Duration: 1936.7ms | Allocations: 62140)
+Completed 200 OK in 1938ms (Views: 1937.6ms | Allocations: 62578)
+
+
+Started DELETE "/session" for ::1 at 2021-04-30 13:49:48 -0400
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (Allocations: 276)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:49:48 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 91)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.7ms | Allocations: 595)
+  Rendered layout layouts/application.html.erb (Duration: 25.5ms | Allocations: 6833)
+Completed 200 OK in 28ms (Views: 26.4ms | Allocations: 7271)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:50:15 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 3.7ms | Allocations: 595)
+  Rendered layout layouts/application.html.erb (Duration: 1382.4ms | Allocations: 61234)
+Completed 200 OK in 1385ms (Views: 1383.5ms | Allocations: 61672)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:50:24 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.5ms | Allocations: 595)
+  Rendered layout layouts/application.html.erb (Duration: 1429.4ms | Allocations: 63963)
+Completed 200 OK in 1432ms (Views: 1430.6ms | Allocations: 64402)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:50:35 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 3.0ms | Allocations: 595)
+  Rendered layout layouts/application.html.erb (Duration: 1736.9ms | Allocations: 64420)
+Completed 200 OK in 1739ms (Views: 1737.8ms | Allocations: 64859)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:50:44 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 2.6ms | Allocations: 595)
+  Rendered layout layouts/application.html.erb (Duration: 1493.1ms | Allocations: 62982)
+Completed 200 OK in 1495ms (Views: 1493.8ms | Allocations: 63421)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:50:51 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.0ms | Allocations: 595)
+  Rendered layout layouts/application.html.erb (Duration: 1385.4ms | Allocations: 62142)
+Completed 200 OK in 1387ms (Views: 1386.0ms | Allocations: 62581)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:51:00 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.6ms | Allocations: 595)
+  Rendered layout layouts/application.html.erb (Duration: 1416.6ms | Allocations: 62638)
+Completed 200 OK in 1418ms (Views: 1417.2ms | Allocations: 63076)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:51:07 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.1ms | Allocations: 595)
+  Rendered layout layouts/application.html.erb (Duration: 1388.8ms | Allocations: 64454)
+Completed 200 OK in 1390ms (Views: 1389.6ms | Allocations: 64892)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:51:32 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 257)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 3.5ms | Allocations: 759)
+  Rendered layout layouts/application.html.erb (Duration: 34.3ms | Allocations: 7586)
+Completed 200 OK in 45ms (Views: 43.0ms | Allocations: 8799)
+
+
+Started DELETE "/session" for ::1 at 2021-04-30 13:51:35 -0400
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (Allocations: 276)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:51:35 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 91)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 2.0ms | Allocations: 595)
+  Rendered layout layouts/application.html.erb (Duration: 27.6ms | Allocations: 6827)
+Completed 200 OK in 31ms (Views: 28.6ms | Allocations: 7264)
+
+
+Started DELETE "/session" for ::1 at 2021-04-30 13:51:36 -0400
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (Allocations: 276)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:51:36 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 91)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 2.2ms | Allocations: 592)
+  Rendered layout layouts/application.html.erb (Duration: 25.9ms | Allocations: 6824)
+Completed 200 OK in 29ms (Views: 27.8ms | Allocations: 7260)
+
+
+Started DELETE "/session" for ::1 at 2021-04-30 13:51:37 -0400
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (Allocations: 276)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:51:37 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 91)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.8ms | Allocations: 592)
+  Rendered layout layouts/application.html.erb (Duration: 24.0ms | Allocations: 6826)
+Completed 200 OK in 26ms (Views: 24.9ms | Allocations: 7263)
+
+
+Started DELETE "/session" for ::1 at 2021-04-30 13:51:39 -0400
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (Allocations: 276)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:51:39 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 91)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 2.0ms | Allocations: 592)
+  Rendered layout layouts/application.html.erb (Duration: 27.4ms | Allocations: 6824)
+Completed 200 OK in 30ms (Views: 28.5ms | Allocations: 7260)
+
+
+Started DELETE "/session" for ::1 at 2021-04-30 13:51:42 -0400
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (Allocations: 276)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:51:42 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 91)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 2.3ms | Allocations: 592)
+  Rendered layout layouts/application.html.erb (Duration: 26.6ms | Allocations: 6826)
+Completed 200 OK in 29ms (Views: 28.0ms | Allocations: 7262)
+
+
+Started DELETE "/session" for ::1 at 2021-04-30 13:51:44 -0400
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (Allocations: 276)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:51:44 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 91)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 2.6ms | Allocations: 595)
+  Rendered layout layouts/application.html.erb (Duration: 29.8ms | Allocations: 6850)
+Completed 200 OK in 36ms (Views: 31.6ms | Allocations: 7287)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:52:16 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 3.2ms | Allocations: 595)
+  Rendered layout layouts/application.html.erb (Duration: 1455.3ms | Allocations: 63943)
+Completed 200 OK in 1457ms (Views: 1456.2ms | Allocations: 64382)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:52:25 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.4ms | Allocations: 592)
+  Rendered layout layouts/application.html.erb (Duration: 21.3ms | Allocations: 7341)
+Completed 200 OK in 23ms (Views: 22.1ms | Allocations: 7779)
+
+
+Started DELETE "/session" for ::1 at 2021-04-30 13:52:26 -0400
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (Allocations: 276)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:52:26 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 91)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.4ms | Allocations: 595)
+  Rendered layout layouts/application.html.erb (Duration: 25.2ms | Allocations: 6852)
+Completed 200 OK in 27ms (Views: 26.1ms | Allocations: 7290)
+
+
+Started DELETE "/session" for ::1 at 2021-04-30 13:52:28 -0400
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (Allocations: 276)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:52:28 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 91)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.6ms | Allocations: 595)
+  Rendered layout layouts/application.html.erb (Duration: 22.8ms | Allocations: 6849)
+Completed 200 OK in 25ms (Views: 24.2ms | Allocations: 7286)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:52:39 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.3ms | Allocations: 592)
+  Rendered layout layouts/application.html.erb (Duration: 21.2ms | Allocations: 7347)
+Completed 200 OK in 23ms (Views: 22.2ms | Allocations: 7787)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:53:20 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 7.2ms | Allocations: 595)
+  Rendered layout layouts/application.html.erb (Duration: 1442.3ms | Allocations: 63980)
+Completed 200 OK in 1444ms (Views: 1443.3ms | Allocations: 64419)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:53:28 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.0ms | Allocations: 595)
+  Rendered layout layouts/application.html.erb (Duration: 1376.1ms | Allocations: 63396)
+Completed 200 OK in 1378ms (Views: 1376.9ms | Allocations: 63835)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:53:36 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.2ms | Allocations: 595)
+  Rendered layout layouts/application.html.erb (Duration: 1386.3ms | Allocations: 63038)
+Completed 200 OK in 1388ms (Views: 1387.0ms | Allocations: 63476)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:53:40 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.7ms | Allocations: 592)
+  Rendered layout layouts/application.html.erb (Duration: 23.0ms | Allocations: 6824)
+Completed 200 OK in 25ms (Views: 23.8ms | Allocations: 7263)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:53:52 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 2.1ms | Allocations: 595)
+  Rendered layout layouts/application.html.erb (Duration: 1413.7ms | Allocations: 64026)
+Completed 200 OK in 1415ms (Views: 1414.3ms | Allocations: 64464)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:54:24 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 2.2ms | Allocations: 595)
+  Rendered layout layouts/application.html.erb (Duration: 1403.6ms | Allocations: 62613)
+Completed 200 OK in 1405ms (Views: 1404.2ms | Allocations: 63052)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:54:33 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.2ms | Allocations: 595)
+  Rendered layout layouts/application.html.erb (Duration: 1556.9ms | Allocations: 64454)
+Completed 200 OK in 1559ms (Views: 1558.1ms | Allocations: 64892)
+
+
+Started DELETE "/session" for ::1 at 2021-04-30 13:54:38 -0400
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (Allocations: 276)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:54:38 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 91)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 2.3ms | Allocations: 595)
+  Rendered layout layouts/application.html.erb (Duration: 43.5ms | Allocations: 6856)
+Completed 200 OK in 45ms (Views: 44.3ms | Allocations: 7294)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:54:45 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.5ms | Allocations: 595)
+  Rendered layout layouts/application.html.erb (Duration: 1407.9ms | Allocations: 63928)
+Completed 200 OK in 1409ms (Views: 1408.6ms | Allocations: 64366)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:55:01 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.7ms | Allocations: 595)
+  Rendered layout layouts/application.html.erb (Duration: 20.7ms | Allocations: 7337)
+Completed 200 OK in 22ms (Views: 21.4ms | Allocations: 7776)
+
+
+Started DELETE "/session" for ::1 at 2021-04-30 13:55:03 -0400
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (Allocations: 276)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:55:03 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 91)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 3.6ms | Allocations: 595)
+  Rendered layout layouts/application.html.erb (Duration: 24.0ms | Allocations: 6851)
+Completed 200 OK in 29ms (Views: 26.0ms | Allocations: 7289)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:55:30 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.6ms | Allocations: 595)
+  Rendered layout layouts/application.html.erb (Duration: 1503.0ms | Allocations: 63529)
+Completed 200 OK in 1505ms (Views: 1503.7ms | Allocations: 63968)
+
+
+Started DELETE "/session" for ::1 at 2021-04-30 13:55:33 -0400
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (Allocations: 276)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:55:33 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 91)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.9ms | Allocations: 595)
+  Rendered layout layouts/application.html.erb (Duration: 53.3ms | Allocations: 6832)
+Completed 200 OK in 56ms (Views: 54.9ms | Allocations: 7270)
+
+
+Started DELETE "/session" for ::1 at 2021-04-30 13:55:34 -0400
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (Allocations: 276)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:55:34 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 91)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 2.2ms | Allocations: 595)
+  Rendered layout layouts/application.html.erb (Duration: 32.4ms | Allocations: 6853)
+Completed 200 OK in 34ms (Views: 33.3ms | Allocations: 7291)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:55:41 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.9ms | Allocations: 592)
+  Rendered layout layouts/application.html.erb (Duration: 17.9ms | Allocations: 6817)
+Completed 200 OK in 19ms (Views: 18.8ms | Allocations: 7255)
+
+
+Started DELETE "/session" for ::1 at 2021-04-30 13:55:42 -0400
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (Allocations: 276)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:55:42 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 91)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 4.4ms | Allocations: 592)
+  Rendered layout layouts/application.html.erb (Duration: 26.3ms | Allocations: 6823)
+Completed 200 OK in 28ms (Views: 27.2ms | Allocations: 7259)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:56:03 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.1ms | Allocations: 595)
+  Rendered layout layouts/application.html.erb (Duration: 1495.2ms | Allocations: 63929)
+Completed 200 OK in 1498ms (Views: 1496.3ms | Allocations: 64368)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:56:14 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.5ms | Allocations: 592)
+  Rendered layout layouts/application.html.erb (Duration: 1395.7ms | Allocations: 64841)
+Completed 200 OK in 1398ms (Views: 1396.6ms | Allocations: 65279)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:56:22 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.4ms | Allocations: 595)
+  Rendered layout layouts/application.html.erb (Duration: 1383.4ms | Allocations: 63017)
+Completed 200 OK in 1385ms (Views: 1383.9ms | Allocations: 63457)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:56:30 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 4.6ms | Allocations: 592)
+  Rendered layout layouts/application.html.erb (Duration: 29.7ms | Allocations: 7335)
+Completed 200 OK in 32ms (Views: 30.7ms | Allocations: 7773)
+
+
+Started DELETE "/session" for ::1 at 2021-04-30 13:56:32 -0400
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (Allocations: 276)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:56:32 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 91)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.4ms | Allocations: 595)
+  Rendered layout layouts/application.html.erb (Duration: 49.2ms | Allocations: 6836)
+Completed 200 OK in 53ms (Views: 50.0ms | Allocations: 7273)
+
+
