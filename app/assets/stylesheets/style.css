@@ -263,8 +263,6 @@ ul {
   white-space: nowrap;
 
   transition: .3s ease;
-
-	color: white;
 }
 
 .main-menu:hover{
@@ -274,12 +272,14 @@ ul {
 
 .main-menu .menu-item{
   padding-right: 0px;
+	color: white;
 }
 
 .main-menu .menu-item:hover{
-  /* background-color: #326566; */
+  background-color: transparent;
   cursor: pointer;
 	color: #d2d900;
+
 }
 
 .main-menu .menu-item .fa{
