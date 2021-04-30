@@ -19,6 +19,8 @@
                   <th scope="col">Date</th>
                   <th scope="col">Hours</th>
                   <th scope="col">Signature</th>
+                  <th scope="col"></th>
+                  <th scope="col"><a href='opportunities/new' class="add-btn"><i class="fas fa-plus"></i></a></th>
                 </tr>
               </thead>
               <% @opportunity.each do |opportunity| %>
@@ -36,10 +38,10 @@
                   </tr>
               <%end%>
             </table>
-          <%= button_to "ADD OPPORTUNITY", 'opportunities/new', method: :get ,class: "" %>
-          <%= button_to "OPPORTUNITY LIST", 'services/', method: :get,class: ""  %>
           <%= button_to "Log out", '/session', method: :delete, class: "" %>
       </section>
 
 </body>
 </html>
+
+<!-- link_to "OPPORTUNITY LIST", 'services/', method: :get,class: "" -->

@@ -1,26 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Community Connect - Timesheet </title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="shortcut icon" type="image/png" href="../../assets/images/logo2.png" />
+        <link rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+    crossorigin="anonymous"/>
+    </head>
+    <body>
+      <div class='section'>
+          <%= simple_form_for @opportunity do |f|%>
+              <div class='field form-group'>
+                  <div class='control' >
+                        <%=f.input :organization, placeholder: "Employer Name", label: false, input_html: { class: 'form-style' }%>
+                  </div>
+              </div>
+              <div class='field'>
+                  <div class='control'>
+                      <%=f.input :date, placeholder: "Date of Opportunity",label: false, input_html: { class: 'form-style' }%>
+                  </div>
+              </div>
+              <div class='field'>
+                  <div class='control'>
+                      <%=f.input :hours, placeholder: "Competed Hours", label: false, input_html: { class: 'form-style' }%>
+                  </div>
+              </div>
+              <div class='field'>
+                  <div class='control'>
+                      <%=f.input :signature, placeholder: "Employer Email", label: false, input_html: { class: 'form-style' } %>
+                  </div>
+              </div>
+              <%= f.button :submit, 'Add Opportunity', class: 'btn btn-outline-dark' %>
+        <%end%>
+      </div>
 
-    <div class='section'>
-        <%= simple_form_for @opportunity do |f|%>
-            <div class='field'>
-                <div class='control' >
-                        <%=f.input :organization%>
-                </div>
-            </div>
-            <div class='field'>
-                <div class='control'>
-                    <%=f.input :date%>
-                </div>
-            </div>
-            <div class='field'>
-                <div class='control'>
-                    <%=f.input :hours%>
-                </div>
-            </div>
-            <div class='field'>
-                <div class='control'>
-                    <%=f.input :signature%>
-                </div>
-            </div>
-            <%= f.button :submit, 'Add Opportunity' %>
-      <%end%>
-    </div>
+</body>
+</html>
