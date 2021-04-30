@@ -245,6 +245,7 @@ body{
 ul {
   list-style: none;
 }
+
 .main-menu{
   background-color: #326566;
   border-top-right-radius: 10px;
@@ -284,8 +285,14 @@ ul {
 
 .main-menu .menu-item .fa{
   width:40px;
-  font-size: 25px;
+  font-size: 30px;
   padding: 10px;
+}
+
+.log-out .the-log .fa{
+  font-size: 30px;
+  position: fixed;
+  left: 40px;
 }
 
 .main-menu .menu-item:hover > .fa{
