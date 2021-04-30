@@ -13,3 +13,6 @@ Turbolinks.start()
 ActiveStorage.start()
 
 require("packs/frontend")
+
+//= require jquery
+//= require jquery_ujs 

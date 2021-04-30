@@ -1,31 +1,14 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #e3f2fd;>
-    <a class="navbar-brand" href="#" > <h1 style="color:#316566">Community Connect</h1></a>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    
-    </div>
-</nav>
-
-
-
-
-
-
-
-    <h3 class='title' style="color:#316566">New Opportunity</h3>
 
     <div class='section'>
         <%= simple_form_for @opportunity do |f|%>
             <div class='field'>
                 <div class='control' >
-                    <div class="tab" >
                         <%=f.input :organization%>
-                    </div>
                 </div>
             </div>
             <div class='field'>
                 <div class='control'>
                     <%=f.input :date%>
-    
                 </div>
             </div>
             <div class='field'>
@@ -38,12 +21,6 @@
                     <%=f.input :signature%>
                 </div>
             </div>
-            <%= button_tag(type: 'submit', class: "btn btn-success") do %>
-                <i class="fa fa-home"></i> Add Opportunity
-            <% end %>
-            
-
-
-
-        <%end%>
-  
+            <%= f.button :submit, 'Add Opportunity' %>
+      <%end%>
+    </div>

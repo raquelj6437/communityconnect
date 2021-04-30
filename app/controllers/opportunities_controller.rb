@@ -23,6 +23,20 @@ class OpportunitiesController < ApplicationController
         redirect_to '/employerverify'
     end
 
+    def edit
+        @opportunity = Opportunity.find(params[:id])
+    end
+
+    def update
+        @opportunity = Opportunity.find(params[:id])
+
+        if @opportunity.update(opportunity_params)
+          redirect_to '/dashboard', :notice => "You post has been updated."
+        else
+          render 'edit'
+        end
+    end
+
     def destroy
         @opportunity = Opportunity.find(params[:id])
         @opportunity.destroy
