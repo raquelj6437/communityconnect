@@ -20794,3 +20794,809 @@ Processing by UsersController#index as HTML
 Completed 200 OK in 32ms (Views: 28.9ms | ActiveRecord: 0.0ms | Allocations: 7544)
 
 
+Started GET "/" for ::1 at 2021-04-29 15:41:54 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 2.2ms | Allocations: 487)
+  Rendered layout layouts/application.html.erb (Duration: 16.4ms | Allocations: 5628)
+Completed 200 OK in 18ms (Views: 17.2ms | ActiveRecord: 0.0ms | Allocations: 6071)
+
+
+Started GET "/" for ::1 at 2021-04-29 17:20:04 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 2.9ms | Allocations: 489)
+  Rendered layout layouts/application.html.erb (Duration: 2878.2ms | Allocations: 56378)
+Completed 200 OK in 2891ms (Views: 2881.8ms | Allocations: 56817)
+
+
+Started GET "/" for ::1 at 2021-04-29 17:20:31 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.8ms | Allocations: 489)
+  Rendered layout layouts/application.html.erb (Duration: 2530.1ms | Allocations: 59093)
+Completed 200 OK in 2532ms (Views: 2531.1ms | Allocations: 59532)
+
+
+Started GET "/" for ::1 at 2021-04-29 17:20:42 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.8ms | Allocations: 487)
+  Rendered layout layouts/application.html.erb (Duration: 23.5ms | Allocations: 5649)
+Completed 200 OK in 25ms (Views: 24.4ms | Allocations: 6087)
+
+
+Started GET "/" for ::1 at 2021-04-29 17:20:51 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.1ms | Allocations: 489)
+  Rendered layout layouts/application.html.erb (Duration: 3635.4ms | Allocations: 56843)
+Completed 200 OK in 3637ms (Views: 3636.3ms | Allocations: 57281)
+
+
+Started GET "/" for ::1 at 2021-04-29 17:21:03 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.8ms | Allocations: 489)
+  Rendered layout layouts/application.html.erb (Duration: 3362.3ms | Allocations: 56804)
+Completed 200 OK in 3365ms (Views: 3363.2ms | Allocations: 57243)
+
+
+Started GET "/" for ::1 at 2021-04-29 17:21:38 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 8.3ms | Allocations: 489)
+  Rendered layout layouts/application.html.erb (Duration: 2426.6ms | Allocations: 58717)
+Completed 200 OK in 2429ms (Views: 2427.9ms | Allocations: 59156)
+
+
+Started GET "/" for ::1 at 2021-04-29 17:22:04 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.9ms | Allocations: 489)
+  Rendered layout layouts/application.html.erb (Duration: 2860.6ms | Allocations: 58218)
+Completed 200 OK in 2863ms (Views: 2861.5ms | Allocations: 58656)
+
+
+Started GET "/" for ::1 at 2021-04-29 17:22:13 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 2.3ms | Allocations: 487)
+  Rendered layout layouts/application.html.erb (Duration: 29.1ms | Allocations: 5650)
+Completed 200 OK in 32ms (Views: 31.2ms | Allocations: 6090)
+
+
+Started GET "/" for ::1 at 2021-04-29 17:22:18 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 25.5ms | Allocations: 489)
+  Rendered layout layouts/application.html.erb (Duration: 3562.8ms | Allocations: 57309)
+Completed 200 OK in 3574ms (Views: 3572.8ms | Allocations: 57747)
+
+
+Started GET "/" for ::1 at 2021-04-29 17:22:34 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.0ms | Allocations: 489)
+  Rendered layout layouts/application.html.erb (Duration: 2402.7ms | Allocations: 59069)
+Completed 200 OK in 2405ms (Views: 2404.1ms | Allocations: 59508)
+
+
+Started GET "/" for ::1 at 2021-04-29 17:23:47 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 2.3ms | Allocations: 489)
+  Rendered layout layouts/application.html.erb (Duration: 3679.8ms | Allocations: 56793)
+Completed 200 OK in 3681ms (Views: 3680.5ms | Allocations: 57231)
+
+
+Started GET "/" for ::1 at 2021-04-29 17:24:22 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.7ms | Allocations: 489)
+  Rendered layout layouts/application.html.erb (Duration: 2806.9ms | Allocations: 59542)
+Completed 200 OK in 2812ms (Views: 2809.8ms | Allocations: 59981)
+
+
+Started GET "/" for ::1 at 2021-04-29 17:24:33 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.9ms | Allocations: 489)
+  Rendered layout layouts/application.html.erb (Duration: 2509.1ms | Allocations: 58179)
+Completed 200 OK in 2511ms (Views: 2510.1ms | Allocations: 58618)
+
+
+Started GET "/" for ::1 at 2021-04-29 17:24:43 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.3ms | Allocations: 489)
+  Rendered layout layouts/application.html.erb (Duration: 3077.4ms | Allocations: 59576)
+Completed 200 OK in 3079ms (Views: 3078.2ms | Allocations: 60014)
+
+
+Started GET "/" for ::1 at 2021-04-29 17:24:53 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.1ms | Allocations: 489)
+  Rendered layout layouts/application.html.erb (Duration: 3088.6ms | Allocations: 59668)
+Completed 200 OK in 3090ms (Views: 3089.5ms | Allocations: 60107)
+
+
+Started GET "/" for ::1 at 2021-04-29 17:25:03 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.9ms | Allocations: 487)
+  Rendered layout layouts/application.html.erb (Duration: 32.2ms | Allocations: 6125)
+Completed 200 OK in 35ms (Views: 33.4ms | Allocations: 6565)
+
+
+Started GET "/" for ::1 at 2021-04-29 17:25:10 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 4.2ms | Allocations: 489)
+  Rendered layout layouts/application.html.erb (Duration: 2875.2ms | Allocations: 58630)
+Completed 200 OK in 2883ms (Views: 2882.1ms | Allocations: 59068)
+
+
+Started GET "/" for ::1 at 2021-04-29 17:25:20 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.8ms | Allocations: 489)
+  Rendered layout layouts/application.html.erb (Duration: 3860.8ms | Allocations: 59100)
+Completed 200 OK in 3863ms (Views: 3861.8ms | Allocations: 59539)
+
+
+Started GET "/" for ::1 at 2021-04-29 17:25:41 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 3.2ms | Allocations: 489)
+  Rendered layout layouts/application.html.erb (Duration: 2822.3ms | Allocations: 56807)
+Completed 200 OK in 2824ms (Views: 2823.1ms | Allocations: 57245)
+
+
+Started GET "/" for ::1 at 2021-04-29 17:25:51 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.1ms | Allocations: 489)
+  Rendered layout layouts/application.html.erb (Duration: 2682.0ms | Allocations: 60074)
+Completed 200 OK in 2684ms (Views: 2683.3ms | Allocations: 60513)
+
+
+Started GET "/" for ::1 at 2021-04-29 17:26:02 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.8ms | Allocations: 487)
+  Rendered layout layouts/application.html.erb (Duration: 28.2ms | Allocations: 5652)
+Completed 200 OK in 32ms (Views: 29.1ms | Allocations: 6092)
+
+
+Started GET "/" for ::1 at 2021-04-29 17:28:42 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.3ms | Allocations: 489)
+  Rendered layout layouts/application.html.erb (Duration: 24.3ms | Allocations: 5610)
+Completed 200 OK in 26ms (Views: 25.2ms | Allocations: 6048)
+
+
+Started GET "/" for ::1 at 2021-04-29 17:28:53 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.4ms | Allocations: 489)
+  Rendered layout layouts/application.html.erb (Duration: 27.1ms | Allocations: 5632)
+Completed 200 OK in 30ms (Views: 28.5ms | Allocations: 6071)
+
+
+Started GET "/" for ::1 at 2021-04-29 22:10:28 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 2.5ms | Allocations: 487)
+  Rendered layout layouts/application.html.erb (Duration: 63.2ms | Allocations: 5610)
+Completed 200 OK in 73ms (Views: 66.7ms | Allocations: 6050)
+
+
+Started GET "/" for ::1 at 2021-04-29 22:17:29 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 2.9ms | Allocations: 487)
+  Rendered layout layouts/application.html.erb (Duration: 51.1ms | Allocations: 5610)
+Completed 200 OK in 65ms (Views: 55.7ms | Allocations: 6048)
+
+
+Started GET "/opportunities" for ::1 at 2021-04-29 22:21:25 -0400
+Processing by OpportunitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/index.html.erb within layouts/application
+  [1m[36mOpportunity Load (7.7ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."user_id" IS NULL ORDER BY created_at DESC[0m
+  ↳ app/views/opportunities/index.html.erb:31
+  Rendered opportunities/index.html.erb within layouts/application (Duration: 17.1ms | Allocations: 1292)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.9ms | Allocations: 495)
+  Rendered layout layouts/application.html.erb (Duration: 45.6ms | Allocations: 6892)
+Completed 200 OK in 164ms (Views: 49.1ms | ActiveRecord: 52.1ms | Allocations: 10989)
+
+
+Started GET "/" for ::1 at 2021-04-29 22:21:29 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 2.1ms | Allocations: 487)
+  Rendered layout layouts/application.html.erb (Duration: 17.3ms | Allocations: 5614)
+Completed 200 OK in 19ms (Views: 18.0ms | ActiveRecord: 0.0ms | Allocations: 6057)
+
+
+Started GET "/" for ::1 at 2021-04-29 22:21:30 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.5ms | Allocations: 489)
+  Rendered layout layouts/application.html.erb (Duration: 23.0ms | Allocations: 5748)
+Completed 200 OK in 24ms (Views: 23.7ms | ActiveRecord: 0.0ms | Allocations: 6194)
+
+
+Started GET "/" for ::1 at 2021-04-29 22:21:35 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 2.6ms | Allocations: 489)
+  Rendered layout layouts/application.html.erb (Duration: 16.1ms | Allocations: 5630)
+Completed 200 OK in 20ms (Views: 18.6ms | ActiveRecord: 0.0ms | Allocations: 6073)
+
+
+Started POST "/users" for ::1 at 2021-04-29 22:21:48 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"a", "email"=>"a@me.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "button"=>""}
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mUser Create (8.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "a"], ["email", "a@me.com"], ["created_at", "2021-04-30 02:21:48.997415"], ["updated_at", "2021-04-30 02:21:48.997415"], ["password_digest", "$2a$12$p5T5MQuQrL2YoQcGC/xDRekBHGAU4ResyfII2nY0nVCwGtOJBjguC"]]
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (3.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+Redirected to http://localhost:3000/opportunities
+Completed 302 Found in 277ms (ActiveRecord: 12.6ms | Allocations: 2765)
+
+
+Started GET "/opportunities" for ::1 at 2021-04-29 22:21:49 -0400
+Processing by OpportunitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/index.html.erb within layouts/application
+  [1m[36mOpportunity Load (1.3ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."user_id" = $1 ORDER BY created_at DESC[0m  [["user_id", 9]]
+  ↳ app/views/opportunities/index.html.erb:31
+  Rendered opportunities/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 911)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.8ms | Allocations: 487)
+  Rendered layout layouts/application.html.erb (Duration: 16.0ms | Allocations: 6432)
+Completed 200 OK in 20ms (Views: 15.5ms | ActiveRecord: 1.3ms | Allocations: 7049)
+
+
+Started GET "/styles/styles.css" for ::1 at 2021-04-29 22:21:49 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles/styles.css"):
+  
+Started GET "/styles.css" for ::1 at 2021-04-29 22:21:49 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/opportunities/new" for ::1 at 2021-04-29 22:21:53 -0400
+Processing by OpportunitiesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/new.html.erb within layouts/application
+  Rendered opportunities/new.html.erb within layouts/application (Duration: 23.0ms | Allocations: 5359)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 3.0ms | Allocations: 489)
+  Rendered layout layouts/application.html.erb (Duration: 45.7ms | Allocations: 10800)
+Completed 200 OK in 49ms (Views: 46.8ms | ActiveRecord: 0.0ms | Allocations: 11381)
+
+
+Started POST "/opportunities" for ::1 at 2021-04-29 22:21:58 -0400
+Processing by OpportunitiesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "opportunity"=>{"organization"=>"a", "date"=>"a", "hours"=>"a", "signature"=>"a"}, "button"=>""}
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/opportunities_controller.rb:15:in `create'
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/opportunities_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (3.8ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/opportunities_controller.rb:15:in `create'
+  Rendering layout layouts/mailer.html.erb
+  Rendering opportunity_mailer/new_opportunity.html.erb within layouts/mailer
+  Rendered opportunity_mailer/new_opportunity.html.erb within layouts/mailer (Duration: 2.2ms | Allocations: 214)
+  Rendered layout layouts/mailer.html.erb (Duration: 4.4ms | Allocations: 391)
+  Rendering layout layouts/mailer.text.erb
+  Rendering opportunity_mailer/new_opportunity.text.erb within layouts/mailer
+  Rendered opportunity_mailer/new_opportunity.text.erb within layouts/mailer (Duration: 1.5ms | Allocations: 102)
+  Rendered layout layouts/mailer.text.erb (Duration: 3.0ms | Allocations: 258)
+OpportunityMailer#new_opportunity: processed outbound mail in 25.0ms
+Delivered mail 608b69c691c5c_217e639c909d7@dhcp-wifi-8021x-168-122-202-47.bu.edu.mail (405.1ms)
+Date: Thu, 29 Apr 2021 22:21:58 -0400
+From: Communityconnecttech@gmail.com
+To: a
+Message-ID: <608b69c691c5c_217e639c909d7@dhcp-wifi-8021x-168-122-202-47.bu.edu.mail>
+Subject: Confirm Hours for a
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_608b69c68d691_217e639c908ce";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_608b69c68d691_217e639c908ce
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+To verify community service hours click here
+
+
+----==_mimepart_608b69c68d691_217e639c908ce
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <p> a completed a hours volunteering at a on a</p>
+<p>
+  To verify community service hours click here:
+</p>
+<a href="community-connect-1.herokuapp.com/opportunity/">Confirm</a>
+
+  </body>
+</html>
+
+----==_mimepart_608b69c68d691_217e639c908ce--
+
+Completed 500 Internal Server Error in 600ms (ActiveRecord: 9.6ms | Allocations: 36223)
+
+
+
+Net::SMTPAuthenticationError - 530-5.7.0 Authentication Required. Learn more at:
+  app/controllers/opportunities_controller.rb:16:in `create'
+
+Started POST "/__better_errors/e22a3b354e18d1a5/variables" for ::1 at 2021-04-29 22:21:59 -0400
+Started GET "/opportunities/new" for ::1 at 2021-04-29 22:22:04 -0400
+Processing by OpportunitiesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/new.html.erb within layouts/application
+  Rendered opportunities/new.html.erb within layouts/application (Duration: 26.3ms | Allocations: 4996)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.7ms | Allocations: 489)
+  Rendered layout layouts/application.html.erb (Duration: 46.6ms | Allocations: 10437)
+Completed 200 OK in 49ms (Views: 47.5ms | ActiveRecord: 0.0ms | Allocations: 10890)
+
+
+Started POST "/opportunities" for ::1 at 2021-04-29 22:22:06 -0400
+Processing by OpportunitiesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "opportunity"=>{"organization"=>"a", "date"=>"a", "hours"=>"a", "signature"=>"a"}, "button"=>""}
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/opportunities_controller.rb:15:in `create'
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/opportunities_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/opportunities_controller.rb:15:in `create'
+  Rendering layout layouts/mailer.html.erb
+  Rendering opportunity_mailer/new_opportunity.html.erb within layouts/mailer
+  Rendered opportunity_mailer/new_opportunity.html.erb within layouts/mailer (Duration: 0.5ms | Allocations: 53)
+  Rendered layout layouts/mailer.html.erb (Duration: 1.5ms | Allocations: 129)
+  Rendering layout layouts/mailer.text.erb
+  Rendering opportunity_mailer/new_opportunity.text.erb within layouts/mailer
+  Rendered opportunity_mailer/new_opportunity.text.erb within layouts/mailer (Duration: 0.2ms | Allocations: 36)
+  Rendered layout layouts/mailer.text.erb (Duration: 0.7ms | Allocations: 112)
+OpportunityMailer#new_opportunity: processed outbound mail in 9.9ms
+Delivered mail 608b69ce222fe_217e3d40911d6@dhcp-wifi-8021x-168-122-202-47.bu.edu.mail (282.0ms)
+Date: Thu, 29 Apr 2021 22:22:06 -0400
+From: Communityconnecttech@gmail.com
+To: a
+Message-ID: <608b69ce222fe_217e3d40911d6@dhcp-wifi-8021x-168-122-202-47.bu.edu.mail>
+Subject: Confirm Hours for a
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_608b69ce20c34_217e3d409109";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_608b69ce20c34_217e3d409109
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+To verify community service hours click here
+
+
+----==_mimepart_608b69ce20c34_217e3d409109
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <p> a completed a hours volunteering at a on a</p>
+<p>
+  To verify community service hours click here:
+</p>
+<a href="community-connect-1.herokuapp.com/opportunity/">Confirm</a>
+
+  </body>
+</html>
+
+----==_mimepart_608b69ce20c34_217e3d409109--
+
+Completed 500 Internal Server Error in 307ms (ActiveRecord: 3.8ms | Allocations: 17032)
+
+
+
+Net::SMTPAuthenticationError - 530-5.7.0 Authentication Required. Learn more at:
+  app/controllers/opportunities_controller.rb:16:in `create'
+
+Started POST "/__better_errors/c6fdf16d3630fdb8/variables" for ::1 at 2021-04-29 22:22:06 -0400
+Started GET "/opportunities/new" for ::1 at 2021-04-29 22:22:29 -0400
+Processing by OpportunitiesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/new.html.erb within layouts/application
+  Rendered opportunities/new.html.erb within layouts/application (Duration: 13.5ms | Allocations: 4988)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.0ms | Allocations: 489)
+  Rendered layout layouts/application.html.erb (Duration: 30.1ms | Allocations: 10429)
+Completed 200 OK in 32ms (Views: 31.3ms | ActiveRecord: 0.0ms | Allocations: 10877)
+
+
+Started GET "/opportunities" for ::1 at 2021-04-29 22:22:31 -0400
+Processing by OpportunitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/index.html.erb within layouts/application
+  [1m[36mOpportunity Load (5.4ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."user_id" = $1 ORDER BY created_at DESC[0m  [["user_id", 9]]
+  ↳ app/views/opportunities/index.html.erb:31
+  Rendered opportunities/index.html.erb within layouts/application (Duration: 9.6ms | Allocations: 910)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.8ms | Allocations: 487)
+  Rendered layout layouts/application.html.erb (Duration: 24.1ms | Allocations: 6431)
+Completed 200 OK in 29ms (Views: 20.2ms | ActiveRecord: 5.4ms | Allocations: 7048)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-29 22:22:32 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/services/" for ::1 at 2021-04-29 22:22:33 -0400
+Processing by ServicesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering services/index.html.erb within layouts/application
+  Rendered services/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 149)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.4ms | Allocations: 495)
+  Rendered layout layouts/application.html.erb (Duration: 19.2ms | Allocations: 5739)
+Completed 200 OK in 24ms (Views: 22.3ms | ActiveRecord: 0.0ms | Allocations: 6758)
+
+
+Started GET "/opportunities" for ::1 at 2021-04-29 22:22:37 -0400
+Processing by OpportunitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/index.html.erb within layouts/application
+  [1m[36mOpportunity Load (1.4ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."user_id" = $1 ORDER BY created_at DESC[0m  [["user_id", 9]]
+  ↳ app/views/opportunities/index.html.erb:31
+  Rendered opportunities/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 909)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.9ms | Allocations: 487)
+  Rendered layout layouts/application.html.erb (Duration: 16.9ms | Allocations: 6440)
+Completed 200 OK in 20ms (Views: 16.4ms | ActiveRecord: 1.4ms | Allocations: 7057)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-29 22:22:37 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started DELETE "/session" for ::1 at 2021-04-29 22:22:39 -0400
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 286)
+
+
+Started GET "/" for ::1 at 2021-04-29 22:22:39 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 91)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.8ms | Allocations: 489)
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | Allocations: 5636)
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.0ms | Allocations: 6077)
+
+
+Started GET "/" for ::1 at 2021-04-29 22:22:43 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.9ms | Allocations: 487)
+  Rendered layout layouts/application.html.erb (Duration: 13.4ms | Allocations: 5614)
+Completed 200 OK in 15ms (Views: 14.2ms | ActiveRecord: 0.0ms | Allocations: 6056)
+
+
+Started GET "/" for ::1 at 2021-04-29 22:23:04 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 250)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.2ms | Allocations: 101)
+  Rendered layout layouts/application.html.erb (Duration: 1561.9ms | Allocations: 59552)
+Completed 200 OK in 1568ms (Views: 1566.3ms | ActiveRecord: 0.0ms | Allocations: 60768)
+
+
+Started POST "/users" for ::1 at 2021-04-29 22:23:16 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"adri", "email"=>"a@me.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "button"=>""}
+  [1m[36mTRANSACTION (3.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mUser Create (4.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "adri"], ["email", "a@me.com"], ["created_at", "2021-04-30 02:23:16.908313"], ["updated_at", "2021-04-30 02:23:16.908313"], ["password_digest", "$2a$12$tpBrV9dG.FLJZ1iOahxGTOdzGKBJ42TYGAwxFZ0WHxgcfZOQ2wyKq"]]
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+Redirected to http://localhost:3000/opportunities
+Completed 302 Found in 327ms (ActiveRecord: 9.2ms | Allocations: 2751)
+
+
+Started GET "/opportunities" for ::1 at 2021-04-29 22:23:16 -0400
+Processing by OpportunitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/index.html.erb within layouts/application
+  [1m[36mOpportunity Load (1.2ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."user_id" = $1 ORDER BY created_at DESC[0m  [["user_id", 10]]
+  ↳ app/views/opportunities/index.html.erb:31
+  Rendered opportunities/index.html.erb within layouts/application (Duration: 5.9ms | Allocations: 1225)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered layout layouts/application.html.erb (Duration: 33.7ms | Allocations: 6364)
+Completed 200 OK in 40ms (Views: 35.6ms | ActiveRecord: 1.2ms | Allocations: 7525)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-29 22:23:17 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/styles/styles.css" for ::1 at 2021-04-29 22:23:17 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles/styles.css"):
+  
+Started GET "/styles/styles.css" for ::1 at 2021-04-29 22:23:17 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles/styles.css"):
+  
+Started GET "/styles.css" for ::1 at 2021-04-29 22:23:17 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/opportunities/new" for ::1 at 2021-04-29 22:23:19 -0400
+Processing by OpportunitiesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/new.html.erb within layouts/application
+  Rendered opportunities/new.html.erb within layouts/application (Duration: 15.4ms | Allocations: 5359)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 29.4ms | Allocations: 10349)
+Completed 200 OK in 32ms (Views: 30.3ms | ActiveRecord: 0.0ms | Allocations: 10926)
+
+
+Started POST "/opportunities" for ::1 at 2021-04-29 22:23:22 -0400
+Processing by OpportunitiesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "opportunity"=>{"organization"=>"a", "date"=>"a", "hours"=>"a", "signature"=>"a"}, "button"=>""}
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/opportunities_controller.rb:15:in `create'
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/opportunities_controller.rb:15:in `create'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/opportunities_controller.rb:15:in `create'
+  Rendering layout layouts/mailer.html.erb
+  Rendering opportunity_mailer/new_opportunity.html.erb within layouts/mailer
+  Rendered opportunity_mailer/new_opportunity.html.erb within layouts/mailer (Duration: 1.2ms | Allocations: 207)
+  Rendered layout layouts/mailer.html.erb (Duration: 2.5ms | Allocations: 381)
+  Rendering layout layouts/mailer.text.erb
+  Rendering opportunity_mailer/new_opportunity.text.erb within layouts/mailer
+  Rendered opportunity_mailer/new_opportunity.text.erb within layouts/mailer (Duration: 1.2ms | Allocations: 101)
+  Rendered layout layouts/mailer.text.erb (Duration: 2.7ms | Allocations: 254)
+OpportunityMailer#new_opportunity: processed outbound mail in 15.4ms
+Delivered mail 608b6a1ac6c3b_217e3d409131d@dhcp-wifi-8021x-168-122-202-47.bu.edu.mail (258.1ms)
+Date: Thu, 29 Apr 2021 22:23:22 -0400
+From: Communityconnecttech@gmail.com
+To: a
+Message-ID: <608b6a1ac6c3b_217e3d409131d@dhcp-wifi-8021x-168-122-202-47.bu.edu.mail>
+Subject: Confirm Hours for adri
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_608b6a1ac58a1_217e3d409124f";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_608b6a1ac58a1_217e3d409124f
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+To verify community service hours click here
+
+
+----==_mimepart_608b6a1ac58a1_217e3d409124f
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <p> adri completed a hours volunteering at a on a</p>
+<p>
+  To verify community service hours click here:
+</p>
+<a href="community-connect-1.herokuapp.com/opportunity/">Confirm</a>
+
+  </body>
+</html>
+
+----==_mimepart_608b6a1ac58a1_217e3d409124f--
+
+Completed 500 Internal Server Error in 293ms (ActiveRecord: 4.8ms | Allocations: 18113)
+
+
+
+Net::SMTPAuthenticationError - 530-5.7.0 Authentication Required. Learn more at:
+  app/controllers/opportunities_controller.rb:16:in `create'
+
+Started POST "/__better_errors/d0390f797ebe6d08/variables" for ::1 at 2021-04-29 22:23:23 -0400
+Started GET "/opportunities/new" for ::1 at 2021-04-29 22:23:32 -0400
+Processing by OpportunitiesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/new.html.erb within layouts/application
+  Rendered opportunities/new.html.erb within layouts/application (Duration: 11.7ms | Allocations: 5002)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 31.3ms | Allocations: 9992)
+Completed 200 OK in 34ms (Views: 32.5ms | ActiveRecord: 0.0ms | Allocations: 10443)
+
+
+Started GET "/opportunities" for ::1 at 2021-04-29 22:23:34 -0400
+Processing by OpportunitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/index.html.erb within layouts/application
+  [1m[36mOpportunity Load (1.7ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."user_id" = $1 ORDER BY created_at DESC[0m  [["user_id", 10]]
+  ↳ app/views/opportunities/index.html.erb:31
+  Rendered opportunities/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 910)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 18.8ms | Allocations: 5982)
+Completed 200 OK in 23ms (Views: 18.3ms | ActiveRecord: 1.7ms | Allocations: 6598)
+
+
+Started GET "/styles.css" for ::1 at 2021-04-29 22:23:34 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/" for ::1 at 2021-04-29 22:23:35 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | Allocations: 5179)
+Completed 200 OK in 15ms (Views: 14.3ms | ActiveRecord: 0.0ms | Allocations: 5632)
+
+
+Started GET "/" for ::1 at 2021-04-29 22:23:36 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 5179)
+Completed 200 OK in 15ms (Views: 13.7ms | ActiveRecord: 0.0ms | Allocations: 5630)
+
+
