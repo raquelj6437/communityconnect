@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+    # layout 'style.css'
     def index
     end
 

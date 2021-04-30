@@ -1,0 +1,20 @@
+.t-button{
+  font-size: 15px;
+  clear: both;
+}
+
+.add-btn{
+  color:green;
+}
+
+.add-btn:hover{
+  background-color:transparent;
+}
+
+/* form style */
+.form-style{
+  width: 100%;
+  padding: 12px 20px;
+  /* margin: 8px 0; */
+  /* box-sizing: border-box; */
+}

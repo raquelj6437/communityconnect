@@ -13,27 +13,27 @@
     <body>
       <div class='section'>
           <%= simple_form_for @opportunity do |f|%>
-              <div class='field form-group'>
+              <div class='field'>
                   <div class='control' >
-                        <%=f.input :organization, placeholder: "Employer Name", label: false, input_html: { class: 'form-style' }%>
+                        <%=f.input :organization, placeholder: "Employer Name", label: false%>
                   </div>
               </div>
               <div class='field'>
                   <div class='control'>
-                      <%=f.input :date, placeholder: "Date of Opportunity",label: false, input_html: { class: 'form-style' }%>
+                      <%=f.input :date, placeholder: "Date of Opportunity", label: false%>
                   </div>
               </div>
               <div class='field'>
                   <div class='control'>
-                      <%=f.input :hours, placeholder: "Competed Hours", label: false, input_html: { class: 'form-style' }%>
+                      <%=f.input :hours, placeholder: "Competed Hours", label: false%>
                   </div>
               </div>
               <div class='field'>
                   <div class='control'>
-                      <%=f.input :signature, placeholder: "Employer Email", label: false, input_html: { class: 'form-style' } %>
+                      <%=f.input :signature, placeholder: "Employer Email", label: false %>
                   </div>
               </div>
-              <%= f.button :submit, 'Add Opportunity', class: 'btn btn-outline-dark' %>
+              <%= f.button :submit, 'Add Opportunity', class: 'btn btn-primary' %>
         <%end%>
       </div>
 

@@ -38,7 +38,7 @@ a {
 .container {
 	background-color: #fff;
 	border-radius: 10px;
-  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+  	box-shadow: 0 14px 28px rgba(0,0,0,0.25),
 			0 10px 10px rgba(0,0,0,0.22);
 	position: relative;
 	overflow: hidden;
@@ -251,17 +251,17 @@ ul {
   border-bottom-right-radius: 10px;
   box-shadow: 0px 0px 20px #d4d4d4;
 
-  width: 70px;
+  width: 80px;
   height: 100vh;
 
   position: fixed;
   top:0;
   left: 0;
-  
+
   overflow-x: hidden;
   overflow-y: hidden;
   white-space: nowrap;
-  
+
   transition: .3s ease;
 }
 
@@ -272,11 +272,14 @@ ul {
 
 .main-menu .menu-item{
   padding-right: 0px;
+	color: white;
 }
 
 .main-menu .menu-item:hover{
-  background-color: #326566;
+  background-color: transparent;
   cursor: pointer;
+	color: #d2d900;
+
 }
 
 .main-menu .menu-item .fa{
@@ -286,7 +289,7 @@ ul {
 }
 
 .main-menu .menu-item:hover > .fa{
-  color: #1d0daa;
+  color: #d2d900;
 }
 
 section.home{
@@ -305,4 +308,3 @@ section.home{
   background: #bbbbbb;
   border-radius: 10px;
 }
-

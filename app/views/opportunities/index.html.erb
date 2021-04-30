@@ -1,47 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Community Connect - Timesheet </title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="shortcut icon" type="image/png" href="../../assets/images/logo2.png" />
+        <link rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+    crossorigin="anonymous"/>
+    </head>
+    <body>
+      <section class="container">
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">Organization</th>
+                  <th scope="col">Date</th>
+                  <th scope="col">Hours</th>
+                  <th scope="col">Signature</th>
+                  <th scope="col"></th>
+                  <th scope="col"><a href='opportunities/new' class="add-btn"><i class="fas fa-plus"></i></a></th>
+                </tr>
+              </thead>
+              <% @opportunity.each do |opportunity| %>
+                  <tr>
+                      <td scope="row"><%= opportunity.organization%></td>
+                      <td><%= opportunity.date%></td>
+                      <td><%= opportunity.hours%></td>
+                      <td><%= opportunity.signature%></td>
+                      <td><%= button_to edit_opportunity_path(opportunity), method: :get, class: 'btn' do %>
+                            <i class="far fa-edit t-button"></i>
+                          <% end %></td>
+                      <td><%= button_to opportunity, :data => {:confirm => 'Are you sure?'}, method: :delete, class: 'btn' do %>
+                            <i class="fas fa-trash t-button"></i>
+                          <% end %> </td>
+                  </tr>
+              <%end%>
+            </table>
+          <%= button_to "Log out", '/session', method: :delete, class: "" %>
+      </section>
 
-<link rel="stylesheet" href="styles/styles.css">
-<nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #e3f2fd;>
-<a class="navbar-brand" href="#" > <h1 style="color:#316566">Community Connect</h1></a>
-<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-<span class="navbar-toggler-icon"></span>
-</button>
-<div class="collapse navbar-collapse" id="navbarNavDropdown">
+</body>
+</html>
 
-
-</div>
-</nav>
-
-
-
-<section class="container">
-    
-    <link rel="stylesheet" href="styles.css">
-
-      <table class="table table-bordered  table-striped rounded">
-        <tr>
-          <th style="color:#316566">Organization:</th>
-          <th style="color:#316566">Date:</th>
-          <th style="color:#316566">Hours:</th>
-          <th style="color:#316566">Signature:</th>
-          <th></th>
-        </tr>
-        <% @opportunity.each do |opportunity| %>
-            <tr>
-                <td><%= opportunity.organization%></td>
-                <td><%= opportunity.date%></td>
-                <td><%= opportunity.hours%></td>
-                <td><%= opportunity.signature%></td>
-                <td><%= button_to "Delete", opportunity,:data => {:confirm => 'Are you sure?'}, method: :delete,class: "btn btn-success" %></td>
-            </tr>
-        <%end%>
-      </table>
-    <%= button_to "ADD OPPORTUNITY", 'opportunities/new', method: :get ,class: "btn btn-success" %>
-      
-    &nbsp;
-    <%= button_to "OPPORTUNITY LIST", 'services/', method: :get,class: "btn btn-success"  %>
-    &nbsp;
-    <%= button_to "Log out", '/session', method: :delete, class: "btn btn-success" %>
-
-      
-</section>
-
+<!-- link_to "OPPORTUNITY LIST", 'services/', method: :get,class: "" -->
