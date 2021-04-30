@@ -15,7 +15,9 @@
   </head>
 
   <body>
-    <%= render "layouts/navbar" %>
+    <% unless action_name == '/users' || action_name == '/session' %>
+      <%= render "layouts/navbar" %>
+    <% end %>
     <%= yield %>
   </body>
 </html>
