@@ -27197,3 +27197,113 @@ Processing by UsersController#index as HTML
 Completed 200 OK in 53ms (Views: 50.0ms | Allocations: 7273)
 
 
+Started GET "/" for ::1 at 2021-04-30 14:11:36 -0400
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 581)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.7ms | Allocations: 812)
+  Rendered layout layouts/application.html.erb (Duration: 1684.0ms | Allocations: 95961)
+Completed 200 OK in 1710ms (Views: 1692.7ms | ActiveRecord: 0.0ms | Allocations: 100276)
+
+
+Started GET "/" for ::1 at 2021-04-30 14:11:38 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 86)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.6ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 36.2ms | Allocations: 7181)
+Completed 200 OK in 40ms (Views: 36.8ms | ActiveRecord: 0.0ms | Allocations: 7638)
+
+
+Started GET "/packs/js/application-cd592a5460e8df03b979.js" for ::1 at 2021-04-30 14:11:38 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-cd592a5460e8df03b979.js"):
+  
+Started POST "/session" for ::1 at 2021-04-30 14:11:43 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "login"=>{"email"=>"max@gmail.com", "password"=>"[FILTERED]"}, "button"=>""}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "max@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:3:in `create'
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 312ms (ActiveRecord: 37.1ms | Allocations: 8769)
+
+
+Started GET "/dashboard" for ::1 at 2021-04-30 14:11:43 -0400
+Processing by OpportunitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/index.html.erb within layouts/application
+  [1m[36mOpportunity Load (2.9ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."user_id" = $1 ORDER BY created_at DESC[0m  [["user_id", 5]]
+  ↳ app/views/opportunities/index.html.erb:26
+  Rendered opportunities/index.html.erb within layouts/application (Duration: 6.2ms | Allocations: 1133)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.8ms | Allocations: 612)
+  Rendered layout layouts/application.html.erb (Duration: 22.1ms | Allocations: 8004)
+Completed 200 OK in 59ms (Views: 21.4ms | ActiveRecord: 6.2ms | Allocations: 11071)
+
+
+Started GET "/packs/js/application-cd592a5460e8df03b979.js" for ::1 at 2021-04-30 14:11:43 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-cd592a5460e8df03b979.js"):
+  
+Started GET "/services/" for ::1 at 2021-04-30 14:11:46 -0400
+Processing by ServicesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering services/index.html.erb within layouts/application
+  Rendered services/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 138)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.5ms | Allocations: 612)
+  Rendered layout layouts/application.html.erb (Duration: 22.0ms | Allocations: 7012)
+Completed 200 OK in 27ms (Views: 24.4ms | ActiveRecord: 0.0ms | Allocations: 8039)
+
+
+Started GET "/packs/js/application-cd592a5460e8df03b979.js" for ::1 at 2021-04-30 14:11:46 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-cd592a5460e8df03b979.js"):
+  
+Started GET "/services/list.css" for ::1 at 2021-04-30 14:11:46 -0400
+
+AbstractController::ActionNotFound - The action 'show' could not be found for ServicesController
+Did you mean?  index:
+
+Started GET "/services/list.css" for ::1 at 2021-04-30 14:11:46 -0400
+
+AbstractController::ActionNotFound - The action 'show' could not be found for ServicesController
+Did you mean?  index:
+
+Started GET "/dashboard" for ::1 at 2021-04-30 14:11:48 -0400
+Processing by OpportunitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/index.html.erb within layouts/application
+  [1m[36mOpportunity Load (1.6ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."user_id" = $1 ORDER BY created_at DESC[0m  [["user_id", 5]]
+  ↳ app/views/opportunities/index.html.erb:26
+  Rendered opportunities/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 733)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.3ms | Allocations: 593)
+  Rendered layout layouts/application.html.erb (Duration: 18.2ms | Allocations: 7513)
+Completed 200 OK in 43ms (Views: 17.4ms | ActiveRecord: 1.6ms | Allocations: 8139)
+
+
+Started GET "/packs/js/application-cd592a5460e8df03b979.js" for ::1 at 2021-04-30 14:11:48 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-cd592a5460e8df03b979.js"):
+  
+Started GET "/opportunities/new" for ::1 at 2021-04-30 14:11:49 -0400
+Processing by OpportunitiesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/new.html.erb within layouts/application
+  Rendered opportunities/new.html.erb within layouts/application (Duration: 95.0ms | Allocations: 19310)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.1ms | Allocations: 591)
+  Rendered layout layouts/application.html.erb (Duration: 116.0ms | Allocations: 25958)
+Completed 200 OK in 130ms (Views: 116.6ms | ActiveRecord: 3.9ms | Allocations: 29976)
+
+
+Started GET "/packs/js/application-cd592a5460e8df03b979.js" for ::1 at 2021-04-30 14:11:49 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-cd592a5460e8df03b979.js"):
+  
