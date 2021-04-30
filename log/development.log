@@ -25843,3 +25843,119 @@ Entrypoint navbar = js/navbar-c830791650c5ccf02c68.js js/navbar-c830791650c5ccf0
 Completed 200 OK in 5010ms (Views: 5009.2ms | Allocations: 10452)
 
 
+Started GET "/" for ::1 at 2021-04-30 13:00:03 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/index.html.erb within layouts/application (Duration: 21.3ms | Allocations: 2489)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 4.5ms | Allocations: 791)
+  Rendered layout layouts/application.html.erb (Duration: 53.8ms | Allocations: 9727)
+Completed 200 OK in 68ms (Views: 63.8ms | Allocations: 10958)
+
+
+Started GET "/packs/js/frontend-0218d3e577e9ccdd11ee.js" for ::1 at 2021-04-30 13:00:04 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/frontend-0218d3e577e9ccdd11ee.js"):
+  
+Started GET "/packs/js/application-cd592a5460e8df03b979.js" for ::1 at 2021-04-30 13:00:04 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-cd592a5460e8df03b979.js"):
+  
+Started GET "/packs/js/frontend-0218d3e577e9ccdd11ee.js" for ::1 at 2021-04-30 13:00:04 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/frontend-0218d3e577e9ccdd11ee.js"):
+  
+Started DELETE "/session" for ::1 at 2021-04-30 13:00:14 -0400
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (Allocations: 395)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:00:14 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/index.html.erb within layouts/application (Duration: 15.2ms | Allocations: 2268)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 3.1ms | Allocations: 595)
+  Rendered layout layouts/application.html.erb (Duration: 47.5ms | Allocations: 8926)
+Completed 200 OK in 51ms (Views: 48.9ms | Allocations: 9364)
+
+
+Started GET "/packs/js/frontend-0218d3e577e9ccdd11ee.js" for ::1 at 2021-04-30 13:00:14 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/frontend-0218d3e577e9ccdd11ee.js"):
+  
+Started GET "/packs/js/application-cd592a5460e8df03b979.js" for ::1 at 2021-04-30 13:00:14 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-cd592a5460e8df03b979.js"):
+  
+Started GET "/packs/js/frontend-0218d3e577e9ccdd11ee.js" for ::1 at 2021-04-30 13:00:15 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/frontend-0218d3e577e9ccdd11ee.js"):
+  
+Started GET "/" for ::1 at 2021-04-30 13:02:55 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/index.html.erb within layouts/application (Duration: 17.2ms | Allocations: 2486)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 3.7ms | Allocations: 775)
+  Rendered layout layouts/application.html.erb (Duration: 43.2ms | Allocations: 9707)
+Completed 200 OK in 49ms (Views: 46.9ms | Allocations: 10920)
+
+
+Started GET "/packs/js/frontend-0218d3e577e9ccdd11ee.js" for ::1 at 2021-04-30 13:02:55 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/frontend-0218d3e577e9ccdd11ee.js"):
+  
+Started GET "/packs/js/application-cd592a5460e8df03b979.js" for ::1 at 2021-04-30 13:02:55 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/application-cd592a5460e8df03b979.js"):
+  
+Started GET "/packs/js/frontend-0218d3e577e9ccdd11ee.js" for ::1 at 2021-04-30 13:02:56 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/packs/js/frontend-0218d3e577e9ccdd11ee.js"):
+  
+Started GET "/" for ::1 at 2021-04-30 13:04:34 -0400
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/index.html.erb within layouts/application (Duration: 12.8ms | Allocations: 2885)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 4.4ms | Allocations: 838)
+  Rendered layout layouts/application.html.erb (Duration: 126.6ms | Allocations: 15923)
+Completed 200 OK in 147ms (Views: 132.5ms | ActiveRecord: 0.0ms | Allocations: 19191)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:05:55 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/index.html.erb within layouts/application (Duration: 16.1ms | Allocations: 2258)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 3.0ms | Allocations: 595)
+  Rendered layout layouts/application.html.erb (Duration: 41.8ms | Allocations: 8918)
+Completed 200 OK in 45ms (Views: 43.5ms | ActiveRecord: 0.0ms | Allocations: 9369)
+
+
+Started GET "/" for ::1 at 2021-04-30 13:06:32 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/index.html.erb within layouts/application (Duration: 16.7ms | Allocations: 2258)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 2.4ms | Allocations: 592)
+  Rendered layout layouts/application.html.erb (Duration: 40.4ms | Allocations: 8876)
+Completed 200 OK in 42ms (Views: 41.6ms | ActiveRecord: 0.0ms | Allocations: 9318)
+
+
