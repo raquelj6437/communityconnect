@@ -12549,6 +12549,14 @@ Completed 200 OK in 17ms (Views: 15.7ms | ActiveRecord: 0.0ms | Allocations: 546
 =======
 >>>>>>> 015499de68ae086ae2ff53ce4e986611cf7e6b5a
 >>>>>>> 47109d351a46c96d391e8601e398965676e93c57
+<<<<<<< HEAD
+Started GET "/" for ::1 at 2021-04-27 22:06:57 -0400
+  [1m[35m (3.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 471)
+=======
 OpportunityMailer#new_opportunity: processed outbound mail in 27.6ms
 OpportunityMailer#new_opportunity: processed outbound mail in 4.5ms
   Rendering layout layouts/mailer.html.erb
@@ -12669,6 +12677,7 @@ Processing by UsersController#index as HTML
   Rendering layout layouts/application.html.erb
   Rendering users/index.html.erb within layouts/application
   Rendered users/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 473)
+>>>>>>> f71a412a0619d7df2c77cb8abbfc0ab3e5c017b9
 [Webpacker] Compiling...
 [Webpacker] Compilation failed:
 yarn run v1.22.10
@@ -12677,6 +12686,1438 @@ info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this comm
 
 error Command "webpack" not found.
 
+<<<<<<< HEAD
+  Rendered layouts/_navbar.html.erb (Duration: 1.7ms | Allocations: 206)
+  Rendered layout layouts/application.html.erb (Duration: 2912.2ms | Allocations: 18353)
+Completed 200 OK in 2942ms (Views: 2922.2ms | ActiveRecord: 0.0ms | Allocations: 21609)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/css/styles.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/css/styles.css"):
+  
+Started GET "/" for ::1 at 2021-04-27 22:13:27 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 1924.0ms | Allocations: 52251)
+Completed 200 OK in 1930ms (Views: 1926.9ms | Allocations: 52701)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/css/styles.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/css/styles.css"):
+  
+Started GET "/" for ::1 at 2021-04-27 22:13:36 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 24.9ms | Allocations: 5782)
+Completed 200 OK in 26ms (Views: 25.7ms | Allocations: 6239)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/css/styles.css"):
+  
+Started GET "/" for ::1 at 2021-04-27 22:15:21 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 1483.3ms | Allocations: 52209)
+Completed 200 OK in 1485ms (Views: 1484.4ms | Allocations: 52657)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/css/styles.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/css/styles.css"):
+  
+Started GET "/" for ::1 at 2021-04-27 22:15:27 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 14.3ms | Allocations: 5111)
+Completed 200 OK in 16ms (Views: 15.3ms | Allocations: 5562)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/css/styles.css"):
+  
+Started GET "/" for ::1 at 2021-04-27 22:16:19 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 31.0ms | Allocations: 5138)
+Completed 200 OK in 35ms (Views: 32.3ms | Allocations: 5586)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/css/styles.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/css/styles.css"):
+  
+Started GET "/" for ::1 at 2021-04-27 22:18:05 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 85)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+yarn run v1.22.10
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+
+
+error Command "webpack" not found.
+
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 3087.1ms | Allocations: 6196)
+Completed 200 OK in 3090ms (Views: 3088.1ms | Allocations: 6646)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/css/styles.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/css/styles.css"):
+  
+Started GET "/" for ::1 at 2021-04-27 22:18:11 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 5118)
+Completed 200 OK in 18ms (Views: 17.2ms | Allocations: 5571)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/css/styles.css"):
+  
+Started GET "/" for ::1 at 2021-04-27 22:18:12 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 85)
+  
+ActionController::RoutingError (No route matches [GET] "/assets/css/styles.css"):
+  
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 67.5ms | Allocations: 27611)
+Completed 200 OK in 69ms (Views: 68.3ms | Allocations: 28069)
+
+
+Started GET "/" for ::1 at 2021-04-27 22:18:14 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 85)
+  
+ActionController::RoutingError (No route matches [GET] "/assets/css/styles.css"):
+  
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 81.4ms | Allocations: 25813)
+Completed 200 OK in 84ms (Views: 82.9ms | Allocations: 26272)
+
+
+Started GET "/" for ::1 at 2021-04-27 22:19:31 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 33.4ms | Allocations: 5098)
+Completed 200 OK in 46ms (Views: 45.3ms | Allocations: 5546)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/css/styles.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/css/styles.css"):
+  
+Started GET "/" for ::1 at 2021-04-27 22:21:05 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 250)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.6ms | Allocations: 196)
+  Rendered layout layouts/application.html.erb (Duration: 23.1ms | Allocations: 5837)
+Completed 200 OK in 33ms (Views: 31.4ms | Allocations: 7060)
+
+
+Started GET "/" for ::1 at 2021-04-27 22:21:10 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 14.2ms | Allocations: 5092)
+Completed 200 OK in 16ms (Views: 15.1ms | Allocations: 5543)
+
+
+Started GET "/" for ::1 at 2021-04-27 22:21:11 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 23.3ms | Allocations: 5092)
+Completed 200 OK in 26ms (Views: 24.6ms | Allocations: 5542)
+
+
+Started GET "/" for ::1 at 2021-04-27 22:21:12 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 30.6ms | Allocations: 5092)
+Completed 200 OK in 34ms (Views: 33.3ms | Allocations: 5543)
+
+
+Started GET "/" for ::1 at 2021-04-27 22:21:13 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 31.8ms | Allocations: 5092)
+Completed 200 OK in 34ms (Views: 32.7ms | Allocations: 5542)
+
+
+Started GET "/" for ::1 at 2021-04-27 22:21:14 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 24.5ms | Allocations: 5112)
+Completed 200 OK in 26ms (Views: 25.4ms | Allocations: 5564)
+
+
+Started GET "/" for ::1 at 2021-04-27 22:21:15 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 25.1ms | Allocations: 5092)
+Completed 200 OK in 28ms (Views: 26.8ms | Allocations: 5542)
+
+
+Started GET "/" for ::1 at 2021-04-27 22:24:38 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 255)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 2.3ms | Allocations: 196)
+  Rendered layout layouts/application.html.erb (Duration: 39.9ms | Allocations: 5822)
+Completed 200 OK in 55ms (Views: 50.7ms | Allocations: 7043)
+
+
+Started GET "/" for ::1 at 2021-04-27 22:24:41 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 15.9ms | Allocations: 5092)
+Completed 200 OK in 17ms (Views: 16.6ms | Allocations: 5543)
+
+
+Started GET "/" for ::1 at 2021-04-27 22:24:41 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 36.6ms | Allocations: 5095)
+Completed 200 OK in 39ms (Views: 37.4ms | Allocations: 5545)
+
+
+Started GET "/" for ::1 at 2021-04-28 10:38:03 -0400
+  [1m[35m (6.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 471)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.9ms | Allocations: 203)
+  Rendered layout layouts/application.html.erb (Duration: 144.1ms | Allocations: 17397)
+Completed 200 OK in 177ms (Views: 152.0ms | ActiveRecord: 0.0ms | Allocations: 20653)
+
+
+Started GET "/" for ::1 at 2021-04-28 10:38:06 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 17.4ms | Allocations: 5094)
+Completed 200 OK in 20ms (Views: 18.7ms | ActiveRecord: 0.0ms | Allocations: 5555)
+
+
+Started GET "/" for ::1 at 2021-04-28 10:38:22 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 25.1ms | Allocations: 5113)
+Completed 200 OK in 30ms (Views: 26.1ms | ActiveRecord: 0.0ms | Allocations: 5570)
+
+
+Started GET "/" for ::1 at 2021-04-28 11:06:53 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 7.3ms | Allocations: 253)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.5ms | Allocations: 96)
+  Rendered layout layouts/application.html.erb (Duration: 101.4ms | Allocations: 6134)
+Completed 200 OK in 158ms (Views: 144.2ms | Allocations: 7362)
+
+
+Started GET "/" for ::1 at 2021-04-28 11:10:09 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 5.0ms | Allocations: 250)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.0ms | Allocations: 130)
+  Rendered layout layouts/application.html.erb (Duration: 2377.9ms | Allocations: 53231)
+Completed 200 OK in 2416ms (Views: 2387.5ms | Allocations: 54447)
+
+
+Started GET "/" for ::1 at 2021-04-28 11:11:53 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 2085.6ms | Allocations: 51683)
+Completed 200 OK in 2089ms (Views: 2087.5ms | Allocations: 52132)
+
+
+Started GET "/" for ::1 at 2021-04-28 11:12:23 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 1896.6ms | Allocations: 52123)
+Completed 200 OK in 1899ms (Views: 1897.6ms | Allocations: 52571)
+
+
+Started GET "/" for ::1 at 2021-04-28 11:13:32 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 27.4ms | Allocations: 5133)
+Completed 200 OK in 29ms (Views: 28.2ms | Allocations: 5580)
+
+
+Started GET "/" for ::1 at 2021-04-28 11:14:36 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 255)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.3ms | Allocations: 99)
+  Rendered layout layouts/application.html.erb (Duration: 46.2ms | Allocations: 5740)
+Completed 200 OK in 62ms (Views: 56.9ms | Allocations: 6961)
+
+
+Started GET "/" for ::1 at 2021-04-28 11:24:45 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 16.7ms | Allocations: 251)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.0ms | Allocations: 144)
+  Rendered layout layouts/application.html.erb (Duration: 167.3ms | Allocations: 5785)
+Completed 200 OK in 233ms (Views: 199.6ms | Allocations: 7008)
+
+
+Started GET "/" for ::1 at 2021-04-28 12:16:37 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 255)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 2.6ms | Allocations: 145)
+  Rendered layout layouts/application.html.erb (Duration: 51.6ms | Allocations: 5787)
+Completed 200 OK in 73ms (Views: 64.3ms | Allocations: 7009)
+
+
+Started GET "/" for ::1 at 2021-04-28 12:20:51 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 1783.8ms | Allocations: 51020)
+Completed 200 OK in 1788ms (Views: 1785.6ms | Allocations: 51468)
+
+
+Started GET "/" for ::1 at 2021-04-28 12:21:02 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 1393.3ms | Allocations: 51986)
+Completed 200 OK in 1396ms (Views: 1395.2ms | Allocations: 52440)
+
+
+Started GET "/" for ::1 at 2021-04-28 12:22:25 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 1640.5ms | Allocations: 53264)
+Completed 200 OK in 1643ms (Views: 1641.3ms | Allocations: 53711)
+
+
+Started GET "/" for ::1 at 2021-04-28 12:22:32 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 15.3ms | Allocations: 5096)
+Completed 200 OK in 17ms (Views: 16.0ms | Allocations: 5543)
+
+
+Started GET "/" for ::1 at 2021-04-28 12:25:45 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 1473.9ms | Allocations: 52900)
+Completed 200 OK in 1476ms (Views: 1475.0ms | Allocations: 53348)
+
+
+Started GET "/" for ::1 at 2021-04-28 12:44:37 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 255)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.2ms | Allocations: 200)
+  Rendered layout layouts/application.html.erb (Duration: 53.0ms | Allocations: 6343)
+Completed 200 OK in 76ms (Views: 66.2ms | Allocations: 7567)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/perfil.jpg"):
+  
+Started GET "/" for ::1 at 2021-04-28 12:47:06 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 250)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 85.9ms | Allocations: 9834)
+  Rendered layout layouts/application.html.erb (Duration: 118.9ms | Allocations: 15486)
+Completed 200 OK in 130ms (Views: 126.4ms | Allocations: 16708)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/perfil.jpg"):
+  
+Started GET "/" for ::1 at 2021-04-28 12:47:21 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 250)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 2.3ms | Allocations: 692)
+  Rendered layout layouts/application.html.erb (Duration: 33.6ms | Allocations: 6340)
+Completed 200 OK in 39ms (Views: 36.4ms | Allocations: 7564)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/perfil.jpg"):
+  
+Started GET "/" for ::1 at 2021-04-28 13:06:30 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 251)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.2ms | Allocations: 169)
+  Rendered layout layouts/application.html.erb (Duration: 1563.5ms | Allocations: 52632)
+Completed 200 OK in 1589ms (Views: 1578.8ms | Allocations: 53854)
+
+
+Started GET "/" for ::1 at 2021-04-28 13:06:56 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 251)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.6ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 33.6ms | Allocations: 5796)
+Completed 200 OK in 39ms (Views: 37.7ms | Allocations: 7018)
+
+
+Started GET "/" for ::1 at 2021-04-28 13:07:20 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 1631.7ms | Allocations: 53069)
+Completed 200 OK in 1633ms (Views: 1632.5ms | Allocations: 53517)
+
+
+Started GET "/" for ::1 at 2021-04-28 13:07:24 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 16.6ms | Allocations: 5101)
+Completed 200 OK in 19ms (Views: 18.1ms | Allocations: 5552)
+
+
+Started GET "/" for ::1 at 2021-04-28 13:07:26 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 27.6ms | Allocations: 5106)
+Completed 200 OK in 30ms (Views: 29.1ms | Allocations: 5556)
+
+
+Started GET "/" for ::1 at 2021-04-28 13:09:06 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 255)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 3.3ms | Allocations: 693)
+  Rendered layout layouts/application.html.erb (Duration: 33.7ms | Allocations: 6864)
+Completed 200 OK in 46ms (Views: 42.1ms | Allocations: 8086)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/perfil.jpg"):
+  
+Started GET "/" for ::1 at 2021-04-28 13:15:46 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 3.2ms | Allocations: 489)
+  Rendered layout layouts/application.html.erb (Duration: 1660.3ms | Allocations: 52830)
+Completed 200 OK in 1669ms (Views: 1663.2ms | Allocations: 53279)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/perfil.jpg"):
+  
+Started GET "/" for ::1 at 2021-04-28 13:16:13 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 250)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 3.3ms | Allocations: 692)
+  Rendered layout layouts/application.html.erb (Duration: 34.4ms | Allocations: 6323)
+Completed 200 OK in 44ms (Views: 41.3ms | Allocations: 7544)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/perfil.jpg"):
+  
+Started GET "/" for ::1 at 2021-04-28 13:16:35 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 250)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 2.2ms | Allocations: 694)
+  Rendered layout layouts/application.html.erb (Duration: 18.2ms | Allocations: 6343)
+Completed 200 OK in 26ms (Views: 24.1ms | Allocations: 7565)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/perfil.jpg"):
+  
+Started GET "/" for ::1 at 2021-04-28 13:16:47 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 250)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.9ms | Allocations: 699)
+  Rendered layout layouts/application.html.erb (Duration: 23.4ms | Allocations: 6353)
+Completed 200 OK in 36ms (Views: 29.7ms | Allocations: 7576)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/perfil.jpg"):
+  
+Started GET "/" for ::1 at 2021-04-28 13:17:16 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.9ms | Allocations: 489)
+  Rendered layout layouts/application.html.erb (Duration: 16.6ms | Allocations: 5571)
+Completed 200 OK in 18ms (Views: 17.3ms | Allocations: 6023)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/perfil.jpg"):
+  
+Started GET "/" for ::1 at 2021-04-28 13:17:21 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 85)
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/perfil.jpg"):
+  
+[Webpacker] Everything's up-to-date. Nothing to do
+Started GET "/" for ::1 at 2021-04-28 13:17:21 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 85)
+  Rendered layouts/_navbar.html.erb (Duration: 4.8ms | Allocations: 541)
+  Rendered layout layouts/application.html.erb (Duration: 128.5ms | Allocations: 31728)
+Completed 200 OK in 131ms (Views: 129.5ms | Allocations: 32180)
+
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 4.3ms | Allocations: 692)
+  Rendered layout layouts/application.html.erb (Duration: 110.7ms | Allocations: 33472)
+Completed 200 OK in 117ms (Views: 111.9ms | Allocations: 33922)
+
+
+Started GET "/" for ::1 at 2021-04-28 13:17:21 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.7ms | Allocations: 487)
+  Rendered layout layouts/application.html.erb (Duration: 23.5ms | Allocations: 6252)
+Completed 200 OK in 25ms (Views: 24.7ms | Allocations: 6703)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/perfil.jpg"):
+  
+Started GET "/" for ::1 at 2021-04-28 13:17:22 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 2.4ms | Allocations: 489)
+  Rendered layout layouts/application.html.erb (Duration: 33.1ms | Allocations: 5604)
+Completed 200 OK in 35ms (Views: 34.1ms | Allocations: 6055)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/perfil.jpg"):
+  
+Started GET "/" for ::1 at 2021-04-28 13:17:23 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 85)
+  
+ActionController::RoutingError (No route matches [GET] "/assets/img/perfil.jpg"):
+  
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 2.6ms | Allocations: 1046)
+  Rendered layout layouts/application.html.erb (Duration: 79.9ms | Allocations: 27326)
+Completed 200 OK in 91ms (Views: 89.2ms | Allocations: 28802)
+
+
+Started GET "/" for ::1 at 2021-04-28 13:19:07 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 250)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 4.9ms | Allocations: 691)
+  Rendered layout layouts/application.html.erb (Duration: 39.3ms | Allocations: 6340)
+Completed 200 OK in 48ms (Views: 45.7ms | Allocations: 7561)
+
+
+Started GET "/" for ::1 at 2021-04-28 13:19:14 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.0ms | Allocations: 487)
+  Rendered layout layouts/application.html.erb (Duration: 19.8ms | Allocations: 5550)
+Completed 200 OK in 23ms (Views: 21.3ms | Allocations: 6001)
+
+
+Started GET "/" for ::1 at 2021-04-29 10:33:48 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 3.4ms | Allocations: 489)
+  Rendered layout layouts/application.html.erb (Duration: 90.8ms | Allocations: 5571)
+Completed 200 OK in 107ms (Views: 95.6ms | Allocations: 6020)
+
+
+Started GET "/" for ::1 at 2021-04-29 11:38:56 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 255)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+yarn run v1.22.10
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+
+
+error Command "webpack" not found.
+
+  Rendered layouts/_navbar.html.erb (Duration: 1.1ms | Allocations: 121)
+  Rendered layout layouts/application.html.erb (Duration: 4599.7ms | Allocations: 55278)
+Completed 200 OK in 4630ms (Views: 4621.8ms | Allocations: 56499)
+
+
+Started GET "/" for ::1 at 2021-04-29 11:39:14 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 71.8ms | Allocations: 5117)
+Completed 200 OK in 76ms (Views: 74.2ms | Allocations: 5567)
+
+
+Started GET "/" for ::1 at 2021-04-29 11:39:52 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 250)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.5ms | Allocations: 118)
+  Rendered layout layouts/application.html.erb (Duration: 22.6ms | Allocations: 5751)
+Completed 200 OK in 30ms (Views: 27.6ms | Allocations: 6971)
+
+
+Started GET "/" for ::1 at 2021-04-29 11:40:05 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 39.2ms | Allocations: 5110)
+Completed 200 OK in 41ms (Views: 40.1ms | Allocations: 5559)
+
+
+Started GET "/" for ::1 at 2021-04-29 11:48:40 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 85)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+yarn run v1.22.10
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+
+
+error Command "webpack" not found.
+
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 2474.0ms | Allocations: 6179)
+Completed 200 OK in 2477ms (Views: 2475.4ms | Allocations: 6626)
+
+
+Started GET "/" for ::1 at 2021-04-29 11:49:08 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 85)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+yarn run v1.22.10
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+
+
+error Command "webpack" not found.
+
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 2268.6ms | Allocations: 6181)
+Completed 200 OK in 2272ms (Views: 2270.1ms | Allocations: 6628)
+
+
+Started GET "/" for ::1 at 2021-04-29 11:56:21 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 255)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.2ms | Allocations: 144)
+  Rendered layout layouts/application.html.erb (Duration: 36.4ms | Allocations: 5782)
+Completed 200 OK in 49ms (Views: 45.2ms | Allocations: 7002)
+
+
+Started GET "/" for ::1 at 2021-04-29 11:57:26 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 1677.7ms | Allocations: 54048)
+Completed 200 OK in 1682ms (Views: 1680.9ms | Allocations: 54496)
+
+
+Started GET "/" for ::1 at 2021-04-29 12:10:23 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 255)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.0ms | Allocations: 120)
+  Rendered layout layouts/application.html.erb (Duration: 47.5ms | Allocations: 5774)
+Completed 200 OK in 68ms (Views: 60.4ms | Allocations: 6996)
+
+
+Started GET "/" for ::1 at 2021-04-29 12:10:25 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 19.2ms | Allocations: 5108)
+Completed 200 OK in 23ms (Views: 21.7ms | Allocations: 5556)
+
+
+Started GET "/" for ::1 at 2021-04-29 12:10:38 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 1511.4ms | Allocations: 52838)
+Completed 200 OK in 1513ms (Views: 1512.5ms | Allocations: 53285)
+
+
+Started GET "/" for ::1 at 2021-04-29 12:17:15 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 255)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.5ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 36.1ms | Allocations: 5782)
+Completed 200 OK in 44ms (Views: 42.4ms | Allocations: 7004)
+
+
+Started GET "/" for ::1 at 2021-04-29 12:19:59 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 250)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 28.9ms | Allocations: 5757)
+Completed 200 OK in 39ms (Views: 37.0ms | Allocations: 6973)
+
+
+Started GET "/" for ::1 at 2021-04-29 12:21:49 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 250)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.6ms | Allocations: 131)
+  Rendered layout layouts/application.html.erb (Duration: 1806.8ms | Allocations: 54135)
+Completed 200 OK in 1819ms (Views: 1813.6ms | Allocations: 55351)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bg.jpeg"):
+  
+Started GET "/" for ::1 at 2021-04-29 12:21:54 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 21.6ms | Allocations: 5106)
+Completed 200 OK in 23ms (Views: 22.3ms | Allocations: 5554)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/bg.jpeg"):
+  
+Started GET "/" for ::1 at 2021-04-29 12:22:13 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 21.2ms | Allocations: 5142)
+Completed 200 OK in 25ms (Views: 23.4ms | Allocations: 5590)
+
+
+Started GET "/" for ::1 at 2021-04-29 12:36:17 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 7.1ms | Allocations: 251)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.7ms | Allocations: 141)
+  Rendered layout layouts/application.html.erb (Duration: 1834.5ms | Allocations: 54072)
+Completed 200 OK in 1861ms (Views: 1849.0ms | Allocations: 55292)
+
+
+Started GET "/style.css" for ::1 at 2021-04-29 12:36:19 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/style.css"):
+  
+Started GET "/style.css" for ::1 at 2021-04-29 12:36:19 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/style.css"):
+  
+Started GET "/" for ::1 at 2021-04-29 12:37:38 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 1651.0ms | Allocations: 54371)
+Completed 200 OK in 1652ms (Views: 1651.6ms | Allocations: 54820)
+
+
+Started GET "/style.css" for ::1 at 2021-04-29 12:37:40 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/style.css"):
+  
+Started GET "/" for ::1 at 2021-04-29 12:39:22 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 1614.7ms | Allocations: 55233)
+Completed 200 OK in 1618ms (Views: 1616.3ms | Allocations: 55681)
+
+
+Started GET "/style.css" for ::1 at 2021-04-29 12:39:24 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/style.css"):
+  
+Started GET "/style.css" for ::1 at 2021-04-29 12:39:24 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/style.css"):
+  
+Started GET "/" for ::1 at 2021-04-29 12:41:59 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 1746.8ms | Allocations: 54331)
+Completed 200 OK in 1749ms (Views: 1747.8ms | Allocations: 54779)
+
+
+Started GET "/style.css" for ::1 at 2021-04-29 12:42:00 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/style.css"):
+  
+Started GET "/style.css" for ::1 at 2021-04-29 12:42:01 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/style.css"):
+  
+Started GET "/" for ::1 at 2021-04-29 12:43:07 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 24.6ms | Allocations: 5120)
+Completed 200 OK in 27ms (Views: 25.7ms | Allocations: 5568)
+
+
+Started GET "/style.css" for ::1 at 2021-04-29 12:43:07 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/style.css"):
+  
+Started GET "/style.css" for ::1 at 2021-04-29 12:43:08 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/style.css"):
+  
+Started GET "/" for ::1 at 2021-04-29 12:43:18 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 1676.8ms | Allocations: 52527)
+Completed 200 OK in 1680ms (Views: 1678.3ms | Allocations: 52975)
+
+
+Started GET "/style.css" for ::1 at 2021-04-29 12:43:20 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/style.css"):
+  
+Started GET "/style.css" for ::1 at 2021-04-29 12:43:20 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/style.css"):
+  
+Started GET "/" for ::1 at 2021-04-29 12:43:28 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 1351.4ms | Allocations: 52505)
+Completed 200 OK in 1353ms (Views: 1352.1ms | Allocations: 52953)
+
+
+Started GET "/style.css" for ::1 at 2021-04-29 12:43:30 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/style.css"):
+  
+Started GET "/style.css" for ::1 at 2021-04-29 12:43:30 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/style.css"):
+  
+Started GET "/" for ::1 at 2021-04-29 12:43:43 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 1341.8ms | Allocations: 55275)
+Completed 200 OK in 1344ms (Views: 1342.6ms | Allocations: 55723)
+
+
+Started GET "/style.css" for ::1 at 2021-04-29 12:43:45 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/style.css"):
+  
+Started GET "/style.css" for ::1 at 2021-04-29 12:43:45 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/style.css"):
+  
+Started GET "/" for ::1 at 2021-04-29 12:44:05 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 250)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.1ms | Allocations: 135)
+  Rendered layout layouts/application.html.erb (Duration: 111.4ms | Allocations: 5991)
+Completed 200 OK in 137ms (Views: 125.6ms | Allocations: 7213)
+
+
+Started GET "/style.css" for ::1 at 2021-04-29 12:44:06 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/style.css"):
+  
+Started GET "/style.css" for ::1 at 2021-04-29 12:44:06 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/style.css"):
+  
+Started GET "/" for ::1 at 2021-04-29 12:44:20 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 250)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.5ms | Allocations: 136)
+  Rendered layout layouts/application.html.erb (Duration: 27.6ms | Allocations: 5786)
+Completed 200 OK in 35ms (Views: 31.9ms | Allocations: 7008)
+
+
+Started GET "/" for ::1 at 2021-04-29 12:45:55 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 1497.4ms | Allocations: 52487)
+Completed 200 OK in 1499ms (Views: 1498.4ms | Allocations: 52935)
+
+
+Started GET "/" for ::1 at 2021-04-29 12:52:03 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 1995.3ms | Allocations: 55779)
+Completed 200 OK in 2007ms (Views: 1999.1ms | Allocations: 56226)
+
+
+Started GET "/" for ::1 at 2021-04-29 12:52:22 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 1745.5ms | Allocations: 56194)
+Completed 200 OK in 1747ms (Views: 1746.4ms | Allocations: 56642)
+
+
+Started GET "/" for ::1 at 2021-04-29 12:52:31 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 18.2ms | Allocations: 5618)
+Completed 200 OK in 20ms (Views: 19.4ms | Allocations: 6065)
+
+
+Started GET "/" for ::1 at 2021-04-29 12:52:38 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 1334.2ms | Allocations: 54006)
+Completed 200 OK in 1336ms (Views: 1335.3ms | Allocations: 54453)
+
+
+Started GET "/" for ::1 at 2021-04-29 12:52:47 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 1543.7ms | Allocations: 55280)
+Completed 200 OK in 1546ms (Views: 1544.7ms | Allocations: 55727)
+
+
+Started GET "/" for ::1 at 2021-04-29 12:52:56 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 16.9ms | Allocations: 5142)
+Completed 200 OK in 19ms (Views: 17.7ms | Allocations: 5589)
+
+
+Started GET "/" for ::1 at 2021-04-29 12:53:05 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 1527.6ms | Allocations: 54397)
+Completed 200 OK in 1529ms (Views: 1528.3ms | Allocations: 54844)
+
+
+Started GET "/" for ::1 at 2021-04-29 12:53:16 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 1833.0ms | Allocations: 53562)
+Completed 200 OK in 1835ms (Views: 1833.7ms | Allocations: 54009)
+
+
+Started GET "/" for ::1 at 2021-04-29 12:53:31 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 1317.2ms | Allocations: 55306)
+Completed 200 OK in 1319ms (Views: 1317.9ms | Allocations: 55753)
+
+
+Started GET "/" for ::1 at 2021-04-29 12:53:38 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 15.9ms | Allocations: 5618)
+Completed 200 OK in 18ms (Views: 17.0ms | Allocations: 6065)
+
+
+Started GET "/" for ::1 at 2021-04-29 12:53:42 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 18.4ms | Allocations: 5101)
+Completed 200 OK in 21ms (Views: 20.0ms | Allocations: 5548)
+
+
+Started GET "/" for ::1 at 2021-04-29 12:53:47 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 1917.9ms | Allocations: 55313)
+Completed 200 OK in 1919ms (Views: 1918.5ms | Allocations: 55760)
+
+
+Started GET "/" for ::1 at 2021-04-29 12:53:57 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 1506.1ms | Allocations: 55719)
+Completed 200 OK in 1508ms (Views: 1506.8ms | Allocations: 56166)
+
+
+Started GET "/" for ::1 at 2021-04-29 12:54:05 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 20.7ms | Allocations: 5622)
+Completed 200 OK in 23ms (Views: 21.9ms | Allocations: 6069)
+
+
+Started GET "/" for ::1 at 2021-04-29 12:54:14 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 1501.7ms | Allocations: 56165)
+Completed 200 OK in 1504ms (Views: 1502.9ms | Allocations: 56612)
+
+
+Started GET "/" for ::1 at 2021-04-29 12:54:28 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 1562.9ms | Allocations: 54273)
+Completed 200 OK in 1565ms (Views: 1563.8ms | Allocations: 54720)
+
+
+Started GET "/" for ::1 at 2021-04-29 12:54:35 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 16.8ms | Allocations: 5148)
+Completed 200 OK in 18ms (Views: 17.6ms | Allocations: 5596)
+
+
+Started GET "/" for ::1 at 2021-04-29 12:55:01 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 1668.7ms | Allocations: 55822)
+Completed 200 OK in 1671ms (Views: 1669.7ms | Allocations: 56269)
+
+
+Started GET "/" for ::1 at 2021-04-29 15:27:48 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 42.9ms | Allocations: 5637)
+Completed 200 OK in 53ms (Views: 45.4ms | Allocations: 6086)
+
+
+Started GET "/" for ::1 at 2021-04-29 15:30:25 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 255)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.0ms | Allocations: 131)
+  Rendered layout layouts/application.html.erb (Duration: 35.4ms | Allocations: 5770)
+Completed 200 OK in 47ms (Views: 45.1ms | Allocations: 6990)
+
+
+Started GET "/" for ::1 at 2021-04-29 15:33:11 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 250)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.5ms | Allocations: 131)
+  Rendered layout layouts/application.html.erb (Duration: 1614.5ms | Allocations: 56440)
+Completed 200 OK in 1620ms (Views: 1617.7ms | Allocations: 57657)
+
+
+Started GET "/" for ::1 at 2021-04-29 15:33:33 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 1603.6ms | Allocations: 53506)
+Completed 200 OK in 1605ms (Views: 1604.4ms | Allocations: 53955)
+
+
+Started GET "/" for ::1 at 2021-04-29 15:33:55 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 1624.9ms | Allocations: 57493)
+Completed 200 OK in 1628ms (Views: 1626.2ms | Allocations: 57941)
+
+
+Started GET "/" for ::1 at 2021-04-29 15:34:10 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 1411.7ms | Allocations: 55319)
+Completed 200 OK in 1413ms (Views: 1412.4ms | Allocations: 55767)
+
+
+Started GET "/" for ::1 at 2021-04-29 15:34:51 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 1734.9ms | Allocations: 57131)
+Completed 200 OK in 1737ms (Views: 1735.7ms | Allocations: 57579)
+
+
+Started GET "/" for ::1 at 2021-04-29 15:35:11 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.6ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 1331.5ms | Allocations: 55746)
+Completed 200 OK in 1333ms (Views: 1332.6ms | Allocations: 56193)
+
+
+Started GET "/" for ::1 at 2021-04-29 15:35:32 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 1360.5ms | Allocations: 55777)
+Completed 200 OK in 1362ms (Views: 1361.4ms | Allocations: 56225)
+
+
+=======
   Rendered layout layouts/application.html.erb (Duration: 5706.6ms | Allocations: 17559)
 Completed 200 OK in 5736ms (Views: 5717.9ms | ActiveRecord: 0.0ms | Allocations: 20818)
 
@@ -19221,3 +20662,135 @@ Started GET "/packs/js/application-c5bd0d85f3037592dc54.js" for ::1 at 2021-04-2
 ActionController::RoutingError (No route matches [GET] "/packs/js/application-c5bd0d85f3037592dc54.js"):
   
 >>>>>>> d50f3f7b1db92318a6fa07d3f77fea9c39b04911
+>>>>>>> f71a412a0619d7df2c77cb8abbfc0ab3e5c017b9
+Started GET "/" for ::1 at 2021-04-29 15:38:36 -0400
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+
+ActiveRecord::PendingMigrationError - Migrations are pending. To resolve this issue, run:
+        bin/rails db:migrate RAILS_ENV=development
+You have 1 pending migration:
+20210428030554_create_employerverifies.rb:
+
+Started POST "/__better_errors/de655837a19584bc/variables" for ::1 at 2021-04-29 15:38:36 -0400
+Started POST "/rails/actions" for ::1 at 2021-04-29 15:38:41 -0400
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4346549080646495835)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateEmployerverifies (20210428030554)
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (81.3ms)[0m  [1m[35mCREATE TABLE "employerverifies" ("id" bigserial primary key, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (5.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210428030554"]]
+  [1m[36mTRANSACTION (3.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (5.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT pg_advisory_unlock(4346549080646495835)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2021-04-29 15:38:42 -0400
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 588)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+yarn run v1.22.10
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+
+
+error Command "webpack" not found.
+
+  Rendered layouts/_navbar.html.erb (Duration: 1.3ms | Allocations: 136)
+  Rendered layout layouts/application.html.erb (Duration: 4108.5ms | Allocations: 76016)
+Completed 200 OK in 4134ms (Views: 4118.1ms | ActiveRecord: 0.0ms | Allocations: 80828)
+
+
+Started POST "/users" for ::1 at 2021-04-29 15:38:54 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"adri", "email"=>"a@me.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "button"=>""}
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mUser Create (10.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "adri"], ["email", "a@me.com"], ["created_at", "2021-04-29 19:38:54.723413"], ["updated_at", "2021-04-29 19:38:54.723413"], ["password_digest", "$2a$12$lSx0GtukGnY6TsR3hUND..4ZJiojLbgbLzdXjWEXlfuF5qYBLx5Oq"]]
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+Redirected to http://localhost:3000/opportunities
+Completed 302 Found in 295ms (ActiveRecord: 21.5ms | Allocations: 8730)
+
+
+Started GET "/opportunities" for ::1 at 2021-04-29 15:38:54 -0400
+Processing by OpportunitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/index.html.erb within layouts/application
+  [1m[36mOpportunity Load (6.5ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."user_id" = $1 ORDER BY created_at DESC[0m  [["user_id", 8]]
+  ↳ app/views/opportunities/index.html.erb:31
+  Rendered opportunities/index.html.erb within layouts/application (Duration: 11.7ms | Allocations: 1323)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered layout layouts/application.html.erb (Duration: 37.3ms | Allocations: 6478)
+Completed 200 OK in 54ms (Views: 32.8ms | ActiveRecord: 8.5ms | Allocations: 9223)
+
+
+Started GET "/styles/styles.css" for ::1 at 2021-04-29 15:38:54 -0400
+Started GET "/styles.css" for ::1 at 2021-04-29 15:38:54 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles/styles.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/styles.css"):
+  
+Started GET "/opportunities/new" for ::1 at 2021-04-29 15:39:02 -0400
+Processing by OpportunitiesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/new.html.erb within layouts/application
+  Rendered opportunities/new.html.erb within layouts/application (Duration: 96.7ms | Allocations: 18131)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 111.4ms | Allocations: 23123)
+Completed 200 OK in 134ms (Views: 112.2ms | ActiveRecord: 3.1ms | Allocations: 27160)
+
+
+Started GET "/opportunities" for ::1 at 2021-04-29 15:39:05 -0400
+Processing by OpportunitiesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering opportunities/index.html.erb within layouts/application
+  [1m[36mOpportunity Load (1.8ms)[0m  [1m[34mSELECT "opportunities".* FROM "opportunities" WHERE "opportunities"."user_id" = $1 ORDER BY created_at DESC[0m  [["user_id", 8]]
+  ↳ app/views/opportunities/index.html.erb:31
+  Rendered opportunities/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 913)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 16.1ms | Allocations: 5985)
+Completed 200 OK in 19ms (Views: 15.2ms | ActiveRecord: 1.8ms | Allocations: 6603)
+
+
+Started GET "/styles/styles.css" for ::1 at 2021-04-29 15:39:05 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/styles/styles.css"):
+  
+Started DELETE "/session" for ::1 at 2021-04-29 15:39:12 -0400
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 324)
+
+
+Started GET "/" for ::1 at 2021-04-29 15:39:12 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 99)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 39)
+  Rendered layout layouts/application.html.erb (Duration: 19.6ms | Allocations: 5242)
+Completed 200 OK in 23ms (Views: 21.7ms | ActiveRecord: 0.0ms | Allocations: 5855)
+
+
+Started GET "/" for ::1 at 2021-04-29 15:40:09 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 255)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 3.0ms | Allocations: 611)
+  Rendered layout layouts/application.html.erb (Duration: 25.9ms | Allocations: 6325)
+Completed 200 OK in 32ms (Views: 28.9ms | ActiveRecord: 0.0ms | Allocations: 7544)
+
+
