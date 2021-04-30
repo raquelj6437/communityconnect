@@ -1,31 +1,31 @@
 {
-  "application.js": "/packs/js/application-c5bd0d85f3037592dc54.js",
-  "application.js.map": "/packs/js/application-c5bd0d85f3037592dc54.js.map",
-  "bootstrap.js": "/packs/js/bootstrap-ec8b3525e4c3b1ee7f83.js",
-  "bootstrap.js.map": "/packs/js/bootstrap-ec8b3525e4c3b1ee7f83.js.map",
+  "application.js": "/packs/js/application-94ea6ec887ae224d42dd.js",
+  "application.js.map": "/packs/js/application-94ea6ec887ae224d42dd.js.map",
+  "bootstrap.js": "/packs/js/bootstrap-5d70b5be648f8df33170.js",
+  "bootstrap.js.map": "/packs/js/bootstrap-5d70b5be648f8df33170.js.map",
   "entrypoints": {
     "application": {
       "js": [
-        "/packs/js/application-c5bd0d85f3037592dc54.js"
+        "/packs/js/application-94ea6ec887ae224d42dd.js"
       ],
       "js.map": [
-        "/packs/js/application-c5bd0d85f3037592dc54.js.map"
+        "/packs/js/application-94ea6ec887ae224d42dd.js.map"
       ]
     },
     "bootstrap": {
       "js": [
-        "/packs/js/bootstrap-ec8b3525e4c3b1ee7f83.js"
+        "/packs/js/bootstrap-5d70b5be648f8df33170.js"
       ],
       "js.map": [
-        "/packs/js/bootstrap-ec8b3525e4c3b1ee7f83.js.map"
+        "/packs/js/bootstrap-5d70b5be648f8df33170.js.map"
       ]
     },
     "frontend": {
       "js": [
-        "/packs/js/frontend-8709e76fc9e1909bc275.js"
+        "/packs/js/frontend-c0fdd77ffdbbf31865ad.js"
       ],
       "js.map": [
-        "/packs/js/frontend-8709e76fc9e1909bc275.js.map"
+        "/packs/js/frontend-c0fdd77ffdbbf31865ad.js.map"
       ]
     },
     "index": {
@@ -35,10 +35,20 @@
       "js.map": [
         "/packs/js/index-97426958ad4ce1118a35.js.map"
       ]
+    },
+    "navbar": {
+      "js": [
+        "/packs/js/navbar-c830791650c5ccf02c68.js"
+      ],
+      "js.map": [
+        "/packs/js/navbar-c830791650c5ccf02c68.js.map"
+      ]
     }
   },
-  "frontend.js": "/packs/js/frontend-8709e76fc9e1909bc275.js",
-  "frontend.js.map": "/packs/js/frontend-8709e76fc9e1909bc275.js.map",
+  "frontend.js": "/packs/js/frontend-c0fdd77ffdbbf31865ad.js",
+  "frontend.js.map": "/packs/js/frontend-c0fdd77ffdbbf31865ad.js.map",
   "index.js": "/packs/js/index-97426958ad4ce1118a35.js",
-  "index.js.map": "/packs/js/index-97426958ad4ce1118a35.js.map"
+  "index.js.map": "/packs/js/index-97426958ad4ce1118a35.js.map",
+  "navbar.js": "/packs/js/navbar-c830791650c5ccf02c68.js",
+  "navbar.js.map": "/packs/js/navbar-c830791650c5ccf02c68.js.map"
 }

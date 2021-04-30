@@ -1,4 +1,5 @@
 window.onload=function(){
+
 const signUpButton = document.getElementById('signUp');
 const signInButton = document.getElementById('signIn');
 const container = document.getElementById('container');
@@ -14,4 +15,5 @@ window.onload=function(){
     function toggleSidebar(ref){
         document.getElementById("sidebar").classList.toggle('active');
       }
+      
 }

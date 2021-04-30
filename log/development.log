@@ -21600,3 +21600,1129 @@ Processing by UsersController#index as HTML
 Completed 200 OK in 15ms (Views: 13.7ms | ActiveRecord: 0.0ms | Allocations: 5630)
 
 
+Started GET "/" for ::1 at 2021-04-29 22:24:58 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 22.5ms | Allocations: 5159)
+Completed 200 OK in 25ms (Views: 23.4ms | ActiveRecord: 0.0ms | Allocations: 5609)
+
+
+Started GET "/" for ::1 at 2021-04-29 22:29:46 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 85)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+yarn run v1.22.10
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+
+
+error Command "webpack" not found.
+
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 2334.1ms | Allocations: 6239)
+Completed 200 OK in 2338ms (Views: 2336.2ms | Allocations: 6686)
+
+
+Started GET "/" for ::1 at 2021-04-29 22:36:09 -0400
+  [1m[35m (8.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 471)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/adrianaalvarado/communityconnect/public/packs
+[Webpacker] Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+[Webpacker] Hash: 82dd0581bc2f19a1c996
+Version: webpack 4.46.0
+Time: 4712ms
+Built at: 04/29/2021 10:36:17 PM
+                                     Asset      Size       Chunks                         Chunk Names
+    js/application-94ea6ec887ae224d42dd.js   126 KiB  application  [emitted] [immutable]  application
+js/application-94ea6ec887ae224d42dd.js.map   140 KiB  application  [emitted] [dev]        application
+      js/bootstrap-5d70b5be648f8df33170.js   336 KiB    bootstrap  [emitted] [immutable]  bootstrap
+  js/bootstrap-5d70b5be648f8df33170.js.map   276 KiB    bootstrap  [emitted] [dev]        bootstrap
+       js/frontend-c0fdd77ffdbbf31865ad.js  4.44 KiB     frontend  [emitted] [immutable]  frontend
+   js/frontend-c0fdd77ffdbbf31865ad.js.map   4.2 KiB     frontend  [emitted] [dev]        frontend
+          js/index-97426958ad4ce1118a35.js  4.08 KiB        index  [emitted] [immutable]  index
+      js/index-97426958ad4ce1118a35.js.map   3.8 KiB        index  [emitted] [dev]        index
+         js/navbar-c830791650c5ccf02c68.js  3.87 KiB       navbar  [emitted] [immutable]  navbar
+     js/navbar-c830791650c5ccf02c68.js.map  3.52 KiB       navbar  [emitted] [dev]        navbar
+                             manifest.json  1.57 KiB               [emitted]              
+Entrypoint application = js/application-94ea6ec887ae224d42dd.js js/application-94ea6ec887ae224d42dd.js.map
+Entrypoint bootstrap = js/bootstrap-5d70b5be648f8df33170.js js/bootstrap-5d70b5be648f8df33170.js.map
+Entrypoint frontend = js/frontend-c0fdd77ffdbbf31865ad.js js/frontend-c0fdd77ffdbbf31865ad.js.map
+Entrypoint index = js/index-97426958ad4ce1118a35.js js/index-97426958ad4ce1118a35.js.map
+Entrypoint navbar = js/navbar-c830791650c5ccf02c68.js js/navbar-c830791650c5ccf02c68.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 520 bytes {application} [built]
+[./app/javascript/packs/bootstrap.js] 177 KiB {bootstrap} [built]
+[./app/javascript/packs/frontend.js] 578 bytes {frontend} {application} [built]
+[./app/javascript/packs/index.js] 226 bytes {index} [built]
+[./app/javascript/packs/navbar.js] 0 bytes {navbar} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 61 hidden modules
+
+  Rendered layouts/_navbar.html.erb (Duration: 0.5ms | Allocations: 106)
+  Rendered layout layouts/application.html.erb (Duration: 8042.3ms | Allocations: 26550)
+Completed 200 OK in 8066ms (Views: 8047.7ms | ActiveRecord: 0.0ms | Allocations: 29831)
+
+
+Started GET "/" for ::1 at 2021-04-29 22:37:27 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 28.5ms | Allocations: 5188)
+Completed 200 OK in 31ms (Views: 29.4ms | ActiveRecord: 0.0ms | Allocations: 5640)
+
+
+Started GET "/" for ::1 at 2021-04-29 22:37:35 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 27.2ms | Allocations: 5187)
+Completed 200 OK in 30ms (Views: 28.6ms | ActiveRecord: 0.0ms | Allocations: 5644)
+
+
+Started GET "/" for ::1 at 2021-04-29 22:37:44 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 20.7ms | Allocations: 5187)
+Completed 200 OK in 23ms (Views: 21.6ms | ActiveRecord: 0.0ms | Allocations: 5641)
+
+
+Started GET "/" for ::1 at 2021-04-29 22:38:48 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 24.6ms | Allocations: 5191)
+Completed 200 OK in 26ms (Views: 25.4ms | ActiveRecord: 0.0ms | Allocations: 5641)
+
+
+Started GET "/" for ::1 at 2021-04-29 22:46:04 -0400
+  [1m[35m (27.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 471)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/adrianaalvarado/communityconnect/public/packs
+[Webpacker] Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+[Webpacker] Hash: 82dd0581bc2f19a1c996
+Version: webpack 4.46.0
+Time: 1586ms
+Built at: 04/29/2021 10:46:09 PM
+                                     Asset      Size       Chunks                         Chunk Names
+    js/application-94ea6ec887ae224d42dd.js   126 KiB  application  [emitted] [immutable]  application
+js/application-94ea6ec887ae224d42dd.js.map   140 KiB  application  [emitted] [dev]        application
+      js/bootstrap-5d70b5be648f8df33170.js   336 KiB    bootstrap  [emitted] [immutable]  bootstrap
+  js/bootstrap-5d70b5be648f8df33170.js.map   276 KiB    bootstrap  [emitted] [dev]        bootstrap
+       js/frontend-c0fdd77ffdbbf31865ad.js  4.44 KiB     frontend  [emitted] [immutable]  frontend
+   js/frontend-c0fdd77ffdbbf31865ad.js.map   4.2 KiB     frontend  [emitted] [dev]        frontend
+          js/index-97426958ad4ce1118a35.js  4.08 KiB        index  [emitted] [immutable]  index
+      js/index-97426958ad4ce1118a35.js.map   3.8 KiB        index  [emitted] [dev]        index
+         js/navbar-c830791650c5ccf02c68.js  3.87 KiB       navbar  [emitted] [immutable]  navbar
+     js/navbar-c830791650c5ccf02c68.js.map  3.52 KiB       navbar  [emitted] [dev]        navbar
+                             manifest.json  1.57 KiB               [emitted]              
+Entrypoint application = js/application-94ea6ec887ae224d42dd.js js/application-94ea6ec887ae224d42dd.js.map
+Entrypoint bootstrap = js/bootstrap-5d70b5be648f8df33170.js js/bootstrap-5d70b5be648f8df33170.js.map
+Entrypoint frontend = js/frontend-c0fdd77ffdbbf31865ad.js js/frontend-c0fdd77ffdbbf31865ad.js.map
+Entrypoint index = js/index-97426958ad4ce1118a35.js js/index-97426958ad4ce1118a35.js.map
+Entrypoint navbar = js/navbar-c830791650c5ccf02c68.js js/navbar-c830791650c5ccf02c68.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 520 bytes {application} [built]
+[./app/javascript/packs/bootstrap.js] 177 KiB {bootstrap} [built]
+[./app/javascript/packs/frontend.js] 578 bytes {frontend} {application} [built]
+[./app/javascript/packs/index.js] 226 bytes {index} [built]
+[./app/javascript/packs/navbar.js] 0 bytes {navbar} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 61 hidden modules
+
+  Rendered layouts/_navbar.html.erb (Duration: 0.5ms | Allocations: 103)
+  Rendered layout layouts/application.html.erb (Duration: 4476.8ms | Allocations: 12519)
+Completed 200 OK in 4499ms (Views: 4482.9ms | ActiveRecord: 0.0ms | Allocations: 15803)
+
+
+Started GET "/" for ::1 at 2021-04-29 22:47:45 -0400
+  [1m[35m (21.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 471)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.6ms | Allocations: 103)
+  Rendered layout layouts/application.html.erb (Duration: 63.5ms | Allocations: 11267)
+Completed 200 OK in 84ms (Views: 69.1ms | ActiveRecord: 0.0ms | Allocations: 14545)
+
+
+Started GET "/" for ::1 at 2021-04-29 22:48:13 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 37.6ms | Allocations: 5186)
+Completed 200 OK in 40ms (Views: 38.6ms | ActiveRecord: 0.0ms | Allocations: 5645)
+
+
+Started GET "/" for ::1 at 2021-04-29 22:50:22 -0400
+  [1m[35m (24.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 471)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.6ms | Allocations: 103)
+  Rendered layout layouts/application.html.erb (Duration: 60.8ms | Allocations: 11267)
+Completed 200 OK in 78ms (Views: 66.0ms | ActiveRecord: 0.0ms | Allocations: 14545)
+
+
+Started GET "/" for ::1 at 2021-04-29 22:55:27 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/index.html.erb within layouts/application (Duration: 17.3ms | Allocations: 2493)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.7ms | Allocations: 96)
+  Rendered layout layouts/application.html.erb (Duration: 42.3ms | Allocations: 7904)
+Completed 200 OK in 50ms (Views: 47.5ms | ActiveRecord: 0.0ms | Allocations: 9140)
+
+
+Started GET "/" for ::1 at 2021-04-29 22:58:56 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 251)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/adrianaalvarado/communityconnect/public/packs
+[Webpacker] Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+[Webpacker] Hash: 82dd0581bc2f19a1c996
+Version: webpack 4.46.0
+Time: 1791ms
+Built at: 04/29/2021 10:59:01 PM
+                                     Asset      Size       Chunks                         Chunk Names
+    js/application-94ea6ec887ae224d42dd.js   126 KiB  application  [emitted] [immutable]  application
+js/application-94ea6ec887ae224d42dd.js.map   140 KiB  application  [emitted] [dev]        application
+      js/bootstrap-5d70b5be648f8df33170.js   336 KiB    bootstrap  [emitted] [immutable]  bootstrap
+  js/bootstrap-5d70b5be648f8df33170.js.map   276 KiB    bootstrap  [emitted] [dev]        bootstrap
+       js/frontend-c0fdd77ffdbbf31865ad.js  4.44 KiB     frontend  [emitted] [immutable]  frontend
+   js/frontend-c0fdd77ffdbbf31865ad.js.map   4.2 KiB     frontend  [emitted] [dev]        frontend
+          js/index-97426958ad4ce1118a35.js  4.08 KiB        index  [emitted] [immutable]  index
+      js/index-97426958ad4ce1118a35.js.map   3.8 KiB        index  [emitted] [dev]        index
+         js/navbar-c830791650c5ccf02c68.js  3.87 KiB       navbar  [emitted] [immutable]  navbar
+     js/navbar-c830791650c5ccf02c68.js.map  3.52 KiB       navbar  [emitted] [dev]        navbar
+                             manifest.json  1.57 KiB               [emitted]              
+Entrypoint application = js/application-94ea6ec887ae224d42dd.js js/application-94ea6ec887ae224d42dd.js.map
+Entrypoint bootstrap = js/bootstrap-5d70b5be648f8df33170.js js/bootstrap-5d70b5be648f8df33170.js.map
+Entrypoint frontend = js/frontend-c0fdd77ffdbbf31865ad.js js/frontend-c0fdd77ffdbbf31865ad.js.map
+Entrypoint index = js/index-97426958ad4ce1118a35.js js/index-97426958ad4ce1118a35.js.map
+Entrypoint navbar = js/navbar-c830791650c5ccf02c68.js js/navbar-c830791650c5ccf02c68.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 520 bytes {application} [built]
+[./app/javascript/packs/bootstrap.js] 177 KiB {bootstrap} [built]
+[./app/javascript/packs/frontend.js] 578 bytes {frontend} {application} [built]
+[./app/javascript/packs/index.js] 226 bytes {index} [built]
+[./app/javascript/packs/navbar.js] 0 bytes {navbar} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 61 hidden modules
+
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 96)
+  Rendered layout layouts/application.html.erb (Duration: 5104.6ms | Allocations: 7067)
+Completed 200 OK in 5112ms (Views: 5110.7ms | Allocations: 8297)
+
+
+Started GET "/" for ::1 at 2021-04-29 22:59:37 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 23.8ms | Allocations: 5185)
+Completed 200 OK in 27ms (Views: 25.3ms | Allocations: 5634)
+
+
+Started GET "/" for ::1 at 2021-04-29 23:03:04 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 250)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.6ms | Allocations: 96)
+  Rendered layout layouts/application.html.erb (Duration: 42.1ms | Allocations: 5810)
+Completed 200 OK in 64ms (Views: 53.7ms | Allocations: 7026)
+
+
+Started GET "/" for ::1 at 2021-04-29 23:03:27 -0400
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 471)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.6ms | Allocations: 103)
+  Rendered layout layouts/application.html.erb (Duration: 79.3ms | Allocations: 11267)
+Completed 200 OK in 103ms (Views: 85.9ms | ActiveRecord: 0.0ms | Allocations: 14545)
+
+
+Started GET "/" for ::1 at 2021-04-29 23:03:45 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 19.6ms | Allocations: 5187)
+Completed 200 OK in 22ms (Views: 20.8ms | ActiveRecord: 0.0ms | Allocations: 5645)
+
+
+Started GET "/" for ::1 at 2021-04-29 23:07:58 -0400
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 471)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 103)
+  Rendered layout layouts/application.html.erb (Duration: 40.9ms | Allocations: 11267)
+Completed 200 OK in 60ms (Views: 47.7ms | ActiveRecord: 0.0ms | Allocations: 14545)
+
+
+Started GET "/" for ::1 at 2021-04-29 23:11:16 -0400
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 471)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.5ms | Allocations: 103)
+  Rendered layout layouts/application.html.erb (Duration: 47.8ms | Allocations: 11267)
+Completed 200 OK in 74ms (Views: 60.9ms | ActiveRecord: 0.0ms | Allocations: 14545)
+
+
+Started POST "/session" for ::1 at 2021-04-29 23:11:28 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "login"=>{"email"=>"a@me.com", "password"=>"[FILTERED]"}, "button"=>""}
+  [1m[36mUser Load (4.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "a@me.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:3:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 377ms (ActiveRecord: 46.8ms | Allocations: 8262)
+
+
+Started GET "/" for ::1 at 2021-04-29 23:11:29 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 5217)
+Completed 200 OK in 13ms (Views: 12.6ms | ActiveRecord: 0.0ms | Allocations: 5672)
+
+
+Started GET "/" for ::1 at 2021-04-29 23:13:35 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 85)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/adrianaalvarado/communityconnect/public/packs
+[Webpacker] Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+[Webpacker] Hash: 6840a702ce86b2fb8da8
+Version: webpack 4.46.0
+Time: 1830ms
+Built at: 04/29/2021 11:13:40 PM
+                                     Asset      Size       Chunks                         Chunk Names
+    js/application-4b8d3d44fabc94119b14.js   125 KiB  application  [emitted] [immutable]  application
+js/application-4b8d3d44fabc94119b14.js.map   139 KiB  application  [emitted] [dev]        application
+      js/bootstrap-5d70b5be648f8df33170.js   336 KiB    bootstrap  [emitted] [immutable]  bootstrap
+  js/bootstrap-5d70b5be648f8df33170.js.map   276 KiB    bootstrap  [emitted] [dev]        bootstrap
+       js/frontend-c0fdd77ffdbbf31865ad.js  4.44 KiB     frontend  [emitted] [immutable]  frontend
+   js/frontend-c0fdd77ffdbbf31865ad.js.map   4.2 KiB     frontend  [emitted] [dev]        frontend
+          js/index-97426958ad4ce1118a35.js  4.08 KiB        index  [emitted] [immutable]  index
+      js/index-97426958ad4ce1118a35.js.map   3.8 KiB        index  [emitted] [dev]        index
+         js/navbar-c830791650c5ccf02c68.js  3.87 KiB       navbar  [emitted] [immutable]  navbar
+     js/navbar-c830791650c5ccf02c68.js.map  3.52 KiB       navbar  [emitted] [dev]        navbar
+                             manifest.json  1.57 KiB               [emitted]              
+Entrypoint application = js/application-4b8d3d44fabc94119b14.js js/application-4b8d3d44fabc94119b14.js.map
+Entrypoint bootstrap = js/bootstrap-5d70b5be648f8df33170.js js/bootstrap-5d70b5be648f8df33170.js.map
+Entrypoint frontend = js/frontend-c0fdd77ffdbbf31865ad.js js/frontend-c0fdd77ffdbbf31865ad.js.map
+Entrypoint index = js/index-97426958ad4ce1118a35.js js/index-97426958ad4ce1118a35.js.map
+Entrypoint navbar = js/navbar-c830791650c5ccf02c68.js js/navbar-c830791650c5ccf02c68.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 511 bytes {application} [built]
+[./app/javascript/packs/bootstrap.js] 177 KiB {bootstrap} [built]
+[./app/javascript/packs/frontend.js] 578 bytes {frontend} [built]
+[./app/javascript/packs/index.js] 226 bytes {index} [built]
+[./app/javascript/packs/navbar.js] 0 bytes {navbar} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 61 hidden modules
+
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 5015.4ms | Allocations: 6440)
+Completed 200 OK in 5020ms (Views: 5017.4ms | ActiveRecord: 0.0ms | Allocations: 6897)
+
+
+Started POST "/session" for ::1 at 2021-04-29 23:13:47 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "login"=>{"email"=>"", "password"=>"[FILTERED]"}, "button"=>""}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:3:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 19ms (ActiveRecord: 1.9ms | Allocations: 1043)
+
+
+Started GET "/" for ::1 at 2021-04-29 23:13:47 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 18.4ms | Allocations: 5187)
+Completed 200 OK in 21ms (Views: 19.3ms | ActiveRecord: 0.0ms | Allocations: 5639)
+
+
+Started GET "/" for ::1 at 2021-04-29 23:15:39 -0400
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 471)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 103)
+  Rendered layout layouts/application.html.erb (Duration: 61.8ms | Allocations: 11267)
+Completed 200 OK in 84ms (Views: 69.2ms | ActiveRecord: 0.0ms | Allocations: 14546)
+
+
+Started GET "/" for ::1 at 2021-04-29 23:16:27 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 50.9ms | Allocations: 5191)
+Completed 200 OK in 53ms (Views: 52.0ms | ActiveRecord: 0.0ms | Allocations: 5645)
+
+
+Started GET "/" for ::1 at 2021-04-29 23:16:59 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 85)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/adrianaalvarado/communityconnect/public/packs
+[Webpacker] Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+[Webpacker] Hash: bf07118746b2c8fe80f2
+Version: webpack 4.46.0
+Time: 1730ms
+Built at: 04/29/2021 11:17:04 PM
+                                     Asset      Size       Chunks                         Chunk Names
+    js/application-e37fa5d796547c1c527d.js   126 KiB  application  [emitted] [immutable]  application
+js/application-e37fa5d796547c1c527d.js.map   140 KiB  application  [emitted] [dev]        application
+      js/bootstrap-5d70b5be648f8df33170.js   336 KiB    bootstrap  [emitted] [immutable]  bootstrap
+  js/bootstrap-5d70b5be648f8df33170.js.map   276 KiB    bootstrap  [emitted] [dev]        bootstrap
+       js/frontend-c0fdd77ffdbbf31865ad.js  4.44 KiB     frontend  [emitted] [immutable]  frontend
+   js/frontend-c0fdd77ffdbbf31865ad.js.map   4.2 KiB     frontend  [emitted] [dev]        frontend
+          js/index-97426958ad4ce1118a35.js  4.08 KiB        index  [emitted] [immutable]  index
+      js/index-97426958ad4ce1118a35.js.map   3.8 KiB        index  [emitted] [dev]        index
+         js/navbar-c830791650c5ccf02c68.js  3.87 KiB       navbar  [emitted] [immutable]  navbar
+     js/navbar-c830791650c5ccf02c68.js.map  3.52 KiB       navbar  [emitted] [dev]        navbar
+                             manifest.json  1.57 KiB               [emitted]              
+Entrypoint application = js/application-e37fa5d796547c1c527d.js js/application-e37fa5d796547c1c527d.js.map
+Entrypoint bootstrap = js/bootstrap-5d70b5be648f8df33170.js js/bootstrap-5d70b5be648f8df33170.js.map
+Entrypoint frontend = js/frontend-c0fdd77ffdbbf31865ad.js js/frontend-c0fdd77ffdbbf31865ad.js.map
+Entrypoint index = js/index-97426958ad4ce1118a35.js js/index-97426958ad4ce1118a35.js.map
+Entrypoint navbar = js/navbar-c830791650c5ccf02c68.js js/navbar-c830791650c5ccf02c68.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 517 bytes {application} [built]
+[./app/javascript/packs/bootstrap.js] 177 KiB {bootstrap} [built]
+[./app/javascript/packs/frontend.js] 578 bytes {frontend} {application} [built]
+[./app/javascript/packs/index.js] 226 bytes {index} [built]
+[./app/javascript/packs/navbar.js] 0 bytes {navbar} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 61 hidden modules
+
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 5075.8ms | Allocations: 6455)
+Completed 200 OK in 5079ms (Views: 5077.5ms | ActiveRecord: 0.0ms | Allocations: 6906)
+
+
+Started GET "/" for ::1 at 2021-04-29 23:18:02 -0400
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 471)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.5ms | Allocations: 103)
+  Rendered layout layouts/application.html.erb (Duration: 72.6ms | Allocations: 11267)
+Completed 200 OK in 99ms (Views: 80.5ms | ActiveRecord: 0.0ms | Allocations: 14546)
+
+
+Started GET "/" for ::1 at 2021-04-29 23:18:06 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 16.1ms | Allocations: 5187)
+Completed 200 OK in 19ms (Views: 17.3ms | ActiveRecord: 0.0ms | Allocations: 5646)
+
+
+Started GET "/" for ::1 at 2021-04-29 23:24:22 -0400
+  [1m[35m (3.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 471)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/adrianaalvarado/communityconnect/public/packs
+[Webpacker] Hash: 82dd0581bc2f19a1c996
+Version: webpack 4.46.0
+Time: 1662ms
+Built at: 04/29/2021 11:24:27 PM
+                                     Asset      Size       Chunks                         Chunk Names
+    js/application-94ea6ec887ae224d42dd.js   126 KiB  application  [emitted] [immutable]  application
+js/application-94ea6ec887ae224d42dd.js.map   140 KiB  application  [emitted] [dev]        application
+      js/bootstrap-5d70b5be648f8df33170.js   336 KiB    bootstrap  [emitted] [immutable]  bootstrap
+  js/bootstrap-5d70b5be648f8df33170.js.map   276 KiB    bootstrap  [emitted] [dev]        bootstrap
+       js/frontend-c0fdd77ffdbbf31865ad.js  4.44 KiB     frontend  [emitted] [immutable]  frontend
+   js/frontend-c0fdd77ffdbbf31865ad.js.map   4.2 KiB     frontend  [emitted] [dev]        frontend
+          js/index-97426958ad4ce1118a35.js  4.08 KiB        index  [emitted] [immutable]  index
+      js/index-97426958ad4ce1118a35.js.map   3.8 KiB        index  [emitted] [dev]        index
+         js/navbar-c830791650c5ccf02c68.js  3.87 KiB       navbar  [emitted] [immutable]  navbar
+     js/navbar-c830791650c5ccf02c68.js.map  3.52 KiB       navbar  [emitted] [dev]        navbar
+                             manifest.json  1.57 KiB               [emitted]              
+Entrypoint application = js/application-94ea6ec887ae224d42dd.js js/application-94ea6ec887ae224d42dd.js.map
+Entrypoint bootstrap = js/bootstrap-5d70b5be648f8df33170.js js/bootstrap-5d70b5be648f8df33170.js.map
+Entrypoint frontend = js/frontend-c0fdd77ffdbbf31865ad.js js/frontend-c0fdd77ffdbbf31865ad.js.map
+Entrypoint index = js/index-97426958ad4ce1118a35.js js/index-97426958ad4ce1118a35.js.map
+Entrypoint navbar = js/navbar-c830791650c5ccf02c68.js js/navbar-c830791650c5ccf02c68.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 520 bytes {application} [built]
+[./app/javascript/packs/bootstrap.js] 177 KiB {bootstrap} [built]
+[./app/javascript/packs/frontend.js] 578 bytes {frontend} {application} [built]
+[./app/javascript/packs/index.js] 226 bytes {index} [built]
+[./app/javascript/packs/navbar.js] 0 bytes {navbar} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 61 hidden modules
+
+  Rendered layouts/_navbar.html.erb (Duration: 0.5ms | Allocations: 103)
+  Rendered layout layouts/application.html.erb (Duration: 4763.1ms | Allocations: 12511)
+Completed 200 OK in 4784ms (Views: 4769.8ms | ActiveRecord: 0.0ms | Allocations: 15790)
+
+
+Started GET "/" for ::1 at 2021-04-29 23:26:03 -0400
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 18.5ms | Allocations: 8855)
+  Rendered layout layouts/application.html.erb (Duration: 18.9ms | Allocations: 8935)
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 0.0ms | Allocations: 12162)
+
+
+
+Sprockets::Rails::Helper::AssetNotFound - The asset "frontend.js" is not present in the asset pipeline.:
+  app/views/users/index.html.erb:1
+
+Started POST "/__better_errors/61cfb416d8ef9cb9/variables" for ::1 at 2021-04-29 23:26:04 -0400
+Started GET "/" for ::1 at 2021-04-29 23:28:07 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 17.2ms | Allocations: 8018)
+  Rendered layout layouts/application.html.erb (Duration: 17.8ms | Allocations: 8086)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms | Allocations: 8502)
+
+
+
+Sprockets::Rails::Helper::AssetNotFound - The asset "frontend.js" is not present in the asset pipeline.:
+  app/views/users/index.html.erb:1
+
+Started POST "/__better_errors/1092b6608c6c6536/variables" for ::1 at 2021-04-29 23:28:07 -0400
+Started GET "/" for ::1 at 2021-04-29 23:28:08 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 32.6ms | Allocations: 8018)
+  Rendered layout layouts/application.html.erb (Duration: 32.9ms | Allocations: 8087)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.0ms | Allocations: 8507)
+
+
+
+Sprockets::Rails::Helper::AssetNotFound - The asset "frontend.js" is not present in the asset pipeline.:
+  app/views/users/index.html.erb:1
+
+Started POST "/__better_errors/42124e0ece137caf/variables" for ::1 at 2021-04-29 23:28:09 -0400
+Started GET "/" for ::1 at 2021-04-29 23:28:10 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 9.5ms | Allocations: 8045)
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 8114)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms | Allocations: 8533)
+
+
+
+Sprockets::Rails::Helper::AssetNotFound - The asset "frontend.js" is not present in the asset pipeline.:
+  app/views/users/index.html.erb:1
+
+Started POST "/__better_errors/622b6a1146ecf036/variables" for ::1 at 2021-04-29 23:28:10 -0400
+Started GET "/" for ::1 at 2021-04-29 23:28:23 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 8.8ms | Allocations: 8018)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 8087)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms | Allocations: 8504)
+
+
+
+Sprockets::Rails::Helper::AssetNotFound - The asset "frontend.js" is not present in the asset pipeline.:
+  app/views/users/index.html.erb:1
+
+Started POST "/__better_errors/ff7170fd522b4c0b/variables" for ::1 at 2021-04-29 23:28:23 -0400
+Started GET "/" for ::1 at 2021-04-29 23:29:05 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 291)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 103)
+  Rendered layout layouts/application.html.erb (Duration: 73.0ms | Allocations: 10976)
+Completed 200 OK in 81ms (Views: 78.8ms | ActiveRecord: 0.0ms | Allocations: 12231)
+
+
+Started GET "/" for ::1 at 2021-04-29 23:29:16 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 252)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.6ms | Allocations: 99)
+  Rendered layout layouts/application.html.erb (Duration: 22.6ms | Allocations: 5822)
+Completed 200 OK in 30ms (Views: 27.2ms | ActiveRecord: 0.0ms | Allocations: 7048)
+
+
+Started GET "/" for ::1 at 2021-04-29 23:35:11 -0400
+  [1m[35m (3.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/adrianaalvarado/communityconnect/public/packs
+[Webpacker] Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+[Webpacker] Hash: afb36d48bfe092b2a5fa
+Version: webpack 4.46.0
+Time: 1412ms
+Built at: 04/29/2021 11:35:15 PM
+                                     Asset      Size       Chunks                         Chunk Names
+    js/application-a33214b4581554f85545.js   126 KiB  application  [emitted] [immutable]  application
+js/application-a33214b4581554f85545.js.map   140 KiB  application  [emitted] [dev]        application
+      js/bootstrap-5d70b5be648f8df33170.js   336 KiB    bootstrap  [emitted] [immutable]  bootstrap
+  js/bootstrap-5d70b5be648f8df33170.js.map   276 KiB    bootstrap  [emitted] [dev]        bootstrap
+       js/frontend-181d0fcaa7bf1e76c4d9.js  4.44 KiB     frontend  [emitted] [immutable]  frontend
+   js/frontend-181d0fcaa7bf1e76c4d9.js.map  4.25 KiB     frontend  [emitted] [dev]        frontend
+          js/index-97426958ad4ce1118a35.js  4.08 KiB        index  [emitted] [immutable]  index
+      js/index-97426958ad4ce1118a35.js.map   3.8 KiB        index  [emitted] [dev]        index
+         js/navbar-c830791650c5ccf02c68.js  3.87 KiB       navbar  [emitted] [immutable]  navbar
+     js/navbar-c830791650c5ccf02c68.js.map  3.52 KiB       navbar  [emitted] [dev]        navbar
+                             manifest.json  1.57 KiB               [emitted]              
+Entrypoint application = js/application-a33214b4581554f85545.js js/application-a33214b4581554f85545.js.map
+Entrypoint bootstrap = js/bootstrap-5d70b5be648f8df33170.js js/bootstrap-5d70b5be648f8df33170.js.map
+Entrypoint frontend = js/frontend-181d0fcaa7bf1e76c4d9.js js/frontend-181d0fcaa7bf1e76c4d9.js.map
+Entrypoint index = js/index-97426958ad4ce1118a35.js js/index-97426958ad4ce1118a35.js.map
+Entrypoint navbar = js/navbar-c830791650c5ccf02c68.js js/navbar-c830791650c5ccf02c68.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 520 bytes {application} [built]
+[./app/javascript/packs/bootstrap.js] 177 KiB {bootstrap} [built]
+[./app/javascript/packs/frontend.js] 573 bytes {frontend} {application} [built]
+[./app/javascript/packs/index.js] 226 bytes {index} [built]
+[./app/javascript/packs/navbar.js] 0 bytes {navbar} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 61 hidden modules
+
+  Rendered users/index.html.erb within layouts/application (Duration: 3614.9ms | Allocations: 4170)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.4ms | Allocations: 103)
+  Rendered layout layouts/application.html.erb (Duration: 3656.1ms | Allocations: 14637)
+Completed 200 OK in 3676ms (Views: 3662.7ms | ActiveRecord: 0.0ms | Allocations: 17916)
+
+
+Started GET "/" for ::1 at 2021-04-29 23:35:24 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/index.html.erb within layouts/application (Duration: 7.9ms | Allocations: 2272)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 21.1ms | Allocations: 7290)
+Completed 200 OK in 23ms (Views: 22.1ms | ActiveRecord: 0.0ms | Allocations: 7751)
+
+
+Started GET "/" for ::1 at 2021-04-29 23:35:24 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/index.html.erb within layouts/application (Duration: 9.4ms | Allocations: 2272)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 23.9ms | Allocations: 7260)
+Completed 200 OK in 26ms (Views: 24.6ms | ActiveRecord: 0.0ms | Allocations: 7716)
+
+
+Started GET "/" for ::1 at 2021-04-29 23:35:25 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/index.html.erb within layouts/application (Duration: 8.0ms | Allocations: 2272)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 20.6ms | Allocations: 7258)
+Completed 200 OK in 22ms (Views: 21.6ms | ActiveRecord: 0.0ms | Allocations: 7709)
+
+
+Started GET "/" for ::1 at 2021-04-29 23:36:19 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/adrianaalvarado/communityconnect/public/packs
+[Webpacker] Hash: 82dd0581bc2f19a1c996
+Version: webpack 4.46.0
+Time: 1395ms
+Built at: 04/29/2021 11:36:24 PM
+                                     Asset      Size       Chunks                         Chunk Names
+    js/application-94ea6ec887ae224d42dd.js   126 KiB  application  [emitted] [immutable]  application
+js/application-94ea6ec887ae224d42dd.js.map   140 KiB  application  [emitted] [dev]        application
+      js/bootstrap-5d70b5be648f8df33170.js   336 KiB    bootstrap  [emitted] [immutable]  bootstrap
+  js/bootstrap-5d70b5be648f8df33170.js.map   276 KiB    bootstrap  [emitted] [dev]        bootstrap
+       js/frontend-c0fdd77ffdbbf31865ad.js  4.44 KiB     frontend  [emitted] [immutable]  frontend
+   js/frontend-c0fdd77ffdbbf31865ad.js.map   4.2 KiB     frontend  [emitted] [dev]        frontend
+          js/index-97426958ad4ce1118a35.js  4.08 KiB        index  [emitted] [immutable]  index
+      js/index-97426958ad4ce1118a35.js.map   3.8 KiB        index  [emitted] [dev]        index
+         js/navbar-c830791650c5ccf02c68.js  3.87 KiB       navbar  [emitted] [immutable]  navbar
+     js/navbar-c830791650c5ccf02c68.js.map  3.52 KiB       navbar  [emitted] [dev]        navbar
+                             manifest.json  1.57 KiB               [emitted]              
+Entrypoint application = js/application-94ea6ec887ae224d42dd.js js/application-94ea6ec887ae224d42dd.js.map
+Entrypoint bootstrap = js/bootstrap-5d70b5be648f8df33170.js js/bootstrap-5d70b5be648f8df33170.js.map
+Entrypoint frontend = js/frontend-c0fdd77ffdbbf31865ad.js js/frontend-c0fdd77ffdbbf31865ad.js.map
+Entrypoint index = js/index-97426958ad4ce1118a35.js js/index-97426958ad4ce1118a35.js.map
+Entrypoint navbar = js/navbar-c830791650c5ccf02c68.js js/navbar-c830791650c5ccf02c68.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 520 bytes {application} [built]
+[./app/javascript/packs/bootstrap.js] 177 KiB {bootstrap} [built]
+[./app/javascript/packs/frontend.js] 578 bytes {frontend} {application} [built]
+[./app/javascript/packs/index.js] 226 bytes {index} [built]
+[./app/javascript/packs/navbar.js] 0 bytes {navbar} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 61 hidden modules
+
+  Rendered users/index.html.erb within layouts/application (Duration: 4538.8ms | Allocations: 3455)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 4550.5ms | Allocations: 8470)
+Completed 200 OK in 4553ms (Views: 4551.8ms | ActiveRecord: 0.0ms | Allocations: 8927)
+
+
+Started GET "/" for ::1 at 2021-04-29 23:36:27 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/index.html.erb within layouts/application (Duration: 9.5ms | Allocations: 2272)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 24.2ms | Allocations: 7261)
+Completed 200 OK in 26ms (Views: 25.2ms | ActiveRecord: 0.0ms | Allocations: 7712)
+
+
+Started GET "/" for ::1 at 2021-04-29 23:36:55 -0400
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/adrianaalvarado/communityconnect/public/packs
+[Webpacker] Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+[Webpacker] Hash: 82dd0581bc2f19a1c996
+Version: webpack 4.46.0
+Time: 1939ms
+Built at: 04/29/2021 11:36:59 PM
+                                     Asset      Size       Chunks                         Chunk Names
+    js/application-94ea6ec887ae224d42dd.js   126 KiB  application  [emitted] [immutable]  application
+js/application-94ea6ec887ae224d42dd.js.map   140 KiB  application  [emitted] [dev]        application
+      js/bootstrap-5d70b5be648f8df33170.js   336 KiB    bootstrap  [emitted] [immutable]  bootstrap
+  js/bootstrap-5d70b5be648f8df33170.js.map   276 KiB    bootstrap  [emitted] [dev]        bootstrap
+       js/frontend-c0fdd77ffdbbf31865ad.js  4.44 KiB     frontend  [emitted] [immutable]  frontend
+   js/frontend-c0fdd77ffdbbf31865ad.js.map  4.21 KiB     frontend  [emitted] [dev]        frontend
+          js/index-97426958ad4ce1118a35.js  4.08 KiB        index  [emitted] [immutable]  index
+      js/index-97426958ad4ce1118a35.js.map   3.8 KiB        index  [emitted] [dev]        index
+         js/navbar-c830791650c5ccf02c68.js  3.87 KiB       navbar  [emitted] [immutable]  navbar
+     js/navbar-c830791650c5ccf02c68.js.map  3.52 KiB       navbar  [emitted] [dev]        navbar
+                             manifest.json  1.57 KiB               [emitted]              
+Entrypoint application = js/application-94ea6ec887ae224d42dd.js js/application-94ea6ec887ae224d42dd.js.map
+Entrypoint bootstrap = js/bootstrap-5d70b5be648f8df33170.js js/bootstrap-5d70b5be648f8df33170.js.map
+Entrypoint frontend = js/frontend-c0fdd77ffdbbf31865ad.js js/frontend-c0fdd77ffdbbf31865ad.js.map
+Entrypoint index = js/index-97426958ad4ce1118a35.js js/index-97426958ad4ce1118a35.js.map
+Entrypoint navbar = js/navbar-c830791650c5ccf02c68.js js/navbar-c830791650c5ccf02c68.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 520 bytes {application} [built]
+[./app/javascript/packs/bootstrap.js] 177 KiB {bootstrap} [built]
+[./app/javascript/packs/frontend.js] 578 bytes {frontend} {application} [built]
+[./app/javascript/packs/index.js] 226 bytes {index} [built]
+[./app/javascript/packs/navbar.js] 0 bytes {navbar} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 61 hidden modules
+
+  Rendered users/index.html.erb within layouts/application (Duration: 4851.2ms | Allocations: 3465)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered layout layouts/application.html.erb (Duration: 4865.1ms | Allocations: 8451)
+Completed 200 OK in 4867ms (Views: 4866.0ms | ActiveRecord: 0.0ms | Allocations: 8902)
+
+
+Started GET "/" for ::1 at 2021-04-29 23:42:59 -0400
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered users/index.html.erb within layouts/application (Duration: 18.2ms | Allocations: 2897)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 26.0ms | Allocations: 623)
+  Rendered layout layouts/application.html.erb (Duration: 340.7ms | Allocations: 28236)
+Completed 200 OK in 362ms (Views: 348.1ms | ActiveRecord: 0.0ms | Allocations: 31516)
+
+
